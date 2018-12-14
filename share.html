@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>QING点 轻轻的来了~</title>
+    <meta name="keywords" content="QING点,资源分享,工作经验,文章资讯,交互设计" /> 
+    <meta name="Description" content="QING点是一个专注于分享文章的个人博客网站,联系邮箱:zqs520crazy@163.com" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no;">
     <meta name="format-detection" content="telephone=no" />
     <link rel="shortcut icon" href="resources/imgs/favicon.ico">
@@ -15,7 +18,7 @@
     <div id="Top">
         <div class="header">
             <div class="wrapper">
-                <h1><a href="#"><img src="resources/imgs/logo.png"></a></h1>
+                <h1><a href="index.html"><img src="resources/imgs/logo.png"></a></h1>
                 <p>客官，欢迎光临，动作请QING一点哟~</p>
                 <div class="menu">
                     <div class="nav">
@@ -33,28 +36,41 @@
                 <div class="page-pic"><img src="resources/imgs/b3.png"></div>
                 <!-- 循坏开始 -->
                 <div class="article-list">
-                    <a href="article/20161206/detail.html" target="_blank">
+                    <a href="article/20160802/detail.html" target="_blank">
                         <div class="article-date left">
-                            <b>06</b>
-                            <p>2016/12</p>
+                            <b>02</b>
+                            <p>2016/08</p>
                         </div>
                     </a>
                     <div class="article-text left">
-                        <a href="article/20161206/detail.html" target="_blank">通过哪些方式能够让你的APP设计更受欢迎？</a>
-                        <p>随着移动互联网不断进步和完善，移动终端与智能手机性能完美结合，各式各样的手机APP顺势而生，在解决特定的需求的同时覆盖了人们生活大小事，让人们的生活方式更加舒适便捷。</p>
+                        <a href="article/20160802/detail.html" target="_blank">为什么大多数APP图标不是蓝色就是红色？</a>
+                        <p>天天刷手机的你是否发现，大部分APP图标可以按照颜色分为蓝色系和红色系两类，而生活中80%的商标Logo也都是以这两种色系为主，蓝或者红。这到底是为什么呢？</p>
                     </div>
                     <div class="clear"></div>
                 </div> <!-- 文章结束 -->
                 <div class="article-list">
-                    <a href="article/example/detail.html" target="_blank">
+                    <a href="article/20160614/detail.html" target="_blank">
                         <div class="article-date left">
-                            <b>06</b>
-                            <p>2018/10</p>
+                            <b>14</b>
+                            <p>2016/06</p>
                         </div>
                     </a>
                     <div class="article-text left">
-                        <a href="article/example/detail.html" target="_blank">这里是标题这里是标题</a>
-                        <p>这里是简单的描述文字这里是简单的描述文字这里是简单的描述文字这里是简单的描述文字这里是简单的描述文字这里是简单的描述文字</p>
+                        <a href="article/20160614/detail.html" target="_blank">利用一个链接实现应用分发下载，将iOS、Android整合为一个二维码</a>
+                        <p>现在很多APP都是可以直接通过扫描一个二维码实现Android或者iOS版本APP的下载，或者点击一个按钮就能实现iOS用户直接跳转到 APP Store下载，Android用户则直接下载或者跳转到第三方应用平台进行下载。这样的设计很方便用户在下载APP时避免过多的操作，优化了用户体验。</p>
+                    </div>
+                    <div class="clear"></div>
+                </div> <!-- 文章结束 -->
+                <div class="article-list">
+                    <a href="article/20100326/detail.html" target="_blank">
+                        <div class="article-date left">
+                            <b>26</b>
+                            <p>2010/03</p>
+                        </div>
+                    </a>
+                    <div class="article-text left">
+                        <a href="article/20100326/detail.html" target="_blank">NBA球队队名搞怪</a>
+                        <p>我叫美国职业篮球联赛，英文名National Basketball Association（简称：NBA） 。我出生在「湖人」家族，但同时也持有「凯尔特人」身份证。从小天赋异禀的我长大后成功成为家族的「国王」，身边保镖众多，他们个个都是骁勇善战的「勇士」。</p>
                     </div>
                     <div class="clear"></div>
                 </div> <!-- 文章结束 -->
@@ -89,6 +105,22 @@
             </div>
         </div>
     </div>
+
+    <!-- JS代码部分 -->
+    <script src="resources/js/jquery-1.11.1.min.js"></script>
+    <script src="resources/js/jquery.gradientify.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#Top").gradientify({
+                gradients: [
+                    { start: [67,152,219], stop: [115,213,248] },
+                    { start: [49,76,172], stop: [242,159,191] },
+                    { start: [255,103,69], stop: [240,154,241] },
+                    { start: [33,229,241], stop: [235,236,117] }
+                ]
+            });
+        });
+    </script>
 
 </body>
 </html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>文章详情 - QING点</title>
+    <meta name="keywords" content="QING点,资源分享,工作经验,文章资讯,交互设计" /> 
+    <meta name="Description" content="QING点是一个专注于分享文章的个人博客网站,联系邮箱:zqs520crazy@163.com" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no;">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="../../resources/imgs/favicon.ico">
+    <link href="../../resources/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../../resources/css/article.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="Top">
+        <div class="header">
+            <div class="wrapper">
+                <div class="title">
+                    <h1>利用一个链接实现应用分发下载，将iOS、Android整合为一个二维码</h1>
+                    <p>2016-06-14</p>
+                </div>
+            </div>  
+        </div>        
+    </div>
+    <div id="Main">
+        <div class="wrapper">
+            <div class="content">
+                <div class="article">
+                    <p>现在很多APP都是可以直接通过扫描一个二维码实现Android或者iOS版本APP的下载，或者点击一个按钮就能实现iOS用户直接跳转到 APP Store下载，Android用户则直接下载或者跳转到第三方应用平台进行下载。这样的设计很方便用户在下载APP时避免过多的操作，优化了用户体验。</p>
+
+                    <h2>下载引导页</h2>
+                    <div class="img-box"><img src="1.png" class="small-pic"></div>
+                    <p>使用这种的界面应用也有一些，优点就是文案随意设计，可定制更多内容。在微信浏览器或者其它浏览器中打开，可以利用弹出层以文字的形式弹出，提示文字引导用户通过浏览器打开下载。
+这种通过下载引导页来实现APP的iOS、Android系统的下载，内容做的很简单，就是一个文字引导，有的也会做成了网页更美观能承载更多的内容的下载引导页面，而它不足就是需要专人去进行设计与开发，投入更多的资源。</p>
+
+                    <h2>应用宝微下载</h2>
+                    <div class="img-box"><img src="2.png" class="small-pic"></div>
+                    <p>简单来说，“微下载” 就是可以直接利用微信的 “扫一扫” 功能，扫描 APP 的二维码即可直接进入下载。比较方便的是，“微下载” 将 iOS 和 Android 两个平台的应用，整合为一个二维码。系统会有一个逻辑判断，iOS 用户会直接跳转到 APP Store，而 Android 用户则直接跳转到应用宝下载。这种方式目前较为多见，优势很明显，兼容性很好，无论是微信还是其他浏览器扫码都能成功的打开APP下载页面。可以放置产品的截图与文字说明，让用户对APP有更深入的了解。同时做到了较为恰当下载时的缓冲页面。</p>
+                    <p>除了整合为一个二维码之外，“微下载” 还有一个优势就是，可以把扫描下载的应用直接分享给微信好友，或者是分享到朋友圈，进行社交传播。</p>
+
+                    <h2>二维码生成器</h2>
+                    <p>利用一些二维码在线生成也能够实现将iOS、Android整合为一个二维码，iOS用户扫描二维码后直接跳转到 APP Store下载，Android用户扫描二维码后则可以直接下载或者跳转到第三方应用平台进行下载。常用的二维码生成网站有草料二维码和二百二维码，都可以实现将苹果应用，安卓应用合成一个下载二维码。实现原理其实就是一个短网址，访问后通过ua判断访问设备的操作系统，如果iOS就跳转到APP Store，如果是Android就自动用应用宝的链接。比较方便。
+草料二维码生成页面：</p>
+                    <div class="img-box"><img src="3.png"></div>
+                    <div class="img-note">▲ 二百二维码生成页面</div>
+                    <div class="img-box"><img src="4.png"></div>
+                    <p>相比较，草料二维码的生成需要提供APP Store ID和应用宝ID，对于那些没有在应用宝平台上架APP的用户可能会不适合，而二百二维码则只需要提供两种系统应用的下载地址即可，安卓系统就不像草料二维码那样固定只能是应用宝了。</p>
+
+                </div>
+            </div>
+            <div class="copyright">
+                <p>COPYRIGHT © <script>document.write(new Date().getFullYear())</script> ZHANGQS ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

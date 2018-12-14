@@ -51,6 +51,18 @@ html,body {
 }
 .article {
 }
+.article .ps-row {
+	background: #f9f9f9;
+	text-align: center;
+	font-size: 16px;
+	color: #767676;
+	padding: 16px 20px;
+	margin-top: 20px;
+}
+.article .ps-row a {
+	font-size: 16px;
+	color: var(--maincolor);
+}
 .article h1 {
 	font-size: 24px;
 	color: #343434;
@@ -78,6 +90,18 @@ html,body {
 .article .img-box img {
 	width: 100%;
 	border: 1px solid #eee;
+}
+.article .img-box img.small-pic {
+	width: 45%;
+}
+.article .img-box img.middle-pic {
+	width: 68%;
+}
+.article .img-note {
+	font-size: 14px;
+	color: #767676;
+	margin: 8px 0 16px;
+	text-align: center;
 }
 .article ul {
 	list-style: circle;
@@ -162,7 +186,7 @@ html,body {
 		width: 96%;
 	}
 	.header {
-		padding-top: 12px;
+		padding-top: 8px;
 		text-align: center;
 	}
 	.title {
@@ -189,7 +213,7 @@ html,body {
 	.article h2 {
 		font-size: 16px;
 		padding-top: 8px;
-		margin: 10px 0;
+		margin: 16px 0;
 	}
 	.article p {
 		font-size: 16px;
@@ -197,6 +221,12 @@ html,body {
 		margin: 12px 0;
 	}
 	.article .img-box img {
+		width: 100%;
+	}
+	.article .img-box img.small-pic {
+		width: 100%;
+	}
+	.article .img-box img.middle-pic {
 		width: 100%;
 	}
 

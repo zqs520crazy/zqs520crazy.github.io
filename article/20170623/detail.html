@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>文章详情 - QING点</title>
+    <meta name="keywords" content="QING点,资源分享,工作经验,文章资讯,交互设计" /> 
+    <meta name="Description" content="QING点是一个专注于分享文章的个人博客网站,联系邮箱:zqs520crazy@163.com" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no;">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="../../resources/imgs/favicon.ico">
+    <link href="../../resources/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../../resources/css/article.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="Top">
+        <div class="header">
+            <div class="wrapper">
+                <div class="title">
+                    <h1>[逆向工程]信息架构推演<微信消息列表>步骤细节</h1>
+                    <p>2017-06-23</p>
+                </div>
+            </div>  
+        </div>        
+    </div>
+    <div id="Main">
+        <div class="wrapper">
+            <div class="content">
+                <div class="article">
+                    <div class="ps-row">本文系转载或参考，<a href="http://www.hozin.com/Point/201601/Reverse-WeChat-Message-List.html" target="_blank">原文链接》</a></div>
+                    <p>无数小伙伴分析过微信的产品、交互设计，然而，这个亿万人使用的社交软件，它的「信息架构」到底是如何的？消息列表，是微信客户端的主界面，今天就来分析一下，管中窥豹！本文富含大量图表，实在是互联网小白和老鸟应该必读的，请不要吝惜流量。</p>
+                    
+                    <h2>流程方法论</h2>
+                    <p>逆向工程，请自行搜索相关概念。简言之，如果非常喜欢一款产品，又无法身临其境的感受设计过程，逆向推演就成为了非常好的学习方法，坚持经常，必有提高。</p>
+                    <div class="img-box"><img src="1.png" class="small-pic"></div>
+
+                    <h2>分析样本输入</h2>
+                    <p>每次打开微信，最经常使用的界面就是[消息列表]，把它先收入囊中，截图取样。截图还是有一些技巧的，尽量把更多交互控件状态都保留下来（在诸多小伙伴的配合下完成，感谢！）。</p>
+                    <div class="img-box"><img src="2.png" class="small-pic"></div>
+                    <div class="img-note">▲ 微信消息列表样本</div>
+
+                    <h2>还原高保真RP</h2>
+                    <p>对于原型的保真度，每个交互设计师的理解不同，如果有3年以上经验，都不会比下面这个差吧</p>
+                    <div class="img-box"><img src="3.png" class="small-pic"></div>
+                    <div class="img-note">▲ 还原之后的高保真RP</div>
+
+                    <h2>输出《交互设计说明文档》</h2>
+                    <p>此刻，变身微信的交互设计师，将产品还原成相对标准的文档。首先，整个界面由三部分组成：标题栏Title、消息列表MsgList、标签式下导航TabNavi；主要操作有对话搜索、添加（+）、Tap点击进入消息对话界面等。</p>
+                    <div class="img-box"><img src="4.png" class="small-pic"></div>
+                    <div class="img-note">▲ 微信消息列表隐藏交互操作</div>
+
+                    <p>其次，消息列表中，某一对话的通栏区块定义为[对话Block]交互组件，包含一个隐藏操作行为：切换已读/未读、删除对话。</p>
+                    <div class="img-box"><img src="5.png" class="small-pic"></div>
+                    <div class="img-note">▲ 微信消息列表隐藏交互操作</div>
+
+                    <p>再次，[对话Block] 这个组件包含图片Image、交谈对象Interlocutor(s) 、当前对话摘要Current Digest 、日期时间Date&Time、未读提示Unread Alert五个交互控件；五个控件并且会根据交谈主体、新消息种类、开通免打搅功能而相互影响变化，交互规则异常复杂，于是将规则逐个列出。</p>
+                    <div class="img-box"><img src="6.png" class="small-pic"></div>
+                    <div class="img-note">▲ 交互文档片段对话Block图片</div>
+                    <div class="img-box"><img src="7.png" class="small-pic"></div>
+                    <div class="img-note">▲ 交互文档片段对话Block交谈对象</div>
+                    <div class="img-box"><img src="8.png" class="small-pic"></div>
+                    <div class="img-note">▲ 交互文档片段对话Block当前对话摘要</div>
+                    <div class="img-box"><img src="9.png" class="small-pic"></div>
+                    <div class="img-note">▲ 交互文档片段对话Block日期时间</div>
+
+                    <p>前面这些都是铺垫，信息架构推演刚刚开始！详尽的交互文档已经完成，反推信息架构应该不是什么难事了吧，这也未必。比如，经过千辛万苦，可能是下面这张图。</p>
+                    <div class="img-box"><img src="10.png" class="small-pic"></div>
+
+                    <h2>为什么这货不是「信息架构」？</h2>
+                    <p>根本原因，信息是抽象的，而不是图上这些表象内容。这货究竟是什么？姑且可以称为“某个界面之中的内容关系”。这货有什么用？用处还挺大的，譬如：1、标注给UI设计师/开发人员，让他们对内容逻辑一目了然。2、放在简历和Work Show里，让非专业人士唏嘘赞叹，让一切看起来井井有条。但是这货没有深入到信息的灵魂，削弱了关联，难免以偏概全，固化了思维，无从着手优化和创新（最后只能大家抄来抄去）。</p>
+
+                    <h2>推理前的复习</h2>
+                    <p>2009年，Hozin发表过一篇《从概念设计到信息架构 》，今天继续沿用其中的思路和方法。复习一下图例先，很重要的。</p>
+                    <div class="img-box"><img src="11.png" class="small-pic"></div>
+
+                    <h2>第一步，核心概念</h2>
+                    <p>「信息架构」是一种准确的抽象，研究抽象事物，那就是摆弄“概念”。微信消息，本质上是「对话」，即“我和其他人之间的信息来往”，核心概念至少有两个：用户User和会话Dialog。于是，我们得到了非常简单的雏形，未来的一切都由这个“受精卵”发育而成，既然是核心，那就越简单越好。</p>
+                    <div class="img-box"><img src="12.png" class="small-pic"></div>
+
+                    <h2>第二步，概念的延伸</h2>
+                    <p>从概念延伸出子概念，辨别概念之间的关系。对于微信消息，不难发现：「对话者」可能是自然人、一群自然人，还可能是机器人，所以增加了一个核心概念“系统System”；「对话」是一种用户间行为，被传递的是「消息」，于是又增加了一个核心概念“消息（单条）A Single Message”。</p>
+                    <div class="img-box"><img src="13.png"></div>
+                    <p>经过这些延伸增益，「信息架构」已经从母体分娩，成为“小婴儿”啦！</p>
+
+                    <h2>第三步，概念合并打包</h2>
+                    <p>概念之前的关系非常复杂，已经占用了太多的连线，为了避免影响到以后的步骤，先要对概念进行整理，无非包含两种情况：概念之间是兄弟平行关系，把它们分配同组；概念之间是父子支配关系，把它们分配同组；一言蔽之“打仗亲兄弟，上阵父子兵”。</p>
+                    <div class="img-box"><img src="14.png"></div>
+                    <p> “小婴儿”当然不晓得自己便便咯，经过慢慢训练，终于有一天离开纸尿裤，养成饭前便后要洗手等习惯，茁壮成长为 “有秩序感的儿童”。</p>
+
+                    <h2>第四步， 概念实例化</h2>
+                    <p>从抽象概念，迈向内容载体的中间过程，就是实例化。有些抽象概念根本无法实例化，比如“道德”；有一些就很容易啊，“鸟类”的实例化就是鸵鸟、大公鸡……无论是IM还是社交软件，聊天这个产品，在实例化之前都是差不多的概念，Step #03那张图对于QQ/Skype/陌陌同样有效，从实例化开始，这些产品才开始分化。只有实例化，才能具体化，才有可能生成最后的界面。</p>
+                    <div class="img-box"><img src="15.png"></div>
+                    <div class="img-box"><img src="15-2.png"></div>
+                    <p>“儿童”终于上了幼儿园，开始接受K12的各种教育培养，找到自己的兴趣方向，成为“恰同学骚年”！</p>
+
+                    <h2>第五步，填充属性与操作</h2>
+                    <p>实体，看得见摸得到；系统的分析实体，无非就是有哪些属性，如何改变这些属性（操作）。谢天谢地，这步骤的操作方法很普及了，就是“这货”的功劳！
+                    <div class="img-box"><img src="16.png"></div>
+
+                    <h2>第六步，标定内容，添加关联，终成「信息架构」</h2>
+                    <p>在互联网产品设计中，信息架构是为了界面呈现而存在，界面是由内容构成的。标定内容的种类和数量，决定了界面的复杂度，甚至决定了“需要多少个界面”。映射，通常意味着[等效关系]，原理略去三百字，主要是用起来方便些。最终结果，如下图</p>
+                    <div class="img-box"><img src="17.png"></div>
+
+                </div>
+            </div>
+            <div class="copyright">
+                <p>COPYRIGHT © <script>document.write(new Date().getFullYear())</script> ZHANGQS ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

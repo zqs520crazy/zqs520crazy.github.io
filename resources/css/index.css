@@ -131,6 +131,7 @@ html,body {
 }
 .flex-box {
 	width: 33.3%;
+	overflow: hidden;
 }
 .center-box {
 	margin: 0 48px;
@@ -150,6 +151,7 @@ html,body {
 	color: #666;
 	font-weight: 400;
 	border-bottom: 1px dashed #ddd;
+	white-space:nowrap;
 }
 .flex-box a:hover {
 	color: #232323;
@@ -216,6 +218,9 @@ html,body {
 	.article-date {
 		width: 12%;
 		height: 88px;
+	}
+	.article-date b {
+		margin-top: 18px;
 	}
 	.article-text {
 		width: 80%;
