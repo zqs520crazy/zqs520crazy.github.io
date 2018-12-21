@@ -1,0 +1,322 @@
+/* CSS Document
+@charset "utf-8";
+
+By I_amzQs
+www.zhangqs.com
+2017-02-09
+*/
+
+/* style reset */
+html{
+	font-size: 62.5%;	/* 设了62.5%后就有1rem = 10px */
+	background: #f6ead0;
+	-webkit-text-size-adjust:none;
+}
+html,body,div,ul,li,dl,dt,dd,h1,h2,i,a,img,span,p,hr,textarea {margin:0; padding:0;}
+a,img {border:none; outline:none;}
+ul li {list-style: none;}
+.clear-fix {clear:both;}
+a {text-decoration: none;}
+input,input:focus,input:active{user-select: text;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+input[type=submit],input[type=button]{
+	-webkit-appearance:none;
+	outline:none;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 320px;
+}
+
+.section {
+	background: #f6ead0;
+}
+.wrapper {
+	padding: 0 1rem;
+}
+.wrapper-2 {
+	padding: 1rem;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+
+.top {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.top .top-logo {
+	width: 5.6rem;
+	height: 5.6rem;
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	z-index: 1
+}
+.top .top-bg-pic {
+	width: 100%;
+}
+
+.main .part-1,
+.main .part-2,
+.main .part-3,
+.main .part-4 {
+	background: #f6ead0;
+}
+.main .part-1 {
+	padding-top: 1.0rem;
+}
+.main .part-1 .pic-box {
+	width: 50%;
+}
+.main .part-1 .pic-box img {
+	width: 100%;
+}
+.main .part-1 .text-box {
+	width: 53%;
+	font-size: 1.6rem;
+	color: #414141;
+	line-height: 2.4rem;
+	margin-left: -3%;
+	margin-top: 10.6%;
+}
+.main .title-row {
+	height: 4.8rem;
+	text-align: center;
+	margin: 10px 0;
+}
+.main .title-row .title-text {
+	font-size: 1.8rem;
+	color: #fdcd5f;
+	text-align: center;
+	background: #f6ead0;
+	padding: 1.4rem;
+	display: inline-block;
+}
+.main .title-row .title-line {
+	height: 1px;
+	width: 100%;
+	background: #fdcd5f;
+	margin-top: -2.5rem;
+}
+.main .part-2 .promotion-row {
+	background: #f1535b;
+	width: 100%;
+	height: auto;
+	background: url('../imgs/tj-bg.png') center center;
+	background-size: cover;
+}
+.main .part-2 .promotion-row .tj-box {
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+    margin-right: -3px;
+}
+.main .part-2 .promotion-row .tj-box .tj-price{
+	margin: 6px 0;
+}
+.main .part-2 .promotion-row .tj-box .tj-price span {
+	color: #fff;
+}
+.main .part-2 .promotion-row .tj-box .tj-price .tag {
+	font-size: 1.4rem;
+	font-family: "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+.main .part-2 .promotion-row .tj-box .tj-price .price {
+	font-size: 3.2rem;
+}
+.main .part-2 .promotion-row .tj-box .tj-price .cc {
+	display: inline-block;
+	text-align: left;
+}
+.main .part-2 .promotion-row .tj-box .tj-price .cc .text {
+	font-size: 1.0rem;
+}
+.main .part-2 .promotion-row .tj-box .tj-price .cc .yuan {
+	font-size: 1.4rem;
+}
+.main .part-2 .promotion-row .tj-box .tj-name {
+	display: inline-block;
+	background: #fff;
+	font-size: 1.6rem;
+	color: #f1535b;
+	text-align: center;
+	line-height: 2.6rem;
+	border-radius: 4px;
+	width: 82%;
+	margin-bottom: 10px;
+}
+.main .part-2 .feature-row {
+	margin: 4.0rem 0 0;
+}
+.main .part-2 .feature-row .feature-box {
+	color: #414141;
+	text-align: center;
+	width: 32%;
+	display: inline-block;
+}
+.main .part-2 .feature-row .feature-box img {
+	width: 60%;
+}
+.main .part-2 .feature-row .feature-box p {
+	font-size: 1.6rem;
+	line-height: 3.2rem;
+}
+
+.main .part-3 .product-row {
+	margin-bottom: 1.8rem;
+}
+.main .part-3 .product-row .product-box {
+	width: 46%;
+}
+.main .part-3 .product-row .product-box img {
+	width: 100%;
+}
+.main .part-3 .product-row .product-box p {
+	font-size: 1.7rem;
+	line-height: 3.2rem;
+	color: #414141;
+}
+.main .part-3 .product-row .product-box p:before {
+	content:".";
+	display: inline-block;
+	width:  6px;
+	line-height: 1.6rem;
+	color: #fe8b0c;
+	background: #fe8b0c;
+	margin-right: 10px;
+}
+
+.main .part-4 .course-part {
+	width: 100%;
+	margin-top: 4.2rem;
+	margin-bottom: 3.2rem;
+	position: relative;
+}
+.main .part-4 .course-part .introduce-box {
+	background: #f87e85;
+	opacity: 0.89;
+	width: 65%;
+	padding: 10px 12px;
+	overflow: hidden;
+}
+.main .part-4 .course-part .introduce-box h2 {
+	font-size: 2.0rem;
+	color: #fff;
+	font-weight: 400;
+}
+.main .part-4 .course-part .introduce-box p {
+	font-size: 1.6rem;
+	color: #fff;
+	line-height: 1.8rem;
+	margin-top: 0.6rem;
+}
+.main .part-4 .course-part .course-pic {
+	width: 44%;
+	margin-top: -10.0rem;
+}
+.main .part-4 .course-part .course-pic .show-more {
+	display: block;
+	background: #666;
+	text-align: center;
+	font-size: 1.35rem;
+	color: #fff;
+	line-height: 3.6rem;
+}
+.main .part-4 .course-part .course-pic img{
+	width: 100%;
+}
+.main .part-4 .course-part .course-text {
+	width: 50%;
+	padding: 10px;
+	font-size: 1.465rem;
+	line-height: 2.05rem;
+	color: #414141;
+}
+.main .part-4 .produce-part {
+	margin-bottom: -3.0rem;
+	padding-bottom: 4.0rem; 
+}
+.main .part-4 .produce-part .produce-box {
+	margin: 2.0rem 0;
+}
+.main .part-4 .produce-part .produce-box .row {
+
+}
+.main .part-4 .produce-part .produce-box .row img {
+	width: 36%;
+}
+.main .part-4 .produce-part .produce-box .row span {
+	font-size: 2.0rem;
+	line-height: 2.0rem;
+	color: #760e0a;
+	font-family: "FZXBSJW-GB1-0";
+	font-weight: 600;
+}
+.main .part-4 .produce-part .produce-box .row span.name {
+	display: inline-block;
+	margin-left: 3.8rem;
+	margin-top: 3.4rem;
+}
+.main .part-4 .produce-part .produce-box .t-wrapper {
+	padding: 0 2rem;
+	margin-top: -3.2rem;
+}
+.main .part-4 .produce-part .produce-box .t-wrapper .text {
+	background: #fff;
+	padding: 2.4rem 1.8rem 1.6rem;
+	font-size: 1.5rem;
+	line-height: 2.0rem;
+	color: #414141;
+}
+
+.main .part-5 {
+	background: url('../imgs/bottom-bg.png') no-repeat #eee;
+	background-size: cover;
+	text-align: center;
+	padding: 6.8rem 0 2.8rem;
+}
+.main .part-5 .text h3 {
+	font-size: 1.8rem;
+	line-height: 3.6rem;
+	color: #fff;
+}
+.main .part-5 .text p {
+	font-size: 1.4rem;
+	line-height: 2.0rem;
+	color: #fff;
+	margin-bottom: 4.0rem;
+	font-style:italic;
+}
+.main .part-5 p img {
+	width: 6.2%;
+}
+.main .part-5 .call-btn {
+	display: block;
+	width: 56%;
+	height: 4.05rem;
+	line-height: 4.05rem;
+	border-radius: 4px;
+	margin: 2.4rem auto 4.8rem;
+	font-size: 1.4rem;
+	color: #ffeec8;
+	border: 1px solid #fff;
+}
+.main .part-5 div img {
+	width: 32%;
+}
+.main .part-5 div p {
+	margin-top: 1.6rem;
+	font-size: 1.4rem;
+	color: #2c2c2c;
+}
+
+
+
+/* style end */

@@ -1,0 +1,59 @@
+
+* {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+body {
+	font-size: 62.5%;	/* 设了62.5%后就有1rem = 10px */
+	background-color:#000;
+	color: #fff;
+}
+
+
+ul,li{
+	margin:0;
+	padding:0;
+}
+div.imgbox{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin:0 auto;
+}
+div.imgbox ul{
+	clear:both;
+	width:75rem;
+}
+div.imgbox ul li{
+	float:left;
+	width:25rem;
+	height:auto;
+	overflow:hidden;
+	text-align:center;
+}
+div.imgbox ul li img{
+	width: 100%;
+}
+.pic-num {
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	background: #000;
+}
+.pic-num #page {
+	font-size: 1.6rem;
+}
+.close-btn {
+	padding: 0.6rem 1.0rem;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.close-btn img {
+	width: 1.4rem;
+	height: 1.4rem;
+}
