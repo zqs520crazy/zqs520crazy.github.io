@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册 | QING点</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link href="resources/css/register.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="resources/js/jquery-1.8.2.min.js"></script>
+</head>
+
+<body>
+<div id="topContent">
+	<div id="logo">
+		<img src="resources/images/login/logo.png" align="absmiddle">
+		只为记录你每一段闪光的才思，展现每一个不一样的存在，我们用心轻轻的呵护你的情感。轻博客之轻，等着你来定义！
+	</div>
+</div>
+<div id="registerBox">
+	<span class="title">注册新用户</span>
+	<form class="register_form" action="login.html" method="post">
+		<p>
+			<input type="text" name="username" class="name_input" placeholder="用户名/博客名"/>
+			<span class="error1">用户名长度必须为4-20位</span>
+		</p>
+		<p>
+			<input type="password" name="password" class="password_input" placeholder="密码"/>
+			<span class="error2">密码长度必须大于6位</span>
+		</p>
+		<p>
+			<input type="text" name="email" class="email_input" placeholder="邮箱"/>
+			<span class="error3">邮箱格式不正确</span>
+		</p>
+		<p>
+			<textarea type="text" name="profile" class="profile_text" placeholder="个人介绍"/></textarea>
+			<span class="error4">长度不够？</span>
+		</p>
+		<p>
+			<input type="text" readonly="readonly" name="userhead" id="file_name" class="fileinput" placeholder="选择头像"/>
+			<input type="file" name="btn_file" style="display:none" onchange="file_change(this.value)"/>
+			<input type="button" value="浏 览" onclick="btn_file.click();" name="get_file" class="liulan"/>		
+			<script type="text/javascript">
+			function file_change(e)
+			{
+				document.getElementById("file_name").value = e;
+			}
+			</script>
+		</p>
+		<p><input type="submit" class="register_btn" value="注册"/></P>
+		<a href="login.html">已有帐号？</a>
+	</form>	
+	<div class="footer">
+		Copyright © <a href="http://weibo.com/zqs520crazy">I_amzQs</a> 2015, All Rights Reserved
+	</div>
+</div>
+
+<!--表单验证-->
+<script>
+$(document).ready(function(){
+
+	$(".name_input").blur(function(){
+		if($(this).val().length<4 || $(this).val().length>20){
+			$(".error1").css("display","block");
+		}else{
+			$(".error1").css("display","none");
+		}
+	});
+	$(".password_input").blur(function(){
+		if($(this).val().length<6){
+			$(".error2").css("display","block");
+			return false;
+		}else{
+			$(".error2").css("display","none");
+		}
+	});
+	$(".email_input").blur(function(){
+		if(!$(this).val().match(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/)){
+			$(".error3").css("display","block");
+		}else{
+			$(".error3").css("display","none");
+		}
+	});
+	
+	$(".register_form").submit(function(){
+		if($(".name_input").val().length == 0){		
+			$(".error1").css("display","block");
+		}else if($(".password_input").val().length == 0){			
+			$(".error2").css("display","block");
+		}else if($(".email_input").val().length == 0){			
+			$(".error3").css("display","block");
+		}
+			return false;
+		if($(".error1, .error2, error3").is(":visible")){		
+            return false;
+		}
+	});
+});
+</script>
+</body>
+</html>
+

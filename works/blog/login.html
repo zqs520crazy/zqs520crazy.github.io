@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录 | QING点</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" >
+<link href="resources/css/login.css" rel="stylesheet" type="text/css" />
+<script src="resources/js/jquery-1.8.2.min.js"></script>
+</head>
+    
+<body>
+<!-- 设置背景 -->
+<img src="resources/images/login/1.jpg" id="bg" />
+<div id="loginBox">
+	<img src="resources/images/login/logo.png">
+	<form id="loginForm" name="loginForm" method="post" action="home.html">
+        <p>
+          <input name="username" type="text" class="name_input" placeholder="帐  号"/>
+        </p>
+        <p>
+          <input name="password" type="password" class="password_input" placeholder="密  码"/>
+        </p>
+        <p>
+          <input name="button" type="submit" class="login_btn" value="登  录" />
+        </p>
+    </form>
+</div>
+<a href="register.html" class="reg_box">注册</a>
+
+<!--修改背景-->
+<script>
+$(document).ready(function() {
+	var i = 1;
+	var spath = "resources/images/login/";
+    var changeBg = setInterval(function(){	
+		$("#bg").css("display","none");
+		i++;
+		$("#bg").attr("src",spath +i+ ".jpg").fadeIn(1000);
+		if(i==5){
+			i=1;
+			$("#bg").attr("src",spath +1+ ".jpg");
+		}
+	},5000);
+
+});
+</script>
+</body>
+</html>

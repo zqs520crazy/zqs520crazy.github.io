@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Relax_HOME</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" >
+<link href="resources/css/font-awesome.css" rel="stylesheet" type="text/css" />
+<link href="resources/css/reset.css" rel="stylesheet" type="text/css" />
+<link href="resources/css/qinger.css" rel="stylesheet" type="text/css" />
+<script src="resources/js/jquery-1.8.2.min.js"></script>
+</head>
+    
+<body>
+<div class="top">
+	<div class="bg">
+		<a href="home.html" class="back-home top-right" ><i class="icon-home"></i>&nbsp返回主页</a>
+		<a href="#" class="btn-follow top-right" ><i class="icon-eye-open"></i>&nbsp关注</a>
+	</div>
+	<div class="user-box">
+		<img src="resources/images/head000.jpg" class="head" />
+		<h1 class="name">Relax_HOME</h1>
+		<p class="introduce">这是我的QING点博客，希望在这里记录我的成长</p>
+	</div>
+</div>
+
+<!-- 回到顶部按钮 -->
+<a href="#" id="toTop"><i class="icon-angle-up"></i></a>
+<script>
+$(document).ready(function(){
+  $(window).scroll(function() {
+	var a = $(window).scrollTop();
+	//alert(a);
+	if(a > 200){
+		$("#toTop").fadeIn();
+	} 
+	if(a < 200){
+		$("#toTop").fadeOut();
+	} 
+	
+  });
+});
+</script>
+
+<div class="content">
+	<div class="container">
+		<div class="blog-box">
+			<div class="ct-box">
+				<h2 class="ct-title">无奈之后，重拾平静</h2>
+				<p class="ct-p">我一直都在渴望简单，越想要简单的生活，也跟随着内心做任何事，但有时并不如意，似乎简单，
+				已成为了“艰难”的事情，奢侈品，你能用钱买，但是奢侈的梦想，则是用钱买不到的。</p>
+			</div>
+			<a href="blog.html" class="date">2015.05.28</a>
+			<span class="round"></span>
+		</div>
+		
+		<div class="blog-box">
+			<div class="ct-box">
+				<img src="resources/images/ex2.jpg" class="ct-pic" />
+				<img src="resources/images/ex3.jpg" class="ct-pic" />
+			</div>
+			<a href="blog.html" class="date">2015.04.01</a>
+			<span class="round"></span>
+		</div>
+		
+		<div class="blog-box">
+			<div class="ct-box">
+				<img src="resources/images/pic2.jpg" class="ct-pic" />
+				<p class="ct-p">当詹姆斯·鲍文发现一只受伤的姜黄色流浪猫，蜷缩在他家公寓的走廊里时，还不知道自己的人生将会面临怎样翻天覆地的转变。
+				作为一个勉强度日的流浪艺人，他从未想过拥有一只宠物。但是，詹姆斯还是决定收留这只聪明的公猫，并给他起名为鲍勃。
+				詹姆斯精心照顾着鲍勃，帮助他恢复健康，然后将他放回街头，准备就此分别。但鲍勃显然另有打算。</p>
+			</div>
+			<a href="blog.html" class="date">2015.01.13</a>
+			<span class="round"></span>
+		</div>
+		
+		<div class="blog-box">
+			<div class="ct-box">
+				<a href="#" class="ct-link">http://weibo.com/zqs520crazy/home?wvr=5&tongji=baiduxinshouye</a>
+			</div>
+			<a href="blog.html" class="date">2014.12.28</a>
+			<span class="round"></span>
+		</div>
+		
+		<div class="blog-box">
+			<div class="ct-box">
+				<img src="resources/images/pic3.jpg" class="ct-pic" />
+			</div>
+			<a href="blog.html" class="date">2014.10.06</a>
+			<span class="round"></span>
+		</div>
+		
+	</div>
+</div>
+</body>
+</html>

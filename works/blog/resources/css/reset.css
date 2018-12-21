@@ -1,0 +1,94 @@
+/* CSS Document */
+@charset "utf-8";
+body,div,input,p,a,ul,li,h1,h2,button,textarea {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei UI";
+}/*标签重置*/
+a,img,button {
+	border: none;
+	outline: none;
+}
+input, textarea {
+	outline: none;
+}
+ul {
+	list-style: none;
+}
+.clear {
+	clear: both;
+}
+
+/* 返回顶部按钮 */
+#toTop {
+	position: fixed;
+	display: none;
+	right: 30px;
+	bottom: 20px;
+	padding: 0 10px;
+	font-size: 50px;
+	color: #fff;
+	background: #ADACA9;
+	text-decoration: none;
+}
+#toTop:hover {
+	background: #8B8A86;
+}
+
+
+/* 用户页和博客详情页共用部分 */
+.bg {
+	width: 100%;
+	min-width: 960px;
+	height: 300px;
+	background: #fdfdfd url(../images/top-bg.jpg) no-repeat bottom;
+	background-size: cover;
+}
+.top-right {
+	position: fixed;
+	display: block;
+	font-size: 12px;
+	background: #646464;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 4px;
+	z-index: 99;
+	padding: 4px 6px;
+}
+.top-right:hover {
+	background: #7C7C7C;
+}
+.back-home {
+	right: 20px;
+	top: 10px;
+}
+.btn-follow{
+	right: 100px;
+	top: 10px;
+}
+.user-box {
+	width: 960px;
+	height: 300px;
+	margin: -60px auto 0;
+	text-align: center;
+}
+.head {
+	width: 120px;
+	height: 120px;
+	border: 10px solid #fff;
+	border-radius: 4px;
+}
+.name {
+	font-weight: normal;
+	font-size: 32px;
+	color: #948C79;
+	margin: 20px auto;
+}
+.introduce {
+	width: 600px;
+	margin: 0 auto;
+	font-size: 14px;
+	color: #999;
+	line-height: 20px;
+}

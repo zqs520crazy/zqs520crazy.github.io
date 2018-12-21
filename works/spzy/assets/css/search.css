@@ -1,0 +1,189 @@
+
+/* 图标 */
+.ico {
+    display: inline-block;
+    width: 16px;
+    height: 20px;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.ico.ico-map {
+    vertical-align: text-top;
+    background-image: url('../images/common/ico-map.png');
+}
+
+
+/* 搜索过滤区域 */
+
+.search-info {
+    background-color: #fff;
+    width: 762px;
+    height: 220px;
+    margin-bottom: 0;
+}
+.search-info .mod-heading-inner {
+    padding-left: 30px;
+}
+.search-info .mod-heading-inner .place {
+    margin-left: 15px;
+    font-size: 16px;
+    color: #3a3a3a;
+}
+.search-info .mod-heading-inner .locate-wrp {
+    position: relative;
+}
+.search-info .mod-heading-inner .locate {
+    border: 1px solid #999999;
+    margin-left: 5px;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+.search-info .mod-heading-inner .locate:focus,
+.search-info .mod-heading-inner .locate:hover {
+    text-decoration: none;
+    background-color: #1aa0f7;
+    border-color: #1aa0f7;
+    color: #fff;
+}
+
+.map-popup {
+    position: absolute;
+    background-color: #fff;
+    width: 420px;
+    top: 25px;
+    left: 5px;
+    z-index: 9;
+    border: 1px solid #3e9eea;
+    font-size: 12px;
+    display: none;
+}
+.map-inner {
+    background-color: #fff;
+    position: relative;
+    padding: 15px 20px;
+}
+.map-inner .cancel {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    color: #3b7be9;
+    font-size: 16px;
+}
+.map-inner .cancel:focus,
+.map-inner .cancel:hover {
+    text-decoration: none;
+}
+.map-inner .hd {
+    border-bottom: 1px solid #ccc;
+}
+.map-inner .hd .lbl {
+    color: #f5b376;
+    float: left;
+}
+.map-inner .hd ul {
+    float: left;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 5px;
+}
+.map-inner .hd li {
+    float: left;
+    margin-right: 25px;
+}
+
+.map-inner .bd {
+    padding-top: 5px;
+}
+.map-inner .bd p {
+    margin-bottom: 5px;
+}
+.map-inner .bd ul {
+    list-style-type: none;
+    padding: 0 5px 0 0;
+}
+.map-inner .bd ul>li {
+    float: left;
+    width: 62px;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    padding-left: 2px;
+}
+.map-inner .bd ul>li.on,
+.map-inner .bd ul>li:focus,
+.map-inner .bd ul>li:hover {
+    background-color: #e1effa;
+    color: #1aa1f6;
+}
+.map-inner .bd ul>li.on a,
+.map-inner .bd ul>li:focus a,
+.map-inner .bd ul>li:hover a {
+    color: #1aa1f6;
+}
+
+.search-info .mod-heading-inner .search-box {
+    margin-right: 25px;
+    margin-top: -2px;
+}
+.search-info .search-box .btn,
+.search-info .search-box .form-control {
+    box-shadow: none;
+    padding: 4px 12px;
+}
+.search-info .search-box .form-control {
+    height: 30px;
+    font-size: 13px;
+    border-color: #eeeeee;
+    width: 220px;
+}
+.search-info .search-box .form-control:focus {
+    border-color: #eeeeee;
+    border-right-color: #1aa1f6;
+}
+.search-info .search-box .btn.btn-primary {
+    background-color: #1aa1f6;
+    border-color: #1aa1f6;
+}
+
+.search-info .mod-body-inner {
+    padding-top: 15px;
+}
+.search-info .filter-list {
+    position: relative;
+    line-height: 40px;
+}
+.search-info .filter-list .filter-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.search-info .filter-list ul {
+    padding-left: 90px;
+    list-style: none;
+}
+.search-info .filter-list ul li {
+    float: left;
+    margin-right: 25px;
+}
+.search-info .filter-list ul li:last-child {
+    margin-right: 0;
+}
+.search-info .filter-list ul li>a {
+    color: #1ea7eb;
+}
+.search-info .filter-list ul li em {
+    font-style: normal;
+}
+
+.search-info-wrp .adv {
+    width: 390px;
+}
+.search-info-wrp .adv a {
+    float: left;
+}
+.search-info-wrp .adv img {
+    width: 390px;
+    height: 110px;
+}
+

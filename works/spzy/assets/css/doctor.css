@@ -1,0 +1,443 @@
+.label {
+    font-weight: 400;
+}
+.label-orange {
+    background-color: #fbc660;
+}
+
+.ico-srv {
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.ico-srv.ico-srv-call {
+    background-image: url(../images/biz/serv_base_call.png);
+}
+.ico-srv.ico-srv-chat {
+    background-image: url(../images/biz/serv_base_chat.png);
+}
+.ico-srv.ico-srv-reserve {
+    background-image: url(../images/biz/serv_base_reserve.png);
+}
+.ico-srv.ico-srv-video {
+    background-image: url(../images/biz/serv_base_video.png);
+}
+.ico-srv.ico-srv-video.none {
+    background-image: url(../images/biz/serv_base_video_none.png);
+}
+
+.ico-srv.vip {
+    height: 71px;
+}
+.ico-srv.ico-vip-bundle {
+    background-image: url(../images/biz/serv_vip_bundle.png);
+}
+.ico-srv.ico-vip-call {
+    background-image: url(../images/biz/serv_vip_call.png);
+}
+.ico-srv.ico-vip-chat {
+    background-image: url(../images/biz/serv_vip_chat.png);
+}
+.ico-srv.ico-vip-home {
+    background-image: url(../images/biz/serv_vip_home.png);
+}
+.ico-srv.ico-vip-phase {
+    background-image: url(../images/biz/serv_vip_phase.png);
+}
+.ico-srv.ico-vip-private {
+    background-image: url(../images/biz/serv_vip_private.png);
+}
+.ico-srv.ico-vip-video.none {
+    background-image: url(../images/biz/serv_vip_video_none.png);
+}
+
+/* 找医生 列表 */
+
+.page-wrapper.main {
+    margin-top: 20px;
+}
+.page-wrapper.main .mod .mod-heading-inner {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.page-wrapper.main .mod .mod-body {
+    padding: 25px 36px;
+}
+.page-wrapper.main .mod-body .mod-body-inner {
+    width: 1200px;
+}
+.mod .mod-body .mod-list {
+    list-style: none;
+    padding-left: 0;
+}
+.mod .mod-body .mod-list>li {
+    width: 200px;
+    height: 260px;
+    float: left;
+    margin-bottom: 24px;
+    margin-right: 24px;
+}
+
+.mod .mod-heading-inner.pad-left {
+    border-left-width: 8px;
+}
+
+/* 找医生 详情 */
+
+.info-wrp {
+    background-color: #fff;
+    position: relative;
+    height: 250px;
+}
+
+.cover {
+    position: absolute;
+    top: 35px;
+    left: 40px;
+}
+.cover .img img {
+    border-radius: 55px;
+}
+.cover .tags {
+    margin-top: 30px;
+    text-align: center;
+}
+.cover .tags .label {
+    padding-top: 0.3em;
+    font-size: 14px;
+}
+
+.desc-info {
+    width: 910px;
+    background-color: #fff;
+    padding-left: 192px;
+    padding-top: 5px;
+    vertical-align: bottom;
+}
+.desc-info .info .name {
+    padding-top: 25px;
+    margin-bottom: 15px;
+}
+.desc-info .info .title {
+    float: left;
+    font-size: 20px;
+}
+.desc-info .info .position {
+    float: left;
+    color: #666;
+    margin-top: 6px;
+    margin-left: 20px;
+}
+.desc-info .info .hos-rating {
+    float: left;
+    margin-left: 20px;
+    padding-top: 4px;
+}
+
+.desc-info .info .prop.hos {
+    color: #333;
+    margin-bottom: 15px;
+}
+.desc-info .info .prop.pull-left {
+    margin-bottom: 15px;
+}
+.desc-info .info .prop.intro {
+    margin-bottom: 15px;
+}
+
+.desc-info .info .prop a {
+    color: #1aa1f6;
+}
+.desc-info .info .prop .lbl {
+    color: #666;
+}
+
+.state-info {
+    position: relative;
+    border: 1px solid #dddddd;
+    border-top: 10px solid #ffa726;
+    width: 188px;
+    height: 188px;
+    margin-top: 28px;
+    margin-right: 48px;
+    padding-top: 30px;
+}
+.state-info:before,
+.state-info:after {
+    position: absolute;
+    display: block;
+    content: " ";
+    background-color: #e8e8e8;
+    width: 8px;
+    height: 30px;
+    left: 32px;
+    top: -20px;
+}
+.state-info:after {
+    left: auto;
+    right: 32px;
+}
+.state-info ul {
+    list-style-type: none;
+    width: 100%;
+    padding-left: 40px;
+    margin-bottom: 25px;
+}
+.state-info ul>li {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.state-info ul>li em {
+    color: #333;
+    font-style: normal;
+}
+.state-info .btn-wrp {
+    text-align: center;
+}
+.state-info .btn-wrp .btn {
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    padding-top: 4px;
+    background-color: #01dd61;
+    border-color: #01dd61;
+}
+
+/* 详情 服务项目 */
+
+.page-wrapper.service {
+    margin-top: 20px;
+}
+.page-wrapper.service .mod {
+    margin-bottom: 0;
+}
+.page-wrapper.service .mod .mod-body {
+    padding: 0;
+}
+
+.service-list.base-service {
+    border-bottom: 1px solid #eee;
+}
+
+.service-list .title {
+    font-size: 16px;
+    color: #999;
+    padding-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.service-list ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.service-list ul>li {
+    float: left;
+    text-align: center;
+    width: 154px;
+    margin-bottom: 35px;
+}
+.service-list ul>li p {
+    margin-bottom: 0;
+}
+.service-list ul>li .nm {
+    color: #1aa1f6;
+}
+.service-list ul>li .nm.none {
+    color: #666;
+}
+
+/* 详情 患者评价 */
+
+.client-rate {
+    width: 760px;
+}
+
+.client-rate ul.msg-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+.client-rate ul.msg-list>li {
+    border-bottom: 1px solid #eee;
+    min-height: 85px;
+    padding: 15px 0;
+}
+.client-rate ul.msg-list>li:first-child {
+    padding-top: 0;
+}
+.client-rate .msg {
+    position: relative;
+}
+.client-rate .msg img.avatar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+}
+.client-rate .msg .content {
+    padding-left: 85px;
+}
+.client-rate .msg .name {
+    color: #333332;
+    font-size: 20px;
+    margin-right: 60px;
+}
+.client-rate .msg .type,
+.client-rate .msg .rt {
+    color: #999;
+    margin-top: 5px;
+    margin-right: 70px;
+}
+.client-rate .msg .rt {
+    margin-right: 0;
+}
+.client-rate .msg .type em {
+    color: #1ed3a0;
+}
+.client-rate .msg .rt em {
+    color: #f3ac47;
+}
+.client-rate .msg .text {
+    color: #333332;
+    margin-top: 10px;
+}
+.client-rate .msg .date {
+    color: #a3a3a3;
+    margin-top: 10px;
+}
+
+.client-rate .pagination-wrp {
+    padding: 35px;
+}
+
+/* 详情 边栏 */
+
+.side-content {
+    width: 390px;
+}
+.side-content .mod {
+    margin-bottom: 20px;
+}
+.side-content .mod.aside .mod-body {
+    padding: 0 20px 15px;
+}
+
+/* 医生档案 */
+
+.side-content .mod.profile .mod-body {
+    padding-bottom: 30px;
+}
+.profile .avatar {
+    padding-top: 40px;
+}
+.profile .avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+.profile .prop {
+    text-align: center;
+    margin-top: 15px;
+}
+.profile .prop a {
+    color: #1aa0f7;
+}
+
+.profile .name {
+    font-size: 20px;
+}
+.profile .prop.name a {
+    color: #333;
+}
+.profile .prop.name a:focus,
+.profile .prop.name a:hover {
+    color: #1aa0f7;
+}
+
+.profile .position .hos {
+    color: #1aa0f7;
+    margin-right: 15px;
+}
+.profile .prop.intro,
+.profile .prop.edu {
+    text-align: left;
+}
+.profile .prop .lbl {
+    color: #999;
+}
+
+.profile .rel-info {
+    border-top: 1px solid #eee;
+    color: #888;
+    padding: 25px 0;
+}
+.profile .rel-info em {
+    color: #86aff3;
+}
+
+/* 同科室推荐 */
+
+.side-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.side-content ul>li {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+.drs-item {
+    position: relative;
+}
+.drs-item .avatar {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.drs-item .avatar img {
+    border-radius: 32px;
+}
+
+.drs-item .info {
+    padding-left: 85px;
+}
+.drs-item .info p {
+    margin-bottom: 0;
+    line-height: 22px;
+    height: 22px;
+    width: 265px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.drs-item .info p a {
+    margin-right: 10px;
+}
+.drs-item .summary .name {
+    margin-right: 10px;
+}
+.drs-item .summary .name a,
+.drs-item .info .position a {
+    color: #333;
+}
+.drs-item .summary .name a:foucs,
+.drs-item .summary .name a:hover,
+.drs-item .info .position a:focus,
+.drs-item .info .position a:hover {
+    color: #1aa0f7;
+}
+.drs-item .summary .lbl {
+    margin-right: 20px;
+    color: #666;
+}
+.drs-item .summary .hos-rating {
+    display: inline;
+}
+.drs-item .summary .hos-rating .br-wrapper {
+    margin-top: -2px;
+}

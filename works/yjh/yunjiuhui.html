@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="云酒汇">
+<title>云酒汇-也许不是最低价</title>
+<link href="favicon.ico" rel="Shortcut Icon" type="image/x-icon">
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery-ui-1.10.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script>
+$(document).ready(function() {
+	$.fn.fullpage({
+		anchors: ['page1', 'page2', 'page3', 'page4'],
+		navigation: true
+	});
+	
+	//alert($(window).width());
+	if($(window).width() < 800){
+		$('.section').css("background-size","150%");
+	}
+	
+	if (navigator.userAgent.match(/mobile/i)) {		
+		$('.section').css("background-size","150%");
+		$('.nav').css({
+			"font-size":"2em",
+		});
+		$('.copyright').css({
+			"font-size":"1.2em",
+		});
+	}
+});
+</script>
+</head>
+
+<body>
+
+	<a href="#" title="云酒汇在线商城" class="nav" target="_blank">云酒商城</a>
+	<div class="section section1"></div>
+	<div class="section section2"></div>
+	<div class="section section3"></div>
+	<div class="section section4">
+		<div class="copyright">蜀ICP备15020745号 © 2015 <a href="http://www.yunjiuhui.com" title="云酒汇" class="g-links" >yunjiuhui.com</a>版权所有</div>
+	</div>
+
+</body>
+</html>

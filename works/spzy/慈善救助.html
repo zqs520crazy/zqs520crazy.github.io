@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>慈善救助 - 上品医生</title>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+        <script src="bower_components/Respond/dest/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="assets/css/base.css" rel="stylesheet">
+    <link href="assets/css/charity.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <link href="assets/css/ie8_fix.css" rel="stylesheet">
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div class="page-wrapper top-links">
+        <div class="container">
+            <ul class="login-links float-ul">
+                <li><a href="登录.html">登录</a></li>
+                <li><a href="注册.html">注册</a></li>
+            </ul>
+            <ul class="user-role-links float-ul">
+                <li><a href="javascript:alert('请添加链接');">医院入口</a></li>
+                <li><a href="javascript:alert('请添加链接');">代理商入口</a></li>
+            </ul>
+            <ul class="about-links float-ul pull-right">
+                <li><a href="javascript:alert('请添加链接');">在线客服</a></li>
+                <li><a href="javascript:alert('请添加链接');">帮助中心</a></li>
+                <li><a href="其它-关于我们.html">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- /.top-links -->
+
+    <div class="page-wrapper head-title clearfix">
+        <div class="container">
+            <div class="logo-panel pull-left">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="首页.html">
+                        <img src="assets/images/logo.png" alt="上品医生">
+                    </a>
+                </div>
+            </div>
+            <!-- /.logo-panel -->
+
+            <nav class="navbar pull-left" role="navigation">
+                <div class="navbar-panel clearfix">
+                    <ul class="nav navbar-nav">
+                        <li><a href="首页.html">首页</a></li>
+                        <li><a href="找医生.html">找医生</a></li>
+                        <li><a href="找医院.html">找医院</a></li>
+                        <li class="active"><a href="慈善救助.html">慈善救助</a></li>
+                        <li><a href="APP下载页.html">APP下载</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-panel -->
+            </nav>
+
+            <nav class="navbar user-navbar pull-right">
+                <div class="navbar-panel clearfix">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="登录.html"><img width="46px" height="46px" class="ie8br" src="assets/images/common/default-avatar.png" alt="默认头像"></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-panel -->
+            </nav>
+        </div>
+    </div>
+    <!-- /.head-title -->
+
+    <div id="topStatus" class="page-wrapper">
+        <div class="container">
+            <div class="state-info pull-left">
+                <p class="title-wrp">
+                    <i class="ico ico-heart"></i>
+                    <span class="title">上品专医慈善救助平台统计</span>
+                    <i class="ico ico-heart"></i>
+                </p>
+                <div class="info-col clearfix">
+                    <div class="container-fuild">
+                        <div class="col-xs-4">
+                            <p class="cnt">120014<em>个</em></p>
+                            <p><span class="ie8br">募集中项目</span></p>
+                        </div>
+                        <div class="col-xs-4 sum">
+                            <p class="cnt">2154647.51<em>元</em></p>
+                            <p><span class="ie8br">共募集善款</span></p>
+                        </div>
+                        <div class="col-xs-4">
+                            <p class="cnt">215402<em>份</em></p>
+                            <p><span class="ie8br">爱心人数</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="adv pull-right">
+                <a href="javascript:alert('请添加链接');">
+                    <img width="390px" height="200px" src="assets/images/dummy/charity_adv.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="page-wrapper main">
+        <div class="container">
+            <div class="mod">
+                <div class="mod-heading">
+                    <div class="mod-heading-inner pad-left">
+                        <a class="sort on" href="javascript:alert('请添加链接');" title="">综合<em>&uarr;</em></a>
+                        <a class="sort" href="javascript:alert('请添加链接');" title="">爱心数<em>&darr;</em></a>
+                        <a class="sort" href="javascript:alert('请添加链接');" title="">发布时间<em>&darr;</em></a>
+                        <a class="sort" href="javascript:alert('请添加链接');" title="">完成度<em>&darr;</em></a>
+                    </div>
+                </div>
+                <div class="mod-body">
+                    <ul class="mod-list">
+
+                        <!-- 循环输出该项目 start -->
+                        <li class="mod-item clearfix">
+                            <div class="banner pull-left">
+                                <a href="慈善救助-详情.html" title="">
+                                    <img width="217px" height="121px" src="assets/images/dummy/charity/charity_list_item2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="info pull-left">
+                                <p class="name">
+                                    <a href="慈善救助-详情.html" title="">被污染改变的生活</a>
+                                </p>
+                                <p class="prop">项目状态：募集中</p>
+                                <p class="prop">爱心人数：7242</p>
+                                <p class="prop">发布时间：2015-08-10 19:29</p>
+                            </div>
+                            <div class="progress-chart pull-right">
+                                <div class="progress-wrp clearfix">
+                                    <div class="progress pull-left">
+                                        <div class="progress-bar progress-bar-spzy" role="progressbar"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 96%">
+                                        </div>
+                                    </div>
+                                    <div class="progress-label pull-right">96%</div>
+                                </div>
+                                <div class="detail row">
+                                    <div class="col-xs-6">
+                                        <span class="label label-blue">目标</span>
+                                        <span class="text text-danger">22000.00元</span>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <span class="label label-green">已筹</span>
+                                        <span class="text">20700.32元</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 循环输出该项目 end -->
+
+                        <li class="mod-item clearfix">
+                            <div class="banner pull-left">
+                                <a href="慈善救助-详情.html" title="">
+                                    <img width="217px" height="121px" src="assets/images/dummy/charity/charity_list_item3.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="info pull-left">
+                                <p class="name">
+                                    <a href="慈善救助-详情.html" title="">流动儿童影像计划</a>
+                                </p>
+                                <p class="prop">项目状态：募集中</p>
+                                <p class="prop">爱心人数：11</p>
+                                <p class="prop">发布时间：2015-09-26 20:30</p>
+                            </div>
+                            <div class="progress-chart pull-right">
+                                <div class="progress-wrp clearfix">
+                                    <div class="progress pull-left">
+                                        <div class="progress-bar progress-bar-spzy" role="progressbar"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                        </div>
+                                    </div>
+                                    <div class="progress-label pull-right">60%</div>
+                                </div>
+                                <div class="detail row">
+                                    <div class="col-xs-6">
+                                        <span class="label label-blue">目标</span>
+                                        <span class="text text-danger">12000.00元</span>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <span class="label label-green">已筹</span>
+                                        <span class="text">8000.00元</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="mod-item clearfix">
+                            <div class="banner pull-left">
+                                <a href="慈善救助-详情.html" title="">
+                                    <img width="217px" height="121px" src="assets/images/dummy/charity/charity_list_item4.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="info pull-left">
+                                <p class="name">
+                                    <a href="慈善救助-详情.html" title="">喝雨水的八旬老太</a>
+                                </p>
+                                <p class="prop">项目状态：募集中</p>
+                                <p class="prop">爱心人数：2541</p>
+                                <p class="prop">发布时间：2015-08-16 14:29</p>
+                            </div>
+                            <div class="progress-chart pull-right">
+                                <div class="progress-wrp clearfix">
+                                    <div class="progress pull-left">
+                                        <div class="progress-bar progress-bar-spzy" role="progressbar"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 56%">
+                                        </div>
+                                    </div>
+                                    <div class="progress-label pull-right">56%</div>
+                                </div>
+                                <div class="detail row">
+                                    <div class="col-xs-6">
+                                        <span class="label label-blue">目标</span>
+                                        <span class="text text-danger">200000.00元</span>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <span class="label label-green">已筹</span>
+                                        <span class="text">110210.00元</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="mod-item clearfix">
+                            <div class="banner pull-left">
+                                <a href="慈善救助-详情.html" title="">
+                                    <img width="217px" height="121px" src="assets/images/dummy/charity/charity_list_item5.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="info pull-left">
+                                <p class="name">
+                                    <a href="慈善救助-详情.html" title="">为男友撑起一片天</a>
+                                </p>
+                                <p class="prop">项目状态：募集中</p>
+                                <p class="prop">爱心人数：1453</p>
+                                <p class="prop">发布时间：2015-08-16 14:29</p>
+                            </div>
+                            <div class="progress-chart pull-right">
+                                <div class="progress-wrp clearfix">
+                                    <div class="progress pull-left">
+                                        <div class="progress-bar progress-bar-spzy" role="progressbar"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 73%">
+                                        </div>
+                                    </div>
+                                    <div class="progress-label pull-right">73%</div>
+                                </div>
+                                <div class="detail row">
+                                    <div class="col-xs-6">
+                                        <span class="label label-blue">目标</span>
+                                        <span class="text text-danger">8000.00元</span>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <span class="label label-green">已筹</span>
+                                        <span class="text">5124.00元</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="mod-item clearfix">
+                            <div class="banner pull-left">
+                                <a href="慈善救助-详情.html" title="">
+                                    <img width="217px" height="121px" src="assets/images/dummy/charity/charity_list_item6.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="info pull-left">
+                                <p class="name">
+                                    <a href="慈善救助-详情.html" title="">残疾父母的先心宝贝</a>
+                                </p>
+                                <p class="prop">项目状态：募集中</p>
+                                <p class="prop">爱心人数：1453</p>
+                                <p class="prop">发布时间：2015-08-16 14:29</p>
+                            </div>
+                            <div class="progress-chart pull-right">
+                                <div class="progress-wrp clearfix">
+                                    <div class="progress pull-left">
+                                        <div class="progress-bar progress-bar-spzy" role="progressbar"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 12%">
+                                        </div>
+                                    </div>
+                                    <div class="progress-label pull-right">12%</div>
+                                </div>
+                                <div class="detail row">
+                                    <div class="col-xs-6">
+                                        <span class="label label-blue">目标</span>
+                                        <span class="text text-danger">12000.00元</span>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <span class="label label-green">已筹</span>
+                                        <span class="text">2031.20元</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="mod-item clearfix">
+                            <div class="banner pull-left">
+                                <a href="慈善救助-详情.html" title="">
+                                    <img width="217px" height="121px" src="assets/images/dummy/charity/charity_list_item7.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="info pull-left">
+                                <p class="name">
+                                    <a href="慈善救助-详情.html" title="">留守儿童的艺术课堂</a>
+                                </p>
+                                <p class="prop">项目状态：募集中</p>
+                                <p class="prop">爱心人数：984</p>
+                                <p class="prop">发布时间：2015-08-16 14:29</p>
+                            </div>
+                            <div class="progress-chart pull-right">
+                                <div class="progress-wrp clearfix">
+                                    <div class="progress pull-left">
+                                        <div class="progress-bar progress-bar-spzy" role="progressbar"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 79%">
+                                        </div>
+                                    </div>
+                                    <div class="progress-label pull-right">79%</div>
+                                </div>
+                                <div class="detail row">
+                                    <div class="col-xs-6">
+                                        <span class="label label-blue">目标</span>
+                                        <span class="text text-danger">360000.00元</span>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <span class="label label-green">已筹</span>
+                                        <span class="text">310008.52元</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="mod-item clearfix">
+                            <div class="banner pull-left">
+                                <a href="慈善救助-详情.html" title="">
+                                    <img width="217px" height="121px" src="assets/images/dummy/charity/charity_list_item8.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="info pull-left">
+                                <p class="name">
+                                    <a href="慈善救助-详情.html" title="">8旬老母照顾5旬盲儿</a>
+                                </p>
+                                <p class="prop">项目状态：募集中</p>
+                                <p class="prop">爱心人数：9650</p>
+                                <p class="prop">发布时间：2015-08-16 14:29</p>
+                            </div>
+                            <div class="progress-chart pull-right">
+                                <div class="progress-wrp clearfix">
+                                    <div class="progress pull-left">
+                                        <div class="progress-bar progress-bar-spzy" role="progressbar"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 26%">
+                                        </div>
+                                    </div>
+                                    <div class="progress-label pull-right">26%</div>
+                                </div>
+                                <div class="detail row">
+                                    <div class="col-xs-6">
+                                        <span class="label label-blue">目标</span>
+                                        <span class="text text-danger">10000.00元</span>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <span class="label label-green">已筹</span>
+                                        <span class="text">2600.00元</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="mod-item clearfix">
+                            <div class="banner pull-left">
+                                <a href="慈善救助-详情.html" title="">
+                                    <img width="217px" height="121px" src="assets/images/dummy/charity/charity_list_item9.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="info pull-left">
+                                <p class="name">
+                                    <a href="慈善救助-详情.html" title="">5元关爱孩子眼健康</a>
+                                </p>
+                                <p class="prop">项目状态：募集中</p>
+                                <p class="prop">爱心人数：7851</p>
+                                <p class="prop">发布时间：2015-08-16 14:29</p>
+                            </div>
+                            <div class="progress-chart pull-right">
+                                <div class="progress-wrp clearfix">
+                                    <div class="progress pull-left">
+                                        <div class="progress-bar progress-bar-spzy" role="progressbar"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 6%">
+                                        </div>
+                                    </div>
+                                    <div class="progress-label pull-right">6%</div>
+                                </div>
+                                <div class="detail row">
+                                    <div class="col-xs-6">
+                                        <span class="label label-blue">目标</span>
+                                        <span class="text text-danger">12300.00元</span>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <span class="label label-green">已筹</span>
+                                        <span class="text">1682.20元</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="mod-item clearfix">
+                            <div class="banner pull-left">
+                                <a href="慈善救助-详情.html" title="">
+                                    <img width="217px" height="121px" src="assets/images/dummy/charity/charity_list_item10.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="info pull-left">
+                                <p class="name">
+                                    <a href="慈善救助-详情.html" title="">美满婚姻加油站</a>
+                                </p>
+                                <p class="prop">项目状态：募集中</p>
+                                <p class="prop">爱心人数：105</p>
+                                <p class="prop">发布时间：2015-08-16 14:29</p>
+                            </div>
+                            <div class="progress-chart pull-right">
+                                <div class="progress-wrp clearfix">
+                                    <div class="progress pull-left">
+                                        <div class="progress-bar progress-bar-spzy" role="progressbar"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 91%">
+                                        </div>
+                                    </div>
+                                    <div class="progress-label pull-right">91%</div>
+                                </div>
+                                <div class="detail row">
+                                    <div class="col-xs-6">
+                                        <span class="label label-blue">目标</span>
+                                        <span class="text text-danger">200000.00元</span>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <span class="label label-green">已筹</span>
+                                        <span class="text">160500.00元</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="mod-item clearfix">
+                            <div class="banner pull-left">
+                                <a href="慈善救助-详情.html" title="">
+                                    <img width="217px" height="121px" src="assets/images/dummy/charity/charity_list_item11.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="info pull-left">
+                                <p class="name">
+                                    <a href="慈善救助-详情.html" title="">一对一助养太阳花</a>
+                                </p>
+                                <p class="prop">项目状态：募集中</p>
+                                <p class="prop">爱心人数：2540</p>
+                                <p class="prop">发布时间：2015-08-16 14:29</p>
+                            </div>
+                            <div class="progress-chart pull-right">
+                                <div class="progress-wrp clearfix">
+                                    <div class="progress pull-left">
+                                        <div class="progress-bar progress-bar-spzy" role="progressbar"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 98%">
+                                        </div>
+                                    </div>
+                                    <div class="progress-label pull-right">98%</div>
+                                </div>
+                                <div class="detail row">
+                                    <div class="col-xs-6">
+                                        <span class="label label-blue">目标</span>
+                                        <span class="text text-danger">21240.00元</span>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <span class="label label-green">已筹</span>
+                                        <span class="text">21000.60元</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="mod-item clearfix">
+                            <div class="banner pull-left">
+                                <a href="慈善救助-详情.html" title="">
+                                    <img width="217px" height="121px" src="assets/images/dummy/charity/charity_list_item12.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="info pull-left">
+                                <p class="name">
+                                    <a href="慈善救助-详情.html" title="">黄果柑助农计划</a>
+                                </p>
+                                <p class="prop">项目状态：募集中</p>
+                                <p class="prop">爱心人数：961</p>
+                                <p class="prop">发布时间：2015-08-16 14:29</p>
+                            </div>
+                            <div class="progress-chart pull-right">
+                                <div class="progress-wrp clearfix">
+                                    <div class="progress pull-left">
+                                        <div class="progress-bar progress-bar-spzy" role="progressbar"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 8%">
+                                        </div>
+                                    </div>
+                                    <div class="progress-label pull-right">8%</div>
+                                </div>
+                                <div class="detail row">
+                                    <div class="col-xs-6">
+                                        <span class="label label-blue">目标</span>
+                                        <span class="text text-danger">10000.0元</span>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <span class="label label-green">已筹</span>
+                                        <span class="text">800.00元</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <nav class="pagination-wrp">
+                        <ul class="pagination">
+                            <li class="disabled">
+                                <a href="javascript:alert('请添加链接');" aria-label="上一页">
+                                    <span aria-hidden="true">上一页</span>
+                                </a>
+                            </li>
+                            <li class="active"><a href="javascript:alert('请添加链接');">1</a></li>
+                            <li><a href="javascript:alert('请添加链接');">2</a></li>
+                            <li><a href="javascript:alert('请添加链接');">3</a></li>
+                            <li class="conn"><span>···</span></li>
+                            <li><a href="javascript:alert('请添加链接');">50</a></li>
+                            <li>
+                                <a href="javascript:alert('请添加链接');" aria-label="下一页">
+                                    <span aria-hidden="true">下一页</span>
+                                </a>
+                            </li>
+                            <li><span>共50页</span></li>
+                            <li>
+                                <div class="input-group">
+                                    <div class="input-group-addon">转到</div>
+                                    <input class="form-control"></input>
+                                </div>
+                            </li>
+
+                            <li>
+                                <button class="btn btn-green ie8br">Go</button>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.page-main -->
+
+    <footer class="footer clearfix">
+        <div class="ft-info container">
+            <p class="ft-links">
+                <a href="javascript:alert('请添加链接');" title="">关于上品</a>
+                <a href="javascript:alert('请添加链接');" title="">合作机会</a>
+                <a href="javascript:alert('请添加链接');" title="">联系我们</a>
+                <a href="javascript:alert('请添加链接');" title="">帮助中心</a>
+                <a href="javascript:alert('请添加链接');" title="">在线客服</a>
+            </p>
+            <p class="copyright">Copyright © 2011-2015 shangpingzhuanyi.com All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <!--[if lt IE 9]>
+        <script src="bower_components/jquery-legacy/dist/jquery.min.js"></script>
+        <script src="bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+    <![endif]-->
+    <!--[if (gte IE 9) | (!IE)]><!-->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!--<![endif]-->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="assets/js/ie_fix.js"></script>
+    <![endif]-->
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>QING点 | 搜索结果</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" >
+<link href="resources/css/font-awesome.css" rel="stylesheet" type="text/css" />
+<link href="resources/css/reset.css" rel="stylesheet" type="text/css" />
+<link href="resources/css/home.css" rel="stylesheet" type="text/css" />
+<script src="resources/js/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+
+<!-- 顶部区域 -->
+<div id="top">
+	<div class="container">
+		<div class="header">
+			<img src="resources/images/login/logo.png" class="logo">
+			<ul id="navBar">
+				<li><a href="home.html" class="active">Relax_HOME</a></li>
+				<li><a href="qing.html">大厅</a></li>
+			</ul>
+			<div class="top-btn-grid">
+				<a href="settings.html" title="设置" ><i class="icon-cog"></i></a>
+				<a href="login.html" title="退出" onclick="return confirm('确定退出博客？')"><i class="icon-off"></i></a>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+
+<!-- 回到顶部按钮 -->
+<a href="#" id="toTop"><i class="icon-angle-up"></i></a>
+<script>
+$(document).ready(function(){
+  $(window).scroll(function() {
+	var a = $(window).scrollTop();
+	//alert(a);
+	if(a > 200){
+		$("#toTop").fadeIn();
+	} 
+	if(a < 200){
+		$("#toTop").fadeOut();
+	} 
+	
+  });
+});
+</script>
+
+<!-- 中部内容区域 -->
+<div id="content">
+	<div class="container">
+		<!-- 右侧部分内容区域 -->
+		<div class="right-con">
+			<form class="side-box" style="background: #fff" method="post" action="search_result.html">
+				<i class="icon-search"></i><input class="search-box" type="text" name="search-msg" placeholder="搜索标签  ">
+			</form>
+			
+			<ul class="side-box">
+				<li class="bottom-line"><a href="#"><i class="icon-tag"></i>美图<span class="hot-tag">热门标签</span></a></li>
+				<li class="bottom-line"><a href="#"><i class="icon-tag"></i>文字<span class="hot-tag">热门标签</span></a></li>
+				<li class="bottom-line"><a href="#"><i class="icon-tag"></i>体育<span class="hot-tag">热门标签</span></a></li>
+				<li><a href="#"><i class="icon-tag"></i>创意<span class="hot-tag">热门标签</span></a></li>
+			</ul>
+		
+			<ul class="side-box" style="margin-top: 26px;">
+				<li class="bottom-line"><a href="#"><i class="icon-user"></i>我关注了2个QING用户</a></li>
+				<li><a href="#"><i class="icon-heart"></i>我喜欢了4个QING博客</a></li>
+			</ul>
+		</div>
+		
+		<!-- 左侧部分内容区域 -->
+		<div class="left-con">
+			<div class="search-result-title">
+				<i class="icon-search"></i>"<span class="search-msg">哲言</span>"的搜索结果
+			</div>
+			<div class="clear"></div>
+			<div class="post-col" style="margin-top: 98px;">
+			
+				<div class="post-list">
+					<div class="tag"></div>
+					<a href="qinger.html" class="user-head-list"><img src="resources/images/head0.jpg"></a>
+					<div class="user-post-list">
+						<div class="user-name"><a href="qinger.html" >YOCK</a></div>
+						<a href="blog.html" class="user-post-link">
+						<div class="user-post-title"></div>
+						<div class="user-post">
+							<p>人在世间，可以让自己成为一道风景。于己于人，都是如此。爱美，成为美，也不需要多费力，倒可能需要多读点书，具备一点美学素养。</p>
+						</div>
+						</a>
+						<div class="user-post-tag"><i class="icon-tag"></i> #哲言</div>
+						<div class="user-post-time"><i class="icon-time"></i> 2014-02-18</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				<div class="post-list">
+					<div class="tag"></div>
+					<a href="qinger.html" class="user-head-list"><img src="resources/images/head000.jpg"></a>
+					<div class="user-post-list">
+						<div class="user-name"><a href="qinger.html" >小小骚年</a></div>
+						<div class="user-post">
+							<a href="#">http://weibo.com/zqs520crazy/home?wvr=5&tongji=baiduxinshouye</a>
+						</div>
+						<div class="user-post-tag"><i class="icon-tag"></i> #链接</div>
+						<div class="user-post-time"><i class="icon-time"></i> 2014-02-18</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				<div class="post-list">
+					<div class="tag"></div>
+					<a href="qinger.html" class="user-head-list"><img src="resources/images/head00.jpg"></a>
+					<div class="user-post-list">
+						<div class="user-name"><a href="qinger.html" >无极太上皇</a></div>
+						<a href="blog.html" class="user-post-link">
+						<div class="user-post">
+							<img src="resources/images/ex2.jpg">
+							<p>大白呆萌可爱，Baymax无论主人让它做什么，只要主人可以开心起来，那么它就会去做那件事，真是个贴心小暖男，治愈系小萌物。</p>
+						</div>
+						</a>
+						<div class="user-post-tag"><i class="icon-tag"></i> #电影</div>
+						<div class="user-post-time"><i class="icon-time"></i> 2014-02-18</div>
+					</div>
+					<div class="clear"></div>
+				</div>				
+				
+				<div class="post-list">
+					<div class="tag"></div>
+					<a href="qinger.html" class="user-head-list"><img src="resources/images/head0.jpg"></a>
+					<div class="user-post-list">
+						<div class="user-name"><a href="qinger.html" >YOCK</a></div>
+						<a href="blog.html" class="user-post-link">
+						<div class="user-post">
+							<div class="user-post-title">人在世间，可以让自己成为一道风景！</div>
+							<p>于己于人，都是如此。爱美，成为美，也不需要多费力，倒可能需要多读点书，具备一点美学素养。</p>
+							<p>灵感来源于“鼎”，方正大气，安静又不失力度，顶部镂空采用了传统的冰裂纹--如冰破裂，裂片层叠，有立体感。给整体造型增添了几分灵动。</p>
+						</div>
+						</a>
+						<div class="user-post-tag"><i class="icon-tag"></i> #哲言</div>
+						<div class="user-post-time"><i class="icon-time"></i> 2014-02-18</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		<div class="clear"></div>
+	</div>
+</div>
+</body>
+</html>

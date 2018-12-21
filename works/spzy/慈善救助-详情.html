@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>慈善救助-详情 - 上品医生</title>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+        <script src="bower_components/Respond/dest/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="assets/css/base.css" rel="stylesheet">
+    <link href="assets/css/charity.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <link href="assets/css/ie8_fix.css" rel="stylesheet">
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div class="page-wrapper top-links">
+        <div class="container">
+            <ul class="login-links float-ul">
+                <li><a href="登录.html">登录</a></li>
+                <li><a href="注册.html">注册</a></li>
+            </ul>
+            <ul class="user-role-links float-ul">
+                <li><a href="javascript:alert('请添加链接');">医院入口</a></li>
+                <li><a href="javascript:alert('请添加链接');">代理商入口</a></li>
+            </ul>
+            <ul class="about-links float-ul pull-right">
+                <li><a href="javascript:alert('请添加链接');">在线客服</a></li>
+                <li><a href="javascript:alert('请添加链接');">帮助中心</a></li>
+                <li><a href="其它-关于我们.html">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- /.top-links -->
+
+    <div class="page-wrapper head-title clearfix">
+        <div class="container">
+            <div class="logo-panel pull-left">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="首页.html">
+                        <img src="assets/images/logo.png" alt="上品医生">
+                    </a>
+                </div>
+            </div>
+            <!-- /.logo-panel -->
+
+            <nav class="navbar pull-left" role="navigation">
+                <div class="navbar-panel clearfix">
+                    <ul class="nav navbar-nav">
+                        <li><a href="首页.html">首页</a></li>
+                        <li><a href="找医生.html">找医生</a></li>
+                        <li><a href="找医院.html">找医院</a></li>
+                        <li class="active"><a href="慈善救助.html">慈善救助</a></li>
+                        <li><a href="APP下载页.html">APP下载</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-panel -->
+            </nav>
+
+            <nav class="navbar user-navbar pull-right">
+                <div class="navbar-panel clearfix">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="登录.html"><img width="46px" height="46px" class="ie8br" src="assets/images/common/default-avatar.png" alt="默认头像"></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-panel -->
+            </nav>
+        </div>
+    </div>
+    <!-- /.head-title -->
+
+    <div id="topDesc" class="page-wrapper">
+        <div class="container">
+            <div class="top-line">
+                <div class="cover pull-left">
+                    <a href="javascript:alert('请添加链接');">
+                        <img height="300px" width="560px" src="assets/images/dummy/charity/charity_item_top.jpg" alt="">
+                    </a>
+                </div>
+                <div class="desc-info pull-right">
+                    <div class="info pull-left">
+                        <p class="name">
+                            <a href="javascript:alert('请添加链接');" title="">给他一道生的曙光</a>
+                        </p>
+                        <p class="prop">项目状态：募集中</p>
+                        <p class="prop">爱心人数：1453</p>
+                        <p class="prop">发布时间：2015-08-16 14:29</p>
+                    </div>
+                    <div class="progress-chart pull-left">
+                        <div class="progress-wrp ie8br clearfix">
+                            <div class="progress ie8br pull-left">
+                                <div class="progress-bar progress-bar-spzy" role="progressbar"
+                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                </div>
+                            </div>
+                            <div class="progress-label pull-right">80%</div>
+                        </div>
+                        <div class="detail row">
+                            <div class="col-xs-6 tl">
+                                <span class="label label-blue">目标</span>
+                                <span class="text text-danger">200000.00元</span>
+                            </div>
+                            <div class="col-xs-6 tr">
+                                <span class="label label-green">已筹</span>
+                                <span class="text">160000.00元</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="page-wrapper main">
+        <div class="container">
+
+            <div class="main-content mod mod-with-tabs  pull-left">
+                <div class="mod-heading">
+                    <div class="mod-heading-inner">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#mcDetail" aria-controls="mcDetail" role="tab" data-toggle="tab">救助详情</a></li>
+                            <li role="presentation"><a href="#mcProgress" aria-controls="mcProgress" role="tab" data-toggle="tab">项目进展</a></li>
+                            <li role="presentation"><a href="#mcPeople" aria-controls="mcPeople" role="tab" data-toggle="tab">爱心人士</a></li>
+                            <li role="presentation"><a href="#mcMessages" aria-controls="mcMessages" role="tab" data-toggle="tab">爱心留言</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mod-body">
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="mcDetail">
+
+                            <!-- 富文本内容 -->
+                            <p>
+                                6岁的李震是湖北省竹溪县水坪镇狮子垭村4组人，就读于广东省汕头市的一所幼儿园，之所以在广东就读是因为李震跟着外出打工的我和妻子一起生活，每次我们把他从幼儿园接回来，他就会一直跟在我们屁股后面转悠，我们去哪儿他去哪儿。我们夫妻俩赚的不多，还带着两个孩子，李震和他11岁的姐姐，日子过得有点清苦，但是一家人在一起也就没那么累。
+                            </p>
+
+                            <h2>不幸的发生</h2>
+                            <hr>
+                            <p>
+                                2015年12月24日，李震开始发起高烧，而且全身都出现了红色的出血点，我们赶紧带着他去了医院。在汕头大峰医院检查后，怀疑李震患有白血病，我们就又带着他去了汕头市李嘉诚医院，同样疑似白血病。最终因为农合的问题，我们回了老家湖北，在武汉的同济医院经过骨髓穿刺检查，李震确诊为急性淋巴细胞白血病T系，中等危重。
+                            </p>
+                            <p style="text-align: left"><img src="assets/images/dummy/charity_item_detail1.jpg" alt=""></p>
+                            <p>
+                                因为这些日子带着孩子四处奔波，所以等他到了同济医院的时候已经感染了肺炎，一入院就开始进行隔离治疗。每天近千元的治疗费压得我们喘不过气来，但是又不能让李震觉得害怕，所以在他面前我们都尽量表现的很轻松，但是转过头去，妻子没少流泪。
+                            </p>
+                            <p>
+                                因为李震一直出现感染的情况，而且各项指标始终上不来，所以自从他入院后就没有再出过院。我们为了能尽可能的多筹一点治疗费，只能让妻子一个人留在医院照顾他，我赶回广州继续工作。但是我一个月的收入也就是3000多块钱，以前生活是够了，现在还不够孩子在医院住上两天。平时在广州我带着女儿，到了月底我会去湖北看看李震，那个时候女儿就由广州的同乡帮忙照看着。我很舍不得也放不下李震，但是没办法，我最多也只能照顾他一个星期就要再赶回广州。
+                            </p>
+                            <p style="text-align: left"><img src="assets/images/dummy/charity_item_detail2.jpg" alt=""></p>
+
+                            <h2>小尾巴不开心</h2>
+                            <hr>
+                            <p>
+                                2015年10月24日，妻子因为卵巢囊肿做了附件切除手术；12月3日我因为肾结石做了碎石手术，几笔开销出去其实积蓄已经没剩多少了，万万没想到没过几天孩子就生病进了医院。他承受了很多我都难以承受的痛苦，每隔两天就要抽骨髓进行检查，那么粗的针头扎进去，我真的光是看着都很受不了。因为化疗药里面含有激素，对孩子身体有刺激性，每次化疗药一上来，不光是吃饭会呕吐，李震的情绪也会变得很不平稳，经常很暴躁。可是每次发脾气哭闹过后，他又会哭着抱着妈妈说对不起，妈妈对不起我不是故意的。我们对他说没关系的，没关系，这个不怪你，真的不怪你。
+                            </p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="mcProgress">
+                            <ul>
+                                <li>
+                                    <p class="text">
+                                        2016年2月7日（除夕）至2月8日（大年初一），120多位孤寡、失独老人来到北京爱暮家养老院，在这里，他们将在志愿者的
+                                        陪伴下，一起贴春联福字、联欢会、包饺子、吃年夜饭、看春晚、新年健走，度过一个充实、快乐、祥和、幸福和充满爱的猴年
+                                        春节。
+                                    </p>
+                                    <div class="thumbnails">
+                                        <img width="140px" height="140px" src="assets/images/dummy/charity_item_prog3.jpg" alt="" class="thumb">
+                                        <img width="140px" height="140px" src="assets/images/dummy/charity_item_prog2.jpg" alt="" class="thumb">
+                                        <img width="140px" height="140px" src="assets/images/dummy/charity_item_prog1.jpg" alt="" class="thumb">
+                                    </div>
+                                    <p class="date">2016-01-09 11:25:23</p>
+                                </li>
+                                <li>
+                                    <p class="text">
+                                        2016年2月7日（除夕）至2月8日（大年初一），120多位孤寡、失独老人来到北京爱暮家养老院，在这里，他们将在志愿者的
+                                        陪伴下，一起贴春联福字、联欢会、包饺子、吃年夜饭、看春晚、新年健走，度过一个充实、快乐、祥和、幸福和充满爱的猴年
+                                        春节。
+                                    </p>
+                                    <div class="thumbnails">
+                                        <img width="140px" height="140px" src="assets/images/dummy/charity_item_prog3.jpg" alt="" class="thumb">
+                                        <img width="140px" height="140px" src="assets/images/dummy/charity_item_prog2.jpg" alt="" class="thumb">
+                                        <img width="140px" height="140px" src="assets/images/dummy/charity_item_prog1.jpg" alt="" class="thumb">
+                                    </div>
+                                    <p class="date">2016-01-09 11:25:23</p>
+                                </li>
+                                <li>
+                                    <p class="text">
+                                        2016年2月7日（除夕）至2月8日（大年初一），120多位孤寡、失独老人来到北京爱暮家养老院，在这里，他们将在志愿者的
+                                        陪伴下，一起贴春联福字、联欢会、包饺子、吃年夜饭、看春晚、新年健走，度过一个充实、快乐、祥和、幸福和充满爱的猴年
+                                        春节。
+                                    </p>
+                                    <div class="thumbnails">
+                                        <img width="140px" height="140px" src="assets/images/dummy/charity_item_prog3.jpg" alt="" class="thumb">
+                                        <img width="140px" height="140px" src="assets/images/dummy/charity_item_prog2.jpg" alt="" class="thumb">
+                                        <img width="140px" height="140px" src="assets/images/dummy/charity_item_prog1.jpg" alt="" class="thumb">
+                                    </div>
+                                    <p class="date">2016-01-09 11:25:23</p>
+                                </li>
+                                <li>
+                                    <p class="text">
+                                        2016年2月7日（除夕）至2月8日（大年初一），120多位孤寡、失独老人来到北京爱暮家养老院，在这里，他们将在志愿者的
+                                        陪伴下，一起贴春联福字、联欢会、包饺子、吃年夜饭、看春晚、新年健走，度过一个充实、快乐、祥和、幸福和充满爱的猴年
+                                        春节。
+                                    </p>
+                                    <div class="thumbnails">
+                                        <img width="140px" height="140px" src="assets/images/dummy/charity_item_prog3.jpg" alt="" class="thumb">
+                                        <img width="140px" height="140px" src="assets/images/dummy/charity_item_prog2.jpg" alt="" class="thumb">
+                                        <img width="140px" height="140px" src="assets/images/dummy/charity_item_prog1.jpg" alt="" class="thumb">
+                                    </div>
+                                    <p class="date">2016-01-09 11:25:23</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="mcPeople">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th width="10%">序号</th>
+                                        <th width="30%">捐款人</th>
+                                        <th width="30%">捐款金额</th>
+                                        <th width="30%">捐款时间</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>王**</td>
+                                        <td>￥162.00</td>
+                                        <td>2015-10-10 16:35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>138**</td>
+                                        <td>￥20.00</td>
+                                        <td>2015-10-10 18:35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>王**</td>
+                                        <td>￥162.00</td>
+                                        <td>2015-10-10 16:35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>138**</td>
+                                        <td>￥20.00</td>
+                                        <td>2015-10-10 18:35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>王**</td>
+                                        <td>￥162.00</td>
+                                        <td>2015-10-10 16:35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>138**</td>
+                                        <td>￥20.00</td>
+                                        <td>2015-10-10 18:35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>王**</td>
+                                        <td>￥162.00</td>
+                                        <td>2015-10-10 16:35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>138**</td>
+                                        <td>￥20.00</td>
+                                        <td>2015-10-10 18:35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>王**</td>
+                                        <td>￥162.00</td>
+                                        <td>2015-10-10 16:35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>138**</td>
+                                        <td>￥20.00</td>
+                                        <td>2015-10-10 18:35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>王**</td>
+                                        <td>￥162.00</td>
+                                        <td>2015-10-10 16:35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>138**</td>
+                                        <td>￥20.00</td>
+                                        <td>2015-10-10 18:35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>王**</td>
+                                        <td>￥162.00</td>
+                                        <td>2015-10-10 16:35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td>138**</td>
+                                        <td>￥20.00</td>
+                                        <td>2015-10-10 18:35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>王**</td>
+                                        <td>￥162.00</td>
+                                        <td>2015-10-10 16:35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>138**</td>
+                                        <td>￥20.00</td>
+                                        <td>2015-10-10 18:35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td>王**</td>
+                                        <td>￥162.00</td>
+                                        <td>2015-10-10 16:35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td>138**</td>
+                                        <td>￥20.00</td>
+                                        <td>2015-10-10 18:35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19</td>
+                                        <td>王**</td>
+                                        <td>￥162.00</td>
+                                        <td>2015-10-10 16:35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>138**</td>
+                                        <td>￥20.00</td>
+                                        <td>2015-10-10 18:35</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <nav class="pagination-wrp">
+                                <ul class="pagination">
+                                    <li class="disabled">
+                                        <a href="javascript:alert('请添加链接');" aria-label="上一页">
+                                            <span aria-hidden="true">上一页</span>
+                                        </a>
+                                    </li>
+                                    <li class="active"><a href="javascript:alert('请添加链接');">1</a></li>
+                                    <li><a href="javascript:alert('请添加链接');">2</a></li>
+                                    <li><a href="javascript:alert('请添加链接');">3</a></li>
+                                    <li class="conn"><span>···</span></li>
+                                    <li><a href="javascript:alert('请添加链接');">50</a></li>
+                                    <li>
+                                        <a href="javascript:alert('请添加链接');" aria-label="下一页">
+                                            <span aria-hidden="true">下一页</span>
+                                        </a>
+                                    </li>
+                                    <li><span>共50页</span></li>
+                                    <li>
+                                        <div class="input-group">
+                                            <div class="input-group-addon">转到</div>
+                                            <input class="form-control"></input>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <button class="btn btn-green ie8br">Go</button>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="mcMessages">
+                            <ul class="msg-list">
+                                <li>
+                                    <div class="msg">
+                                        <img class="avatar ie8br" width="64px" height="64px" src="assets/images/dummy/avatar/avatar.jpg" alt="">
+                                        <div class="content">
+                                            <div class="info clearfix">
+                                                <span class="name pull-left">张**</span>
+                                                <span class="date pull-right">2016-01-11 20:00:05</span>
+                                            </div>
+                                            <div class="text">在都市的繁华与自身的困窘间，贫困的孩子在小心翼翼地行走。也许物质的贫乏只是生活对他们的磨砺，未来希望他们定会振翅飞翔。</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="msg">
+                                        <img class="avatar ie8br" width="64px" height="64px" src="assets/images/dummy/avatar/avatar2.jpg" alt="">
+                                        <div class="content">
+                                            <div class="info clearfix">
+                                                <span class="name pull-left">乐**</span>
+                                                <span class="date pull-right">2016-01-11 20:00:05</span>
+                                            </div>
+                                            <div class="text">在都市的繁华与自身的困窘间，贫困的孩子在小心翼翼地行走。也许物质的贫乏只是生活对他们的磨砺，未来希望他们定会振翅飞翔。</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="msg">
+                                        <img class="avatar ie8br" width="64px" height="64px" src="assets/images/dummy/avatar/avatar4.jpg" alt="">
+                                        <div class="content">
+                                            <div class="info clearfix">
+                                                <span class="name pull-left">王**</span>
+                                                <span class="date pull-right">2016-01-11 20:00:05</span>
+                                            </div>
+                                            <div class="text">在都市的繁华与自身的困窘间，贫困的孩子在小心翼翼地行走。也许物质的贫乏只是生活对他们的磨砺，未来希望他们定会振翅飞翔。</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="msg">
+                                        <img class="avatar ie8br" width="64px" height="64px" src="assets/images/dummy/avatar/avatar7.jpg" alt="">
+                                        <div class="content">
+                                            <div class="info clearfix">
+                                                <span class="name pull-left">白*</span>
+                                                <span class="date pull-right">2016-01-11 20:00:05</span>
+                                            </div>
+                                            <div class="text">在都市的繁华与自身的困窘间，贫困的孩子在小心翼翼地行走。也许物质的贫乏只是生活对他们的磨砺，未来希望他们定会振翅飞翔。</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="msg">
+                                        <img class="avatar ie8br" width="64px" height="64px" src="assets/images/dummy/avatar/avatar1.jpg" alt="">
+                                        <div class="content">
+                                            <div class="info clearfix">
+                                                <span class="name pull-left">李**</span>
+                                                <span class="date pull-right">2016-01-11 20:00:05</span>
+                                            </div>
+                                            <div class="text">在都市的繁华与自身的困窘间，贫困的孩子在小心翼翼地行走。也许物质的贫乏只是生活对他们的磨砺，未来希望他们定会振翅飞翔。</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="msg">
+                                        <img class="avatar ie8br" width="64px" height="64px" src="assets/images/dummy/avatar/avatar9.jpg" alt="">
+                                        <div class="content">
+                                            <div class="info clearfix">
+                                                <span class="name pull-left">胡**</span>
+                                                <span class="date pull-right">2016-01-11 20:00:05</span>
+                                            </div>
+                                            <div class="text">在都市的繁华与自身的困窘间，贫困的孩子在小心翼翼地行走。也许物质的贫乏只是生活对他们的磨砺，未来希望他们定会振翅飞翔。</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="msg">
+                                        <img class="avatar ie8br" width="64px" height="64px" src="assets/images/dummy/avatar/avatar5.jpg" alt="">
+                                        <div class="content">
+                                            <div class="info clearfix">
+                                                <span class="name pull-left">王**</span>
+                                                <span class="date pull-right">2016-01-11 20:00:05</span>
+                                            </div>
+                                            <div class="text">在都市的繁华与自身的困窘间，贫困的孩子在小心翼翼地行走。也许物质的贫乏只是生活对他们的磨砺，未来希望他们定会振翅飞翔。</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="msg">
+                                        <img class="avatar ie8br" width="64px" height="64px" src="assets/images/dummy/avatar/avatar3.jpg" alt="">
+                                        <div class="content">
+                                            <div class="info clearfix">
+                                                <span class="name pull-left">郭*</span>
+                                                <span class="date pull-right">2016-01-11 20:00:05</span>
+                                            </div>
+                                            <div class="text">在都市的繁华与自身的困窘间，贫困的孩子在小心翼翼地行走。也许物质的贫乏只是生活对他们的磨砺，未来希望他们定会振翅飞翔。</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="msg">
+                                        <img class="avatar ie8br" width="64px" height="64px" src="assets/images/dummy/avatar/avatar.jpg" alt="">
+                                        <div class="content">
+                                            <div class="info clearfix">
+                                                <span class="name pull-left">王**</span>
+                                                <span class="date pull-right">2016-01-11 20:00:05</span>
+                                            </div>
+                                            <div class="text">在都市的繁华与自身的困窘间，贫困的孩子在小心翼翼地行走。也许物质的贫乏只是生活对他们的磨砺，未来希望他们定会振翅飞翔。</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="msg">
+                                        <img class="avatar ie8br" width="64px" height="64px" src="assets/images/dummy/avatar/avatar.jpg" alt="">
+                                        <div class="content">
+                                            <div class="info clearfix">
+                                                <span class="name pull-left">李*</span>
+                                                <span class="date pull-right">2016-01-11 20:00:05</span>
+                                            </div>
+                                            <div class="text">在都市的繁华与自身的困窘间，贫困的孩子在小心翼翼地行走。也许物质的贫乏只是生活对他们的磨砺，未来希望他们定会振翅飞翔。</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <nav class="pagination-wrp">
+                                <ul class="pagination">
+                                    <li class="disabled">
+                                        <a href="javascript:alert('请添加链接');" aria-label="上一页">
+                                            <span aria-hidden="true">上一页</span>
+                                        </a>
+                                    </li>
+                                    <li class="active"><a href="javascript:alert('请添加链接');">1</a></li>
+                                    <li><a href="javascript:alert('请添加链接');">2</a></li>
+                                    <li><a href="javascript:alert('请添加链接');">3</a></li>
+                                    <li class="conn"><span>···</span></li>
+                                    <li><a href="javascript:alert('请添加链接');">50</a></li>
+                                    <li>
+                                        <a href="javascript:alert('请添加链接');" aria-label="下一页">
+                                            <span aria-hidden="true">下一页</span>
+                                        </a>
+                                    </li>
+                                    <li><span>共50页</span></li>
+                                    <li>
+                                        <div class="input-group">
+                                            <div class="input-group-addon">转到</div>
+                                            <input class="form-control"></input>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <button class="btn btn-green ie8br">Go</button>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-content pull-right">
+                <div class="mod aside help">
+                    <div class="mod-heading">
+                        <div class="mod-heading-inner">
+                            <i class="ico ico-help"></i><span class="title">常见问题</span>
+                        </div>
+                    </div>
+                    <div class="mod-body">
+                        <ul>
+                            <li><a href="javascript:alert('请添加链接');" title="">1.平台项目审核规则是什么？</a></li>
+                            <li><a href="javascript:alert('请添加链接');" title="">2.怎样在上品慈善救助平台上发起项目？</a></li>
+                            <li><a href="javascript:alert('请添加链接');" title="">3.完成项目募款后，如何进行拨款？</a></li>
+                            <li><a href="javascript:alert('请添加链接');" title="">4.平台项目的真实性如何保证？</a></li>
+                            <li><a href="javascript:alert('请添加链接');" title="">5.平台项目审核规则是什么？</a></li>
+                            <li><a href="javascript:alert('请添加链接');" title="">6.怎样在上品慈善救助平台上发起项目？</a></li>
+                            <li><a href="javascript:alert('请添加链接');" title="">7.完成项目募款后，如何进行拨款？</a></li>
+                            <li><a href="javascript:alert('请添加链接');" title="">8.平台项目的真实性如何保证？</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mod aside reco">
+                    <div class="mod-heading">
+                        <div class="mod-heading-inner">
+                            <i class="ico ico-recommend"></i><span class="title">你可能关注</span>
+                        </div>
+                    </div>
+                    <div class="mod-body">
+                        <ul>
+                            <li>
+                                <div class="act">
+                                    <div class="cover">
+                                        <a href="javascript:alert('请添加链接');">
+                                            <img width="258px" height="146px" src="assets/images/dummy/charity/charity_list_item8.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="progress-wrp ie8br clearfix">
+                                            <div class="progress ie8br pull-left">
+                                                <div class="progress-bar progress-bar-spzy" role="progressbar"
+                                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 82%">
+                                                </div>
+                                            </div>
+                                            <div class="progress-label pull-right">82%</div>
+                                        </div>
+                                        <div class="name">
+                                            <p><a href="慈善救助-详情.html">帮助孤寡老人</a></p>
+                                        </div>
+                                        <div class="text">
+                                            <p>已筹：<span class="text-danger">160000.0</span>元</p>
+                                            <p>目标：200000.0元</p>
+                                            <a class="help-btn" href="javascript:alert('请添加链接');">我来救助</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="act">
+                                    <div class="cover">
+                                        <a href="javascript:alert('请添加链接');">
+                                            <img width="258px" height="146px" src="assets/images/dummy/charity/charity_list_item5.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="progress-wrp ie8br clearfix">
+                                            <div class="progress ie8br pull-left">
+                                                <div class="progress-bar progress-bar-spzy" role="progressbar"
+                                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 82%">
+                                                </div>
+                                            </div>
+                                            <div class="progress-label pull-right">82%</div>
+                                        </div>
+                                        <div class="name">
+                                            <p><a href="慈善救助-详情.html">请大家救救我的老公</a></p>
+                                        </div>
+                                        <div class="text">
+                                            <p>已筹：<span class="text-danger">160000.0</span>元</p>
+                                            <p>目标：200000.0元</p>
+                                            <a class="help-btn" href="javascript:alert('请添加链接');">我来救助</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="act">
+                                    <div class="cover">
+                                        <a href="javascript:alert('请添加链接');">
+                                            <img width="258px" height="146px" src="assets/images/dummy/charity/charity_list_item6.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="progress-wrp ie8br clearfix">
+                                            <div class="progress ie8br pull-left">
+                                                <div class="progress-bar progress-bar-spzy" role="progressbar"
+                                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 82%">
+                                                </div>
+                                            </div>
+                                            <div class="progress-label pull-right">82%</div>
+                                        </div>
+                                        <div class="name">
+                                            <p><a href="慈善救助-详情.html">回来吧，乖宝宝</a></p>
+                                        </div>
+                                        <div class="text">
+                                            <p>已筹：<span class="text-danger">160000.0</span>元</p>
+                                            <p>目标：200000.0元</p>
+                                            <a class="help-btn" href="javascript:alert('请添加链接');">我来救助</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="act">
+                                    <div class="cover">
+                                        <a href="javascript:alert('请添加链接');">
+                                            <img width="258px" height="146px" src="assets/images/dummy/charity/charity_item_reco.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="progress-wrp ie8br clearfix">
+                                            <div class="progress ie8br pull-left">
+                                                <div class="progress-bar progress-bar-spzy" role="progressbar"
+                                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 82%">
+                                                </div>
+                                            </div>
+                                            <div class="progress-label pull-right">82%</div>
+                                        </div>
+                                        <div class="name">
+                                            <p><a href="慈善救助-详情.html">送给乡亲们一份温暖的年货</a></p>
+                                        </div>
+                                        <div class="text">
+                                            <p>已筹：<span class="text-danger">160000.0</span>元</p>
+                                            <p>目标：200000.0元</p>
+                                            <a class="help-btn" href="javascript:alert('请添加链接');">我来救助</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- /.page-main -->
+
+    <footer class="footer clearfix">
+        <div class="ft-info container">
+            <p class="ft-links">
+                <a href="javascript:alert('请添加链接');" title="">关于上品</a>
+                <a href="javascript:alert('请添加链接');" title="">合作机会</a>
+                <a href="javascript:alert('请添加链接');" title="">联系我们</a>
+                <a href="javascript:alert('请添加链接');" title="">帮助中心</a>
+                <a href="javascript:alert('请添加链接');" title="">在线客服</a>
+            </p>
+            <p class="copyright">Copyright © 2011-2015 shangpingzhuanyi.com All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <!--[if lt IE 9]>
+        <script src="bower_components/jquery-legacy/dist/jquery.min.js"></script>
+        <script src="bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+    <![endif]-->
+    <!--[if (gte IE 9) | (!IE)]><!-->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!--<![endif]-->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="assets/js/ie_fix.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+        $(function() {
+            $("#mcPeople tr:odd").css('background-color', '#f9f9f9');
+        });
+    </script>
+
+</body>
+
+</html>

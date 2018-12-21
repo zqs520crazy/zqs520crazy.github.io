@@ -1,0 +1,73 @@
+/* CSS Document */
+@charset "utf-8";
+
+*{margin:0; padding:0;}/*标签重置*/
+a, img{border:none;}	/*对图片边框的重置*/
+li{list-style:none}
+.clear{clear: both}
+*{font-family: "Microsoft Yahei";}
+
+.nav {
+	display: block;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+	color: #fff;
+	font-size: 1em;
+	text-align: center;
+	text-decoration: none;
+	z-index: 99;
+	background: #da251d;
+}
+.nav {
+	display: block;
+	position: fixed;
+	top: 0;
+	right: 2em;
+	width: 5em;
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+	color: #fff;
+	font-size: 1em;
+	text-align: center;
+	text-decoration: none;
+	z-index: 99;
+	background: #da251d;
+}
+.section1 {
+	background: url(../images/1.jpg) center center no-repeat  #fff;
+	background-size: 100%;
+} 
+.section2 {
+	background: url(../images/2.jpg) center center no-repeat  #fff;
+	background-size: 100%;
+} 
+
+.section3 {
+	background: url(../images/3.jpg) center center no-repeat  #fff;
+	background-size: 100%;
+}
+
+.section4 {
+	background: url(../images/4.jpg) center center no-repeat  #fff;
+	background-size: 100%;
+}
+.copyright {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	color: #333;
+	font-size: 0.8em;
+}
+.g-links {
+	text-decoration: none;
+	color: #da251d;
+}
+.g-links:hover {
+	text-decoration: underline;
+}

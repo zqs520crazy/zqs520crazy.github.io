@@ -1,0 +1,240 @@
+
+/* 头部广告&下载链接 */
+
+#topBanner {
+    width: 760px;
+    height: 360px;
+    padding: 0;
+    position: relative;
+}
+#topBanner .item .fill {
+    width: 760px;
+    height: 360px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#topBanner .carousel-indicators {
+    bottom: 5px;
+    left: 25px;
+    margin-left: 0;
+    width: auto;
+}
+#topBanner .carousel-indicators li {
+    border-radius: 0;
+    width: 15px;
+    height: 4px;
+    margin-right: 7.5px;
+}
+
+.down-btn-wrp {
+    margin-bottom: 20px;
+}
+.qrcode-wrp {
+    position: relative;
+    height: 160px;
+    width: 390px;
+    background-color: #444;
+}
+.qrcode-wrp img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.qrcode-wrp .desc {
+    padding: 2px 2px 0 175px;
+}
+.qrcode-wrp .desc p {
+    margin-bottom: 0;
+}
+.qrcode-wrp .desc .title {
+    font-size: 20px;
+    line-height: 1em;
+    color: #fff;
+    padding: 25px 0 20px;
+}
+.qrcode-wrp .desc .details {
+    color: #b5b5b5;
+    line-height: 1.75em;
+}
+
+/* 模块共用 */
+
+.page-wrapper .mod {
+    margin-bottom: 0;
+}
+.page-wrapper .mod .mod-heading .mod-heading-inner {
+    border-width: 9px;
+}
+.page-wrapper .mod .mod-heading .title {
+    font-size: 24px;
+    color: #1b1b1b;
+}
+.page-wrapper .mod .mod-heading .more {
+    line-height: 38px;
+}
+.page-wrapper .mod .mod-body {
+    padding: 20px 30px;
+}
+.page-wrapper .mod .mod-body ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+/* 推荐医生 */
+
+.page-wrapper.reco-doctors {
+    margin-top: 20px;
+}
+
+.page-wrapper.reco-doctors .mod-body .mod-body-inner {
+    width: 1200px;
+}
+.page-wrapper.reco-doctors .mod-body ul>li {
+    width: 202px;
+    height: 260px;
+    float: left;
+    margin-right: 25px;
+}
+
+/* 推荐医院 */
+
+.page-wrapper.reco-hospitals {
+    margin-top: 20px;
+}
+
+.page-wrapper.reco-hospitals .mod-body .mod-body-inner {
+    width: 1200px;
+}
+.page-wrapper.reco-hospitals .mod-body ul>li {
+    width: 253px;
+    height: 220px;
+    float: left;
+    margin-right: 32px;
+}
+
+.hos-item {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #e4e4e4;
+    overflow: hidden;
+}
+.hos-item .cover {
+    display: block;
+    text-align: center;
+}
+.hos-item .desc {
+    padding: 10px 15px;
+}
+.hos-item .desc p {
+    margin-bottom: 0;
+}
+.hos-item .desc .name {
+}
+.hos-item .desc .name a {
+    color: #333;
+}
+.hos-item .desc .name a:focus,
+.hos-item .desc .name a:hover {
+    color: #1aa0f7;
+}
+.hos-item .desc .lbl,
+.hos-item .desc .tel {
+    font-size: 12px;
+    color: #afafaf;
+}
+
+
+/* 慈善救助 */
+
+.page-wrapper.reco-charity {
+    margin-top: 20px;
+}
+.page-wrapper.reco-charity .mod {
+    margin-bottom: 35px;
+}
+
+.page-wrapper.reco-charity .mod-body .mod-body-inner {
+    width: 1200px;
+}
+.page-wrapper.reco-charity .mod-body ul>li {
+    width: 254px;
+    height: 240px;
+    float: left;
+    margin-right: 31px;
+}
+
+.chrt-item {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.chrt-item .cover {
+    text-align: center;
+}
+.chrt-item .cover a {
+    display: block;
+    overflow: hidden;
+}
+.chrt-item .detail {
+    border: 1px solid #e4e4e4;
+    border-top: none;
+    padding: 10px 7.5px;
+}
+.chrt-item .progress-wrp {
+    margin-top: 0;
+}
+.chrt-item .progress,
+.chrt-item .progress-bar {
+    border-radius: 5px;
+    height: 5px;
+}
+.chrt-item .progress {
+    width: 205px;
+    margin-bottom: 7.5px;
+}
+.chrt-item .progress-bar {
+    background-color: #a2c538;
+}
+.chrt-item .progress-label {
+    font-size: 12px;
+    margin-top: -5px;
+}
+.chrt-item .name {
+    color: #333;
+}
+.chrt-item .name a {
+    color: #333;
+}
+.chrt-item .name a:focus,
+.chrt-item .name a:hover {
+    color: #1aa0f7;
+}
+.chrt-item p {
+    margin-bottom: 0;
+}
+.chrt-item .text {
+    color: #afafaf;
+    font-size: 12px;
+    position: relative;
+}
+.chrt-item .text .text-danger {
+    color: #ff6c00;
+}
+.chrt-item .help-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #ff6c00;
+    font-size: 12px;
+    color: #fff;
+    padding: 2px 5px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.chrt-item .help-btn:focus,
+.chrt-item .help-btn:hover {
+    text-decoration: none;
+}
+

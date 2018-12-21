@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>登录 - 上品医生</title>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+        <script src="bower_components/Respond/dest/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="assets/css/base.css" rel="stylesheet">
+    <link href="assets/css/account.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <link href="assets/css/ie8_fix.css" rel="stylesheet">
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div class="container account-page-container login-page-container">
+        <div class="page-inner clearfix">
+            <div class="tabs">
+                <ul>
+                    <li class="login on">
+                        <a href="登录.html" title="登录">登录</a>
+                    </li>
+                    <li class="register">
+                        <a href="注册.html" title="注册">注册</a>
+                    </li>
+                    <li class="app">
+                        <a href="二维码.html" title="扫码下载APP">扫码下载APP</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="signin-wrapper">
+                <form class="form-signin form form-horizontal">
+                    <div class="login-title">
+                        <img class="logo" src="assets/images/logo.png" />
+                        <span class="page-title">用户<br/>登录</span>
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </span>
+                        <input type="text" id="inputEmail" class="form-control" placeholder="手机邮箱或用户名" required autofocus />
+                    </div>
+
+                    <div class="input-group pwd">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-lock"></span>
+                        </span>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="密码" required />
+                        <a href="javascript:alert('请添加链接');" title="忘记密码？">忘记密码？</a>
+                    </div>
+
+                    <button class="btn btn-lg btn-primary btn-block ie8br" type="submit">登录</button>
+
+                    <div class="sec-title-line">
+                        <div class="sec-title">
+                            <span>使用第三方登录</span>
+                        </div>
+                    </div>
+
+                    <div class="sec-list">
+                        <div class="col-xs-4">
+                            <a class="sec-item" href="javascript:alert('请添加链接');">
+                                <img src="assets/images/account/login-qq.png" alt="QQ登录">
+                            </a>
+                        </div>
+                        <div class="col-xs-4">
+                            <a class="sec-item" href="javascript:alert('请添加链接');">
+                                <img src="assets/images/account/login-weibo.png" alt="微博登录">
+                            </a>
+                        </div>
+                        <div class="col-xs-4">
+                            <a class="sec-item" href="javascript:alert('请添加链接');">
+                                <img src="assets/images/account/login-wechat.png" alt="微信登录">
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="fullscreen-bg" style="background-image: url(assets/images/account/account_bg.png);">
+        <img src="assets/images/account/account_bg.png">
+    </div>
+
+    <!-- jQuery -->
+    <!--[if lt IE 9]>
+        <script src="bower_components/jquery-legacy/dist/jquery.min.js"></script>
+        <script src="bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+    <![endif]-->
+    <!--[if (gte IE 9) | (!IE)]><!-->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!--<![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="assets/js/ie_fix.js"></script>
+    <![endif]-->
+</body>
+
+</html>

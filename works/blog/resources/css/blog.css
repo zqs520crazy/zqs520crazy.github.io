@@ -1,0 +1,128 @@
+/* CSS Document */
+@charset "utf-8";
+
+body{
+	background: #fdfdfd;
+}
+.container {
+	width: 900px;
+	margin: 20px auto 100px;
+}
+.blog-box {
+	width: 900px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0 0 40px;
+}
+.blog-title {
+	font-size: 20px;
+	color: #444;
+	line-height: 28px;
+	font-weight: blod;
+	margin-bottom: 20px;
+}
+.blog-p {
+	font-size: 14px;
+	color: #666;
+	text-align: left;
+	line-height: 22px;
+	margin-top: 10px;
+}
+.blog-pic {
+	margin-top: 10px;
+	max-width: 740px;
+}
+.blog-link {
+	color: #5F83A8;
+	font-size: 30px;
+}
+.icon-tag {	
+	font-size: 12px;
+	color: #999;
+	margin-right: 6px;
+}
+.tag {
+	font-size: 12px;
+	color: #999;
+	text-decoration: none;
+	margin-right: 14px;
+}
+.tag:hover {
+	color: #ccc;
+}
+.blog-date {
+	margin-top: 4px;
+	float: right;
+	color: #999;
+	font-size: 12px;
+}
+.edit-com-box {
+	margin: 20px 0;
+}
+.com-title {
+	display: block;
+	font-size: 14px;
+	color: #666;
+	margin-bottom: 8px;
+}
+.com-text {
+	width: 888px;
+	height: 80px;
+	color: #333;
+	padding: 6px;
+	overflow:hidden;
+	border: 1px solid #999;
+}
+.btn-com-pub {
+	float: right;
+	width: 80px;
+	height: 24px;
+	line-height: 24px;
+	color: #fff;
+	background: #777;
+	cursor: pointer;
+	margin: 10px 0;
+}
+.com {
+	position: relative;
+	border-top: 1px solid #EBEBEB;
+	padding: 10px 0;
+	vertical-align: middle;
+}
+.com-head {
+	width: 32px;
+	height: 32px;
+	margin-right: 10px;
+}
+.com-user {
+	font-size: 14px;
+	color: #333;
+}
+.com-con {
+	font-size: 14px;
+	color: #666;
+}
+.com-time {
+	position: absolute;
+	right: 0;
+	top: 18px;
+	font-size: 12px;
+	color: #999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

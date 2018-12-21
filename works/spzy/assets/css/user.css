@@ -1,0 +1,115 @@
+
+/* 用户信息 */
+
+.label.label-level {
+    background-color: #fbb958;
+    color: #fff;
+}
+
+.page-wrapper.user-info .info-panel .control-label {
+    text-align: right;
+}
+
+
+.page-wrapper.user-info .info-panel-wrp {
+    background-color: #fff;
+}
+
+.page-wrapper.user-info .info-panel {
+    padding-top: 40px;
+}
+.info-panel .user-avatar {
+    text-align: center;
+}
+.info-panel .user-avatar-link {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.info-panel .user-avatar-link img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.info-panel .user-avatar-link span {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 100px;
+    color: #fff;
+}
+.info-panel .user-avatar-link:focus span,
+.info-panel .user-avatar-link:hover span {
+    display: block;
+}
+
+.info-panel .level {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.info-panel .form-wrp {
+    margin-bottom: 70px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.info-panel .form {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.info-panel .form .control-label {
+    font-size: 16px;
+    color: #666;
+    font-weight: normal;
+}
+.info-panel .form .form-control {
+    border-radius: 0;
+    box-shadow: none;
+}
+.info-panel .form .form-control:focus {
+    border-color: #ccc;
+}
+.info-panel .form .radio,
+.info-panel .form .checkbox {
+    border: 1px solid #ccc;
+    padding: 5px 12px;
+}
+
+.info-panel .form .col-sm-2 {
+    width: 120px;
+}
+.info-panel .form .col-sm-8 {
+    width: 420px;
+}
+.info-panel .form .col-sm-offset-2 {
+    margin-left: 120px;
+}
+.info-panel .form .btn-primary {
+    border-radius: 0;
+    background-color: #1aa1f6;
+    border-color: #1aa1f6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

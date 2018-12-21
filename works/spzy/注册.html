@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>注册 - 上品医生</title>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+        <script src="bower_components/Respond/dest/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="assets/css/base.css" rel="stylesheet">
+    <link href="assets/css/account.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <link href="assets/css/ie8_fix.css" rel="stylesheet">
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div class="container account-page-container register-page-container">
+        <div class="page-inner clearfix">
+            <div class="tabs">
+                <ul>
+                    <li class="login">
+                        <a href="登录.html" title="登录">登录</a>
+                    </li>
+                    <li class="register on">
+                        <a href="注册.html" title="注册">注册</a>
+                    </li>
+                    <li class="app">
+                        <a href="二维码.html" title="扫码下载APP">扫码下载APP</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="signin-wrapper">
+                <form class="form-signin form form-horizontal">
+                    <div class="login-title">
+                        <img class="logo" src="assets/images/logo.png" />
+                        <span class="page-title">用户<br/>注册</span>
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </span>
+                        <input type="email" id="inputEmail" class="form-control" placeholder="请输入手机号码" required autofocus />
+                    </div>
+
+                    <div class="input-group captcha hide">
+                        <input type="text" id="inputCaptcha" class="form-control" placeholder="验证码" required />
+                        <span class="input-group-addon">
+                            <a href="javascript:alert('请添加链接');" title="刷新验证码">
+                                <img src="assets/images/dummy/captcha.png" alt="图片验证码">
+                            </a>
+                        </span>
+                    </div>
+
+                    <div class="input-group verify">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-phone"></span>
+                        </span>
+                        <input type="text" id="inputMobileVerify" class="form-control" placeholder="手机验证码" required />
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default">发送验证码</button>
+                        </span>
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-lock"></span>
+                        </span>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="请设置密码" required />
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-lock"></span>
+                        </span>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="重复密码" required />
+                    </div>
+
+                    <div class="checkbox hide">
+                        <label>
+                            <input type="checkbox"> 我同意 <a href="javascript:alert('请添加链接');" title="《上品专医用户注册协议》">《上品专医用户注册协议》</a>
+                        </label>
+                    </div>
+
+                    <button class="btn btn-lg btn-primary btn-block ie8br" type="submit">注册</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="fullscreen-bg" style="background-image: url(assets/images/account/account_bg.png);">
+        <img src="assets/images/account/account_bg.png">
+    </div>
+
+    <!-- jQuery -->
+    <!--[if lt IE 9]>
+        <script src="bower_components/jquery-legacy/dist/jquery.min.js"></script>
+        <script src="bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+    <![endif]-->
+    <!--[if (gte IE 9) | (!IE)]><!-->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!--<![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="assets/js/ie_fix.js"></script>
+    <![endif]-->
+</body>
+
+</html>

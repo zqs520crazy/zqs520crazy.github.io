@@ -1,0 +1,194 @@
+
+.page-wrapper.user-app {
+    background-color: #fafafa;
+    margin-top: -20px;
+    padding: 50px 0 30px;
+}
+
+.page-wrapper .user-app-info {
+    padding-left: 190px;
+    width: 650px;
+    padding-top: 50px;
+}
+.user-app-info .title {
+    font-size: 54px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    line-height: 1em;
+}
+.user-app-info .slogan {
+    color: #676769;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 0;
+    line-height: 1em;
+}
+
+.user-app-info .links {
+    margin-top: 60px;
+}
+.user-app-info .links .btn {
+    width: 200px;
+    height: 56px;
+    display: block;
+    font-size: 20px;
+    position: relative;
+}
+.user-app-info .links .btn span {
+    padding-left: 40px;
+    line-height: 45px;
+}
+
+.user-app-info .links .btn.android {
+    border: 1px solid #01c15a;
+    color: #01c15a;
+    margin-bottom: 25px;
+}
+.user-app-info .links .btn.android:focus,
+.user-app-info .links .btn.android:hover {
+    background: #01c15a;
+    color: #fff;
+}
+.user-app-info .links .btn.ios {
+    border: 1px solid #389adc;
+    color: #389adc;
+}
+.user-app-info .links .btn.ios:focus,
+.user-app-info .links .btn.ios:hover {
+    background: #389adc;
+    color: #fff;
+}
+
+.user-app-info .links .btn i {
+    display: inline-block;
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    width: 26px;
+    height: 31px;
+    background-repeat: no-repeat;
+    background-image: url(../images/app/platforms.png);
+    background-size: 100% auto;
+}
+.user-app-info .links .btn:focus i,
+.user-app-info .links .btn:hover i {
+    background-size: 157.59231% auto;
+}
+.user-app-info .links .btn.android i {
+    background-position: 0 0;
+}
+.user-app-info .links .btn.android:focus i,
+.user-app-info .links .btn.android:hover i {
+    background-position: 0 -49px;
+}
+
+.user-app-info .links .btn.ios i {
+    background-position: 0 -51px;
+}
+.user-app-info .links .btn.ios:focus i,
+.user-app-info .links .btn.ios:hover i {
+    background-position: 0 -128px;
+}
+
+.user-app-info .links .qrcode {
+    padding-left: 225px;
+}
+.user-app-info .links .qrcode img {
+    border: 1px solid #e3e3e3;
+    width: 138px;
+    height: 138px;
+    overflow: hidden;
+}
+
+
+/* 手机预览 */
+
+.page-wrapper .user-app-cover {
+    background: url(../images/app/iphone.png) 50% 50% no-repeat;
+    background-size: 100% 100%;
+    width: 366px;
+    height: 600px;
+    position: relative;
+}
+.page-wrapper .user-app-cover .sliders-wrp {
+    position: absolute;
+    top: 69px;
+    left: 56px;
+}
+.page-wrapper .user-app-cover .sliders-wrp * {
+    padding: 0;
+    margin: 0;
+}
+.page-wrapper .user-app-cover .sliders {
+    position: relative;
+    width: 253px;
+    height: 449px;
+    overflow: hidden;
+}
+.page-wrapper .user-app-cover ul {
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* margin-left: 253px; */
+    margin-left: 0;
+}
+.page-wrapper .user-app-cover ul>li {
+    float: left;
+}
+
+.bx-wrapper {
+    border: none;
+}
+
+/* 其他APP */
+
+.other-app .title {
+    margin-top: 45px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.other-app .dr .title {
+    text-indent: 100px;
+}
+.other-app .st .title {
+    text-indent: -100px;
+}
+
+.other-app .dr,
+.other-app .st {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.other-app .item {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.other-app .dr .item {
+    margin-left: 35px;
+}
+.other-app .st .item {
+    margin-right: 35px;
+}
+
+.other-app .icon {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.other-app .icon img {
+    text-align: center;
+    vertical-align: middle;
+}
+.other-app .desc {
+    margin-top: 25px;
+    font-size: 16px;
+    color: #666;
+}
+

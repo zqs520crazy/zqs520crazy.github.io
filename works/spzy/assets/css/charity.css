@@ -1,0 +1,415 @@
+
+/* 图标 */
+.ico {
+    display: inline-block;
+    width: 18px;
+    height: 14px;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.ico.ico-heart {
+    vertical-align: text-top;
+    background-image: url('../images/common/ico-heart.png');
+}
+.ico.ico-help {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-top;
+    background-image: url('../images/common/ico-help.png');
+}
+.ico.ico-recommend {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-top;
+    background-image: url('../images/common/ico-recommend.png');
+}
+
+
+/* 进度条 */
+.progress-chart {
+    width: 100%;
+}
+.progress-wrp {
+    margin-top: 15px;
+}
+.progress-wrp .progress {
+    width: 90%;
+}
+.progress-wrp .progress-label {
+    font-size: 16px;
+}
+.progress-wrp .progress {
+    background-color: #d9dbdc;
+    border-radius: 0;
+    height: 10px;
+    margin-top: 7.5px;
+    box-shadow: none;
+}
+.progress-wrp .progress-bar {
+    box-shadow: none;
+}
+.progress-bar-spzy {
+    background-color: #fbb958;
+    border-radius: 0;
+}
+
+.progress-chart .label {
+    border-radius: 0;
+}
+.label-blue {
+    background-color: #44abeb;
+}
+.label-green {
+    background-color: #49d7ad;
+}
+
+.progress-chart .text {
+    font-size: 16px;
+    margin-left: 10px;
+}
+.progress-chart .text.text-danger {
+    color: #f63f21;
+}
+
+/* 慈善救助 页头 */
+#topStatus .state-info {
+    background-color: #fff;
+    width: 762px;
+    height: 200px;
+}
+
+#topStatus .state-info p {
+    text-align: center;
+}
+#topStatus .state-info p.title-wrp {
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 0;
+}
+#topStatus .state-info .title {
+    color: #474747;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#topStatus .state-info .info-col p.cnt {
+    color: #19cff6;
+    font-size: 24px;
+}
+#topStatus .state-info .info-col .sum p.cnt {
+    color: #1aa0f7;
+}
+#topStatus .state-info .info-col p.cnt em {
+    font-size: 18px;
+    font-style: normal;
+    margin-left: 5px;
+}
+#topStatus .state-info .info-col p span {
+    display: inline-block;
+    border: 1px solid #19cff6;
+    line-height: 28px;
+    border-radius: 15px;
+    padding: 0 15px;
+    color: #666;
+}
+#topStatus .state-info .info-col .sum p span {
+    border-color: #1aa0f7;
+}
+
+#topStatus .adv img {
+    width: 390px;
+    height: 200px;
+}
+
+/* 慈善救助 列表 */
+
+.page-wrapper.main {
+    margin-top: 20px;
+}
+
+.mod .mod-body .mod-list {
+    list-style: none;
+    padding-left: 0;
+}
+.mod .mod-body .mod-item {
+    padding: 25px 0 30px;
+    border-bottom: 1px solid #eeeeee;
+}
+.mod .mod-body .mod-item .info {
+    margin-left: 20px;
+    max-width: 382px;
+}
+.mod .mod-body .mod-item .info .name a {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    line-height: 45px;
+    height: 45px;
+    font-size: 18px;
+    color: #3a3a3a;
+}
+.mod .mod-body .mod-item .info .name a:focus,
+.mod .mod-body .mod-item .info .name a:hover {
+    color: #1aa0f7;
+}
+
+.mod .mod-body .mod-item .info .prop {
+    margin-bottom: 2px;
+}
+
+.mod .mod-body .mod-item .progress-chart {
+    width: 510px;
+}
+.mod .mod-body .mod-item .progress-wrp .progress {
+    width: 454px;
+}
+
+
+/* 慈善救助 详情 */
+
+#topDesc .container .top-line {
+    border-top: 4px solid #41cb57;
+}
+#topDesc .desc-info {
+    width: 610px;
+    height: 300px;
+    background-color: #fff;
+    padding-left: 65px;
+    padding-top: 5px;
+}
+#topDesc .desc-info .info .name {
+    width: 545px;
+}
+#topDesc .desc-info .info .name a {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    line-height: 80px;
+    height: 80px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+#topDesc .desc-info .info .prop {
+    color: #676767;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+#topDesc .desc-info .progress-chart {
+    width: 480px;
+}
+#topDesc .desc-info .progress-wrp .progress {
+    width: 425px;
+}
+
+#topDesc .desc-info .detail .tr {
+    text-align: right;
+}
+
+
+/* 详情标签页 */
+
+.main-content {
+    width: 840px;
+}
+.main-content.mod .mod-body {
+    padding: 20px 25px;
+}
+
+#mcDetail {
+    color: #666;
+}
+#mcDetail * {
+    max-width: 100%;
+}
+#mcDetail p {
+    line-height: 2em;
+}
+#mcDetail h2 {
+    font-size: 18px;
+    padding-left: 8px;
+    border-left: 4px solid #333;
+}
+#mcDetail hr {
+    margin-top: 7.5px;
+    margin-bottom: 20px;
+}
+
+#mcProgress ul {
+    padding-top: 15px;
+    padding-left: 25px;
+    list-style-image: url(../images/common/list-style-img.png);
+}
+#mcProgress ul>li {
+    padding-left: 15px;
+}
+#mcProgress ul>li p {
+    margin-bottom: 5px;
+    line-height: 2em;
+}
+#mcProgress ul>li p.text {
+    color: #666;
+}
+#mcProgress ul>li p.date {
+    font-size: 16px;
+    color: #868686;
+}
+#mcProgress ul>li .thumbnails {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#mcProgress ul>li .thumb {
+    width: 140px;
+    height: 140px;
+    border: 1px solid #d5d5d5;
+}
+
+#mcPeople .table,
+#mcPeople .table th {
+    text-align: center;
+}
+#mcPeople .table th,
+#mcPeople .table td {
+    border: none;
+    font-size: 16px;
+    color: #666;
+    padding: 15px 8px;
+}
+#mcPeople .table th {
+    font-weight: bold;
+}
+
+#mcMessages ul.msg-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+#mcMessages ul.msg-list>li {
+    border-bottom: 1px solid #eee;
+    min-height: 85px;
+    padding: 15px 0;
+}
+#mcMessages ul.msg-list>li:first-child {
+    padding-top: 0;
+}
+#mcMessages .msg {
+    position: relative;
+}
+#mcMessages .msg img.avatar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+}
+#mcMessages .msg .content {
+    padding-left: 85px;
+}
+#mcMessages .msg .name {
+    color: #333332;
+    font-size: 20px;
+}
+#mcMessages .msg .date {
+    color: #a3a3a3;
+}
+#mcMessages .msg .text {
+    color: #333332;
+}
+
+
+/* 详情右边栏 */
+
+.side-content {
+    width: 310px;
+}
+.side-content .mod {
+    margin-bottom: 20px;
+}
+
+.side-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.side-content .mod .mod-heading .ico {
+    vertical-align: top;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.side-content .mod.help ul>li>a {
+    line-height: 1.95em;
+    color: #666;
+}
+.side-content .mod.help ul>li>a:focus,
+.side-content .mod.help ul>li>a:hover {
+    /* text-decoration: none; */
+    color: #1aa0f7;
+}
+
+.side-content .mod.reco ul>li {
+    margin-bottom: 20px;
+}
+.side-content .mod.reco ul>li:last-child {
+    margin-bottom: 5px;
+}
+.side-content .act .cover {
+    text-align: center;
+}
+.side-content .act .cover a {
+    display: block;
+    overflow: hidden;
+}
+.side-content .act .detail {
+    border: 1px solid #e4e4e4;
+    border-top: none;
+    padding: 5px 7.5px;
+}
+.side-content .act .progress-wrp {
+    margin-top: 0;
+}
+.side-content .act .progress,
+.side-content .act .progress-bar {
+    border-radius: 5px;
+    height: 5px;
+}
+.side-content .act .progress {
+    width: 205px;
+    margin-bottom: 7.5px;
+}
+.side-content .act .progress-bar {
+    background-color: #a2c538;
+}
+.side-content .act .progress-label {
+    font-size: 12px;
+    margin-top: 2px;
+}
+.side-content .act .name {
+}
+.side-content .act p {
+    margin-bottom: 0;
+}
+.side-content .act .text {
+    color: #afafaf;
+    font-size: 12px;
+    position: relative;
+}
+.side-content .act .text .text-danger {
+    color: #ff6c00;
+}
+.side-content .act .help-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #ff6c00;
+    font-size: 12px;
+    color: #fff;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+.side-content .act .help-btn:focus,
+.side-content .act .help-btn:hover {
+    text-decoration: none;
+}

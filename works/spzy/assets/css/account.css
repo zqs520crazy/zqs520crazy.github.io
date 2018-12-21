@@ -1,0 +1,338 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+  margin-bottom: 0;
+}
+
+.account-page-container {
+  margin-top: 80px;
+}
+
+.page-inner {
+  background: #fff;
+  width: 684px;
+  height: 423px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.page-inner .tabs {
+  float: left;
+  width: 84px;
+  height: 100%;
+}
+.page-inner .tabs ul {
+  list-style: none;
+  height: 100%;
+  display: block;
+  padding-left: 0;
+}
+.page-inner .tabs ul>li {
+  height: 33.33333%;
+  padding: 0 10px;
+  position: relative;
+}
+.page-inner .tabs ul>li.login:after {
+  content: "·";
+  text-align: center;
+  display: block;
+  padding-right: 7.5px;
+  font-weight: bold;
+  font-size: 24px;
+  color: #999;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.page-inner .tabs ul>li.app {
+  background: url(../images/account/app-bg.png) left bottom no-repeat #383837;
+}
+
+.page-inner .tabs ul>li>a {
+  display: block;
+  text-align: center;
+  padding: 0 22.5px 0 10px;
+  font-size: 18px;
+  line-height: 1em;
+  position: absolute;
+}
+.page-inner .tabs ul>li.on>a {
+  border-left: 1px solid #1aa1f6;
+  color: #1aa1f6;
+}
+.page-inner .tabs ul>li>a:hover,
+.page-inner .tabs ul>li>a:active,
+.page-inner .tabs ul>li>a:focus {
+  text-decoration: none;
+}
+
+.page-inner .tabs ul>li.login a {
+  bottom: 20px;
+}
+.page-inner .tabs ul>li.register a {
+  top: 50px;
+}
+.page-inner .tabs ul>li.app a,
+.page-inner .tabs ul>li>a.app:hover,
+.page-inner .tabs ul>li>a.app:active,
+.page-inner .tabs ul>li>a.app:focus {
+  color: #fff;
+  line-height: 1.3em;
+  padding-top: 25px;
+}
+
+.signin-wrapper {
+  float: right;
+  width: 600px;
+}
+.form-signin {
+  width: 330px;
+  padding: 7.5px;
+  margin: 0 auto;
+}
+.form-signin .login-title {
+  width: 100%;
+  margin: 25px auto 18px;
+  text-align: center;
+}
+.form-signin .login-title img {
+    width: 180px;
+    vertical-align: text-bottom;
+}
+.form-signin .login-title .page-title {
+    font-size: 22px;
+    padding-left: 20px;
+    margin-left: 20px;
+    border-left: 1px solid #c8c8c8;
+    display: inline-block;
+    line-height: 25px;
+    color: #666666;
+}
+
+.form-signin .input-group {
+  margin-bottom: 15px;
+}
+.form-signin .input-group * {
+  border-radius: 0;
+  border-color: #c8c8c8;
+}
+.form-signin .input-group .input-group-addon {
+  background: #fff;
+  color: #9d9d9d;
+}
+.form-signin .input-group .form-control {
+  padding: 10px 15px;
+  height: 44px;
+}
+.form-signin .input-group .form-control:focus {
+  border-color: #c8c8c8;
+}
+
+.form-signin .input-group.pwd {
+  position: relative;
+}
+.form-signin .input-group.pwd a {
+  position: absolute;
+  display: inline-block;
+  right: 5px;
+  z-index: 99;
+  top: 12px;
+  color: #1aa1f6;
+}
+
+.form-signin .btn-primary {
+  background-color: #76c000;
+  border-color: #76c000;
+  border-radius: 2px;
+}
+.form-signin .btn-primary:active,
+.form-signin .btn-primary:focus {
+  background-color: #76c022;
+  border-color: #76c022;
+}
+
+.form-signin .sec-title-line {
+  border-bottom: 1px solid #c8c8c8;
+  width: 210px;
+  height: 1em;
+  margin: 20px auto 25px;
+  position: relative;
+}
+.form-signin .sec-title {
+  display: inline-block;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.form-signin .sec-title span {
+  display: inline-block;
+  background: #fff;
+  padding: 0 5px;
+}
+.form-signin .sec-list>div {
+  text-align: center;
+}
+.form-signin .sec-list>div:first-child {
+  text-align: right;
+}
+.form-signin .sec-list>div:last-child {
+  text-align: left;
+}
+
+.login-page-container .form-signin .login-title {
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+
+/* 二维码 */
+
+.qrcode-page-container .page-inner .tabs ul>li {
+  background: #383837;
+}
+.qrcode-page-container .page-inner .tabs ul>li a {
+  color: #999;
+}
+.qrcode-page-container .page-inner .tabs ul>li.login:after {
+  color: #999;
+}
+.qrcode-page-container .page-inner .tabs ul>li.app {
+  background: #fff;
+}
+.qrcode-page-container .page-inner .tabs ul>li.app:before {
+  content: " ";
+  border-left: 1px solid #1aa1f6;
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  top: 50px;
+  height: 18px;
+  width: 5px;
+}
+.qrcode-page-container .page-inner .tabs ul>li.app a {
+  color: #1aa1f6;
+}
+
+.qrcode-wrapper {
+  float: right;
+  width: 600px;
+  padding: 100px 25px;
+}
+
+.qrcode-wrapper .img-responsive {
+  width: 160px;
+  height: 160px;
+  border: 1px solid #d4d4d4;
+  padding: 12px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.qrcode-wrapper p {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 15px;
+}
+.qrcode-wrapper p.type {
+  color: #1aa1f6;
+}
+
+/* 注册 */
+
+.register-page-container .form-signin .login-title {
+  margin-bottom: 25px;
+  margin-bottom: 30px;
+}
+
+.register-page-container .form-signin a {
+  color: #1aa1f6;
+}
+
+.register-page-container .input-group .btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.register-page-container .input-group.captcha .input-group-addon {
+  padding: 0;
+  height: 42px;
+  padding-left: 10px;
+  border: none;
+}
+.register-page-container .input-group.captcha a {
+  display: block;
+  height: 100%;
+}
+.register-page-container .input-group.captcha a>img {
+  height: 100%;
+}
+
+.register-page-container .input-group.verify .input-group-btn {
+  padding-left: 10px;
+}
+.register-page-container .input-group.verify .input-group-btn>.btn {
+  padding: 10px 5px;
+  color: #1aa1f6;
+  background-color: #e5eef1;
+  border-color: #e5eef1;
+}
+
+.register-page-container .input-group.pwd {
+  margin-bottom: 5px;
+}
+
+.register-page-container .form-signin .checkbox {
+  margin-bottom: 5px;
+}
+
+/* 背景图 */
+.fullscreen-bg {
+  background-position: 50% 50%;
+  background-size: cover;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  position: absolute\9;
+  width: 100%\9;
+  height: 100%\9;
+}
+
+.fullscreen-bg:before {
+  background: rgba(0,0,0,.2);
+  background-size: 100%;
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: .5;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.fullscreen-bg img {
+  -ms-interpolation-mode: bicubic;
+  filter: progid:DXImageTransform.Microsoft.Fade(duration=0.3);
+  height: auto;
+  margin: 0;
+  visibility: visible;
+  opacity: 1;
+  display: none;
+  display: block\9;
+}
+
+.fullscreen-bg:after {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}

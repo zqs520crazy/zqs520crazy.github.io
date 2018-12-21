@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>QING点 | 博客设置</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" >
+<link href="resources/css/font-awesome.css" rel="stylesheet" type="text/css" />
+<link href="resources/css/reset.css" rel="stylesheet" type="text/css" />
+<link href="resources/css/home.css" rel="stylesheet" type="text/css" />
+<script src="resources/js/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+
+<!-- 顶部区域 -->
+<div id="top">
+	<div class="container">
+		<div class="header">
+			<img src="resources/images/login/logo.png" class="logo">
+			<ul id="navBar">
+				<li id="blog-name"><a href="home.html" class="active">Relax_HOME</a></li>
+				<li><a href="qing.html">大厅</a></li>
+			</ul>
+			<div class="top-btn-grid">
+				<a href="#" title="设置" ><i class="icon-cog"></i></a>
+				<a href="login.html" title="退出" ><i class="icon-off"></i></a>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+
+<!-- 中部内容区域 -->
+<div id="content">
+	<div class="container">
+		<div class="publish-page">
+			<h1 class="page-title">博客设置</h1>
+			<form class="publish-form">
+				<p class="form-p">博客名称<font style="color:#888; font-size:14px"></font></p>
+				<input type="text" name="blog-name" class="blog-title" id="blog-name-input"> 
+				<p class="form-p">博客介绍</p>
+				<textarea name="blog-content" class="blog-content"></textarea>
+				<button class="publish-btn">保存</button>
+				<div class="clear"></div>
+			</form>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		window.onload = function(){
+			//alert("aa");
+			var blog_name = document.getElementById("blog-name").innerText;
+			var blog_name_input = document.getElementById("blog-name-input");
+			blog_name_input.value = blog_name;
+		}
+	</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>找医院-医院详情 - 上品医生</title>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+        <script src="bower_components/Respond/dest/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="assets/css/base.css" rel="stylesheet">
+    <link href="assets/plugins/jquery-bar-rating/themes/css-stars-custom.css" rel="stylesheet">
+    <link href="assets/css/search.css" rel="stylesheet">
+    <link href="assets/css/hospital.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <link href="assets/css/ie8_fix.css" rel="stylesheet">
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div class="page-wrapper top-links">
+        <div class="container">
+            <ul class="login-links float-ul">
+                <li><a href="登录.html">登录</a></li>
+                <li><a href="注册.html">注册</a></li>
+            </ul>
+            <ul class="user-role-links float-ul">
+                <li><a href="javascript:alert('请添加链接');">医院入口</a></li>
+                <li><a href="javascript:alert('请添加链接');">代理商入口</a></li>
+            </ul>
+            <ul class="about-links float-ul pull-right">
+                <li><a href="javascript:alert('请添加链接');">在线客服</a></li>
+                <li><a href="javascript:alert('请添加链接');">帮助中心</a></li>
+                <li><a href="其它-关于我们.html">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- /.top-links -->
+
+    <div class="page-wrapper head-title clearfix">
+        <div class="container">
+            <div class="logo-panel pull-left">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="首页.html">
+                        <img src="assets/images/logo.png" alt="上品医生">
+                    </a>
+                </div>
+            </div>
+            <!-- /.logo-panel -->
+
+            <nav class="navbar pull-left" role="navigation">
+                <div class="navbar-panel clearfix">
+                    <ul class="nav navbar-nav">
+                        <li><a href="首页.html">首页</a></li>
+                        <li><a href="找医生.html">找医生</a></li>
+                        <li class="active"><a href="找医院.html">找医院</a></li>
+                        <li><a href="慈善救助.html">慈善救助</a></li>
+                        <li><a href="APP下载页.html">APP下载</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-panel -->
+            </nav>
+
+            <nav class="navbar user-navbar pull-right">
+                <div class="navbar-panel clearfix">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="登录.html"><img width="46px" height="46px" class="ie8br" src="assets/images/common/default-avatar.png" alt="默认头像"></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-panel -->
+            </nav>
+        </div>
+    </div>
+    <!-- /.head-title -->
+
+    <div id="topDesc" class="page-wrapper">
+        <div class="container">
+            <div class="info-wrp clearfix">
+                <div class="cover">
+                    <div class="img">
+                        <img width="240px" height="140px" src="assets/images/dummy/hospital/hospital_detail_cover2.jpg" alt="">
+                    </div>
+                    <div class="tags">
+                        <span class="label label-orange">三甲</span>
+                        <span class="label label-green">医保</span>
+                        <span class="label label-purple">体检</span>
+                        <span class="label label-pink">挂号</span>
+                    </div>
+                </div>
+
+                <div class="desc-info pull-left">
+                    <div class="info pull-left">
+                        <div class="name clearfix">
+                            <span class="title" href="javascript:alert('请添加链接');" title="">复旦大学附属华山医院</span>
+                            <div class="hos-rating bar-rating-sm bar-rating-inline-block bar-rating-yellow">
+                                <select class="bar-rating-instance"
+                                    bar-rating-initialRating="5"
+                                    bar-rating-theme="css-stars"
+                                    bar-rating-readonly="true">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="prop pull-left tel"><span class="lbl">电话：</span>028-87365412</div>
+                        <div class="prop pull-left addr"><span class="lbl">医院地址：</span>上海市静安区乌鲁木齐中路12号</div>
+                        <div class="prop pull-left map"><a href="javascript:alert('请添加链接');" title="查看地图">查看地图</a></div>
+                        <div class="clearfix"></div>
+
+                        <div class="prop intro">
+                            <span class="lbl">医院简介：</span>
+                            复旦大学附属华山医院是卫生部直属复旦大学（原上海医科大学）附属的一所综合性教学医院。
+                            建院于1907年，前身是中国红十字会总院，是上海地区中国人最早创办的医院，1991年重新恢复为中国
+                            红十字会直属医院。1992年首批通过国家三级甲等医院评审，目前已成为一所国家高层次的医疗机构，
+                            并为全国医疗、预防、教学、科研相结合的技术中... <a href="javascript:alert('请添加链接');" title="查看更多">更多</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="state-info pull-right">
+                    <ul>
+                        <li>咨询人数：<em>45541</em>次</li>
+                        <li>昨日访问：<em>1212</em>次</li>
+                        <li>医生数：<em>11</em>位</li>
+                    </ul>
+                    <div class="btn-wrp">
+                        <a href="javascript:alert('未实现');" class="btn btn-success ie8br">预约体验</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-wrapper reserve clearfix">
+        <div class="container search-info-wrp">
+            <div class="mod">
+                <div class="mod-heading">
+                    <div class="mod-heading-inner pad-left">
+                        <span class="title">预约挂号</span>
+                    </div>
+                </div>
+                <div class="mod-body clearfix">
+                    <div class="mod-body-inner">
+                        <div class="search-info pull-left">
+                            <div class="filter-list clearfix type">
+                                <span class="filter-label">科室筛选</span>
+                                <ul>
+                                    <li><a href="javascript:alert('请添加链接');" title="">全部（<em>1487</em>）</a></li>
+                                    <li><a href="javascript:alert('请添加链接');" title="">皮肤性病科（<em>10</em>）</a></li>
+                                    <li><a href="javascript:alert('请添加链接');" title="">内科（<em>65</em>）</a></li>
+                                    <li><a href="javascript:alert('请添加链接');" title="">男科（<em>75</em>）</a></li>
+                                    <li><a href="javascript:alert('请添加链接');" title="">妇科（<em>20</em>）</a></li>
+                                    <li><a href="javascript:alert('请添加链接');" title="">产科（<em>1</em>）</a></li>
+                                    <li><a href="javascript:alert('请添加链接');" title="">口腔科（<em>84</em>）</a></li>
+                                    <li><a href="javascript:alert('请添加链接');" title="">肿瘤科（<em>16</em>）</a></li>
+                                    <li><a href="javascript:alert('请添加链接');" title="">中医科（<em>41</em>）</a></li>
+                                    <li><a href="javascript:alert('请添加链接');" title="">内科（<em>20</em>）</a></li>
+                                    <li><a href="javascript:alert('请添加链接');" title="">男科（<em>41</em>）</a></li>
+                                    <li><a href="javascript:alert('请添加链接');" title="">妇科（<em>30</em>）</a></li>
+                                    <li><a href="javascript:alert('请添加链接');" title="">耳鼻喉科（<em>10</em>）</a></li>
+                                    <li><a href="javascript:alert('请添加链接');" title="">妇科（<em>20</em>）</a></li>
+                                    <li><a href="javascript:alert('请添加链接');" title="">产科（<em>1</em>）</a></li>
+                                    <li><a href="javascript:alert('请添加链接');" title="">外科（<em>36</em>）</a></li>
+                                    <li><a href="javascript:alert('请添加链接');" title="">骨外科（<em>87</em>）</a></li>
+                                    <li><a href="javascript:alert('请添加链接');" title="">儿科（<em>5</em>）</a></li>
+                                    <li><a href="javascript:alert('请添加链接');" title="">内科（<em>65</em>）</a></li>
+                                    <li><a href="javascript:alert('请添加链接');" title="">男科（<em>75</em>）</a></li>
+                                    <li><a href="javascript:alert('请添加链接');" title="">妇科（<em>20</em>）</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="help-info">
+                            <p class="title">挂号规则</p>
+                            <div class="rule-wrp">
+                                <ul>
+                                    <li>1.每日8:00左右更新后一天的号源；</li>
+                                    <li>2.预约成功后，请参考短信提示到相关医院就诊；</li>
+                                    <li>3.若需要取消预约，可在“我的”>“我的服务”中找到预约单，点击“取消服务”按钮即可取消预约；</li>
+                                    <li>4.实名制免费预约，与有效身份证件、社保卡直接关联；</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="page-wrapper doctors">
+        <div class="container">
+            <div class="mod">
+                <div class="mod-heading">
+                    <div class="mod-heading-inner pad-left">
+                        <a class="sort on" href="javascript:alert('请添加链接');" title="">综合<em>&uarr;</em></a>
+                        <a class="sort" href="javascript:alert('请添加链接');" title="">咨询量<em>&darr;</em></a>
+                        <a class="sort" href="javascript:alert('请添加链接');" title="">评分<em>&darr;</em></a>
+                    </div>
+                </div>
+                <div class="mod-body">
+                    <div class="mod-body-inner">
+                        <ul class="mod-list">
+
+                            <!-- 循环输出该项目 start -->
+                            <li>
+                                <div class="dr-item">
+                                    <a class="profile ie8br" href="找医生-医生详情.html">
+                                        <img class="ie8br" src="assets/images/dummy/avatar/doctor_detail_cover1.jpg" alt="">
+                                    </a>
+                                    <p class="title"><a href="找医生-医生详情.html">张庆云</a><span class="info">风湿科</span></p>
+                                    <p class="info hosp"><a href="找医院-医院详情.html" title="">复旦大学附属华山医院</a></p>
+                                    <p class="info state">已有<em>127</em>人咨询</p>
+                                    <div class="desc">
+                                        <p class="info">擅长治疗耳鼻喉头颈部各种良性恶性肿瘤，以及风湿关节炎的诊...</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 循环输出该项目 end -->
+
+                            <li>
+                                <div class="dr-item">
+                                    <a class="profile ie8br" href="找医生-医生详情.html">
+                                        <img class="ie8br" src="assets/images/dummy/avatar/doctor_detail_cover2.jpg" alt="">
+                                    </a>
+                                    <p class="title"><a href="找医生-医生详情.html">吴凡</a><span class="info">骨科</span></p>
+                                    <p class="info hosp"><a href="找医院-医院详情.html" title="">复旦大学附属华山医院</a></p>
+                                    <p class="info state">已有<em>127</em>人咨询</p>
+                                    <div class="desc">
+                                        <p class="info">斜视、弱视、复视、眼球震颤、屈光不正的诊断与治疗</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="dr-item">
+                                    <a class="profile ie8br" href="找医生-医生详情.html">
+                                        <img class="ie8br" src="assets/images/dummy/avatar/doctor_detail_cover3.jpg" alt="">
+                                    </a>
+                                    <p class="title"><a href="找医生-医生详情.html">苏宁云</a><span class="info">内科</span></p>
+                                    <p class="info hosp"><a href="找医院-医院详情.html" title="">复旦大学附属华山医院</a></p>
+                                    <p class="info state">已有<em>127</em>人咨询</p>
+                                    <div class="desc">
+                                        <p class="info">头颈部各种良性恶性肿瘤，以及风湿关节炎的诊...</p>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li>
+                                <div class="dr-item">
+                                    <a class="profile ie8br" href="找医生-医生详情.html">
+                                        <img class="ie8br" src="assets/images/dummy/avatar/doctor_detail_cover4.jpg" alt="">
+                                    </a>
+                                    <p class="title"><a href="找医生-医生详情.html">明道</a><span class="info">儿科</span></p>
+                                    <p class="info hosp"><a href="找医院-医院详情.html" title="">复旦大学附属华山医院</a></p>
+                                    <p class="info state">已有<em>127</em>人咨询</p>
+                                    <div class="desc">
+                                        <p class="info">中医药治疗各种原因引起的失眠症、抑郁症、焦虑症和戒除对镇静催眠类西药（安眠药）的依赖，社会上有“有失眠，找施明”之称。</p>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li>
+                                <div class="dr-item">
+                                    <a class="profile ie8br" href="找医生-医生详情.html">
+                                        <img class="ie8br" src="assets/images/dummy/avatar/doctor_detail_cover5.jpg" alt="">
+                                    </a>
+                                    <p class="title"><a href="找医生-医生详情.html">柯帆</a><span class="info">风湿科</span></p>
+                                    <p class="info hosp"><a href="找医院-医院详情.html" title="">复旦大学附属华山医院</a></p>
+                                    <p class="info state">已有<em>127</em>人咨询</p>
+                                    <div class="desc">
+                                        <p class="info">擅长治疗耳鼻喉头颈部各种良性恶性肿瘤，以及风湿关节炎的诊...</p>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li>
+                                <div class="dr-item">
+                                    <a class="profile ie8br" href="找医生-医生详情.html">
+                                        <img class="ie8br" src="assets/images/dummy/avatar/doctor_detail_cover6.jpg" alt="">
+                                    </a>
+                                    <p class="title"><a href="找医生-医生详情.html">吴大磊</a><span class="info">骨科</span></p>
+                                    <p class="info hosp"><a href="找医院-医院详情.html" title="">复旦大学附属华山医院</a></p>
+                                    <p class="info state">已有<em>127</em>人咨询</p>
+                                    <div class="desc">
+                                        <p class="info">擅长小儿呼吸系统、消化系统、营养性疾病等常见病、多发病的预防、临床诊断及治疗。</p>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li>
+                                <div class="dr-item">
+                                    <a class="profile ie8br" href="找医生-医生详情.html">
+                                        <img class="ie8br" src="assets/images/dummy/avatar/doctor_detail_cover7.jpg" alt="">
+                                    </a>
+                                    <p class="title"><a href="找医生-医生详情.html">牛洋</a><span class="info">脑科</span></p>
+                                    <p class="info hosp"><a href="找医院-医院详情.html" title="">复旦大学附属华山医院</a></p>
+                                    <p class="info state">已有<em>127</em>人咨询</p>
+                                    <div class="desc">
+                                        <p class="info">手足癣、带状疱疹、湿疹、皮炎、荨麻疹、银屑病、痤疮、黄褐斑、脱发、红斑狼疮</p>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li>
+                                <div class="dr-item">
+                                    <a class="profile ie8br" href="找医生-医生详情.html">
+                                        <img class="ie8br" src="assets/images/dummy/avatar/doctor_detail_cover8.jpg" alt="">
+                                    </a>
+                                    <p class="title"><a href="找医生-医生详情.html">何名扬</a><span class="info">皮肤科</span></p>
+                                    <p class="info hosp"><a href="找医院-医院详情.html" title="">复旦大学附属华山医院</a></p>
+                                    <p class="info state">已有<em>127</em>人咨询</p>
+                                    <div class="desc">
+                                        <p class="info">擅长治疗耳鼻喉头颈部各种良性恶性肿瘤，以及风湿关节炎的诊...</p>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li>
+                                <div class="dr-item">
+                                    <a class="profile ie8br" href="找医生-医生详情.html">
+                                        <img class="ie8br" src="assets/images/dummy/avatar/doctor_detail_cover9.jpg" alt="">
+                                    </a>
+                                    <p class="title"><a href="找医生-医生详情.html">黄莉莉</a><span class="info">神经科</span></p>
+                                    <p class="info hosp"><a href="找医院-医院详情.html" title="">复旦大学附属华山医院</a></p>
+                                    <p class="info state">已有<em>127</em>人咨询</p>
+                                    <div class="desc">
+                                        <p class="info">鼻息肉、鼻窦炎、鼻腔良恶性肿瘤、甲状腺及腮腺良恶性肿瘤、咽喉肿瘤、胆脂瘤中耳炎、分泌性中耳炎、鼾症和经鼻微创手术。</p>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li>
+                                <div class="dr-item">
+                                    <a class="profile ie8br" href="找医生-医生详情.html">
+                                        <img class="ie8br" src="assets/images/dummy/avatar/doctor_detail_cover10.jpg" alt="">
+                                    </a>
+                                    <p class="title"><a href="找医生-医生详情.html">吴丽阳</a><span class="info">妇科</span></p>
+                                    <p class="info hosp"><a href="找医院-医院详情.html" title="">复旦大学附属华山医院</a></p>
+                                    <p class="info state">已有<em>127</em>人咨询</p>
+                                    <div class="desc">
+                                        <p class="info">在过敏性鼻炎、慢性鼻窦炎、慢性咽喉炎、中耳炎、耳部带状疱疹、耳鸣耳聋、内耳眩晕病方面有丰富的诊治经验。尤其擅长耳聋耳鸣、各类眩晕病、过敏性鼻炎、慢性咽炎</p>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li>
+                                <div class="dr-item">
+                                    <a class="profile ie8br" href="找医生-医生详情.html">
+                                        <img class="ie8br" src="assets/images/dummy/avatar/doctor_detail_cover11.jpg" alt="">
+                                    </a>
+                                    <p class="title"><a href="找医生-医生详情.html">百合</a><span class="info">中医科</span></p>
+                                    <p class="info hosp"><a href="找医院-医院详情.html" title="">复旦大学附属华山医院</a></p>
+                                    <p class="info state">已有<em>127</em>人咨询</p>
+                                    <div class="desc">
+                                        <p class="info">呼吸道疾病(感冒、咳嗽、气管—支气管炎、哮喘、肺气肿、肺心病、肺癌)、消化道疾病、失眠、头痛、老年性疾病及各类体质虚症调理。</p>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li>
+                                <div class="dr-item">
+                                    <a class="profile ie8br" href="找医生-医生详情.html">
+                                        <img class="ie8br" src="assets/images/dummy/avatar/doctor_detail_cover12.jpg" alt="">
+                                    </a>
+                                    <p class="title"><a href="找医生-医生详情.html">柯勇</a><span class="info">风湿科</span></p>
+                                    <p class="info hosp"><a href="找医院-医院详情.html" title="">复旦大学附属华山医院</a></p>
+                                    <p class="info state">已有<em>127</em>人咨询</p>
+                                    <div class="desc">
+                                        <p class="info">眼部整形、青光眼、白内障、眼部整形、白内障手术</p>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li>
+                                <div class="dr-item">
+                                    <a class="profile ie8br" href="找医生-医生详情.html">
+                                        <img class="ie8br" src="assets/images/dummy/avatar/doctor_detail_cover13.jpg" alt="">
+                                    </a>
+                                    <p class="title"><a href="找医生-医生详情.html">王誉霖</a><span class="info">骨科</span></p>
+                                    <p class="info hosp"><a href="找医院-医院详情.html" title="">复旦大学附属华山医院</a></p>
+                                    <p class="info state">已有<em>127</em>人咨询</p>
+                                    <div class="desc">
+                                        <p class="info">乳腺疾病情志疏导工作、音乐及气功导引疗法等。</p>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li>
+                                <div class="dr-item">
+                                    <a class="profile ie8br" href="找医生-医生详情.html">
+                                        <img class="ie8br" src="assets/images/dummy/avatar/doctor_detail_cover14.jpg" alt="">
+                                    </a>
+                                    <p class="title"><a href="找医生-医生详情.html">李明宇</a><span class="info">内科</span></p>
+                                    <p class="info hosp"><a href="找医院-医院详情.html" title="">复旦大学附属华山医院</a></p>
+                                    <p class="info state">已有<em>127</em>人咨询</p>
+                                    <div class="desc">
+                                        <p class="info">擅长治疗耳鼻喉头颈部各种良性恶性肿瘤，以及风湿关节炎的诊...</p>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li>
+                                <div class="dr-item">
+                                    <a class="profile ie8br" href="找医生-医生详情.html">
+                                        <img class="ie8br" src="assets/images/dummy/avatar/doctor_detail_cover15.jpg" alt="">
+                                    </a>
+                                    <p class="title"><a href="找医生-医生详情.html">王宇</a><span class="info">儿科</span></p>
+                                    <p class="info hosp"><a href="找医院-医院详情.html" title="">复旦大学附属华山医院</a></p>
+                                    <p class="info state">已有<em>127</em>人咨询</p>
+                                    <div class="desc">
+                                        <p class="info">擅长治疗耳鼻喉头颈部各种良性恶性肿瘤</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <nav class="pagination-wrp">
+                        <ul class="pagination">
+                            <li class="disabled">
+                                <a href="javascript:alert('请添加链接');" aria-label="上一页">
+                                    <span aria-hidden="true">上一页</span>
+                                </a>
+                            </li>
+                            <li class="active"><a href="javascript:alert('请添加链接');">1</a></li>
+                            <li><a href="javascript:alert('请添加链接');">2</a></li>
+                            <li><a href="javascript:alert('请添加链接');">3</a></li>
+                            <li class="conn"><span>···</span></li>
+                            <li><a href="javascript:alert('请添加链接');">50</a></li>
+                            <li>
+                                <a href="javascript:alert('请添加链接');" aria-label="下一页">
+                                    <span aria-hidden="true">下一页</span>
+                                </a>
+                            </li>
+                            <li><span>共50页</span></li>
+                            <li>
+                                <div class="input-group">
+                                    <div class="input-group-addon">转到</div>
+                                    <input class="form-control"></input>
+                                </div>
+                            </li>
+
+                            <li>
+                                <button class="btn btn-green ie8br">Go</button>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.page-main -->
+
+    <footer class="footer clearfix">
+        <div class="ft-info container">
+            <p class="ft-links">
+                <a href="javascript:alert('请添加链接');" title="">关于上品</a>
+                <a href="javascript:alert('请添加链接');" title="">合作机会</a>
+                <a href="javascript:alert('请添加链接');" title="">联系我们</a>
+                <a href="javascript:alert('请添加链接');" title="">帮助中心</a>
+                <a href="javascript:alert('请添加链接');" title="">在线客服</a>
+            </p>
+            <p class="copyright">Copyright © 2011-2015 shangpingzhuanyi.com All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <!--[if lt IE 9]>
+        <script src="bower_components/jquery-legacy/dist/jquery.min.js"></script>
+        <script src="bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+    <![endif]-->
+    <!--[if (gte IE 9) | (!IE)]><!-->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!--<![endif]-->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- jQuery Bar Rating -->
+    <script src="bower_components/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
+    <!-- Core Scripts -->
+    <script src="assets/js/core.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="assets/js/ie_fix.js"></script>
+    <![endif]-->
+
+</body>
+
+</html>

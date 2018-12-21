@@ -1,0 +1,528 @@
+/* CSS Document */
+@charset "utf-8";
+
+body,div,p,ul,li,dl,dt,dd,h1,h2,h3,h5,a,img{margin:0; padding:0;}/*标签重置*/
+a , img{border:none;}	/*对边框的重置*/
+.clear{claear: both;}
+*{font-family: "Microsoft Yahei";}
+html, body{ margin:0; height:100%; }
+ul, li{ list-style:none; }
+.clear{ clear:both;}
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.header {
+	width: 100%;
+	min-width: 960px;
+	height: 82px;
+	background: #71B7EA;
+	border-bottom: solid 6px #4DB8E3;
+}
+.logo {
+	float: left;
+	margin-top: 10px;
+}
+.navBar {	
+	float: right;
+}
+.navBar li {
+	float: left;
+}
+.navBar li a{
+	display: block;
+	width: 80px;
+	height: 82px;
+	line-height: 82px;
+	text-align: center;
+	font-size: 15px; 
+	color: #fff; 
+	text-decoration: none;
+	float: left;
+}
+.active {
+	border-bottom: solid 6px #2590BB;
+}
+.nav-icon {
+	margin-right: 4px;
+}
+#banner {
+	position: relative;
+}
+.bannerBox{
+	width: 100%;
+	min-width: 960px;
+}
+.banner-btn-bj { 	
+	height: 24px;
+	position: absolute;
+	bottom: 0;
+	z-index: 99;
+	text-align: center;
+}
+#bannerBtn li {
+	float: left;
+	display: inline;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	margin-right: 5px;
+	background: #111;
+	cursor: pointer;
+	color: #fff;
+}
+#bannerBtn li.cc {
+	background: #323232;
+	color: #1A8FCA;
+}
+#bannerMain {
+	width: 100%;
+	overflow: hidden;
+}
+#bannerMain img{
+	width: 100%;
+	min-width: 960px;
+}
+
+
+/*中间部分内容CSS*/
+#content {	
+	min-width: 960px;
+	background: url("../images/bg.jpg") no-repeat top;
+	background-size: 100% 100%;
+}
+.title-box {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	border-bottom: solid 1px #8CA7B2;
+}
+.title-box a{
+	text-decoration: none;
+	font-size: 14px;
+	color: #8CA7B2;
+}
+.l-title {
+	font-size: 26px;
+	font-weight: 400;
+}
+.title-box h1 {
+	font-size: 36px;
+	font-weight: 400;	
+}
+.title-box .eng {
+	font-family: 'SimHei',Arial,"Times New Roman"; 
+	font-size: 34px;
+	font-weight: bold;
+	margin-right: 10px;
+	text-transform: uppercase;
+}
+.viewAll {
+	position: absolute;
+	right: 0;
+	top: 40px;
+	display: block;
+	width: 98px;
+	height: 32px;
+	line-height: 32px;
+	border: solid 1px #8CA7B2;
+	text-transform: uppercase;
+}
+.viewAll:hover {
+	background: #8CA7B2;
+	color: #fff;
+}
+.cont-box {
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+.news-grid {
+	position: relative;
+	float: left;
+	width: 312px;
+	height: 212px;
+	background: #f1f1f1;
+	color: #fff;
+}
+.news-grid img {
+	width: 312px;
+	height: 212px;
+}
+.news-grid-day {
+	position: absolute;
+	top: 6px;
+	left: 12px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.news-grid-year {
+	position: absolute;
+	top: 22px;
+	left: 12px;
+	font-size: 10px;
+	font-weight: bold;	
+}
+.news-grid-title {
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 312px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 15px;
+	font-weight: 100;
+	text-align: center;
+	z-index: 2;
+}
+.news-grid-title-bg {
+	position: absolute;
+	bottom: 0;
+	width: 312px;
+	height: 50px;
+	background: #000;
+	filter: alpha(opacity:60);  
+    -moz-opacity: 0.6;  
+    -khtml-opacity: 0.6;  
+    opacity: 0.6;  
+}
+.n-right {
+	margin-right: 12px;
+}
+.about-us img{
+	width: 100%;
+	min-width: 960px;
+	background: #f1f1f1;
+}
+.course-grid {
+	position: relative;
+	float: left;
+	width: 212px;
+	height: 212px;
+	color: #fff;
+	background: #f1f1f1;
+}
+.course-grid img {
+	width: 212px;
+	height: 212px;
+}
+.course-grid-title {
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 212px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 15px;
+	font-weight: 100;
+	text-align: center;
+	z-index: 3;
+}
+.course-grid-title-bg {
+	position: absolute;
+	bottom: 0;
+	width: 212px;
+	height: 50px;
+	background: #000;
+	filter: alpha(opacity:60);  
+    -moz-opacity: 0.6;  
+    -khtml-opacity: 0.6;  
+    opacity: 0.6;  
+}
+.c-right {
+	margin-right: 37px;
+}
+.c-top {
+	margin-top: 37px;
+}
+.teachers img {
+	width: 100%;
+	min-width: 960px;
+	background: #f1f1f1;
+}
+.platform-grid {
+	position: relative;
+	float: left;
+	width: 312px;
+	height: 246px;
+}
+.platform-grid h2 {
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 312px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 30px;
+	font-weight: 500;
+	text-align: center;
+	color: #2D2D2D;
+	z-index: 3;	
+}
+.platform-wh {
+	background: url("../images/platform-1.png") no-repeat top;
+}
+.platform-jc {
+	background: url("../images/platform-2.png") no-repeat top;
+}
+.platform-gy {
+	background: url("../images/platform-3.png") no-repeat top;
+}
+.link-title-box {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 20px;
+}
+.link-title-box h1 {
+	font-size: 26px;
+	font-weight: 500;	
+}
+.link-title-box .eng {
+	font-family: Arial;
+	margin-right: 8px;
+	text-transform: uppercase;	
+}
+.link-grid {
+	float: left;
+	width: 150px;
+	height: 50px;
+	background: #f1f1f1;
+	margin-bottom: 200px;
+}
+.links-1 {
+	width: 180px;
+	height: 50px;
+	background: url("../images/links-1.png") no-repeat top;	
+}
+.links-2 {
+	width: 200px;
+	height: 50px;
+	background: url("../images/links-2.png") no-repeat top;	
+}
+.links-3 {
+	width: 200px;
+	height: 50px;
+	background: url("../images/links-3.png") no-repeat top;	
+}
+.links-4 {
+	width: 240px;
+	height: 50px;
+	background: url("../images/links-4.png") no-repeat top;	
+}
+.l-left {
+	float: left;
+}
+.l-right {
+	float: right;
+}
+
+.l-margin {
+	margin-left: 40px;
+}
+
+/*底部部分内容CSS*/
+#bottom {
+	width: 100%;
+	min-width: 960px;
+	height: 412px;
+	background: #232323;
+}
+.bottom-box {
+	height: 360px;
+	position: relative;
+	color: #979797;
+}
+.bot-icon {
+	float: left;
+	color: #fff;
+	margin-top: 6px;
+}
+.bot-word {
+	float: right;
+	display: block;
+	width: 250px;
+	text-align: left;
+}
+.contact-box {
+	position: absolute;
+	top: 80px;
+	width: 280px;
+	text-align: left;
+}
+.contact-box h2 {
+	font-size: 24px;
+	font-weight: 500;
+	padding-bottom: 20px;
+}
+.contact-box p {
+	font-size: 16px;
+	line-height: 30px;
+	clear: both;
+}
+.map-box {
+	position: absolute;
+	left: 320px;
+	top: 40px;
+	width: 320px;
+	text-align: center;
+}
+.map-box h2 {	
+	font-size: 24px;
+	font-weight: 500;
+	padding-bottom: 10px;
+}
+.map-box a {
+	color: #979797;
+	text-decoration: none;
+}
+.map-box .little-map {
+	margin-bottom: 10px;
+}
+.code-box {
+	position: absolute;
+	right: 0;
+	top: 80px;
+	text-align: center;
+}
+.code-box h2 {	
+	font-size: 24px;
+	font-weight: 500;
+	padding-bottom: 20px;
+}
+.weibo-grid {
+	float: left;
+	margin-right: 10px;
+	width: 108px;
+	font-size: 13px;
+}
+.weixin-grid {
+	float: right;
+	width: 108px;
+	font-size: 13px;
+}
+.code {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 8px;
+	border: solid 4px #8A6CFE;
+}
+.footer {
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	color: #4F4F4F;
+}
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	overflow: hidden;
+	width: 48px;
+	height: 48px;
+	border: none;
+	text-indent: 100%;
+	background: url("../images/to-top.png") no-repeat 0px 0px;
+}
+/*  首页CSS结束  CSS*/
+
+
+/*  简介页面CSS  CSS*/
+.about-page-banner {
+	position: relative;
+}
+.about-page-banner h1 {	
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	font-size: 36px;
+	font-weight: 400;
+	color: #fff;
+}
+.about-us-pic img{
+	width: 100%;
+	min-width: 960px;
+}
+.company-about, .company-plaform {
+	margin-bottom: 80px;
+}
+.cont-title {
+	font-size: 32px;
+	font-weight: 400;
+	color: #2F2F2F;
+	text-align: center;	
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+.title-line {
+}
+.cont-p {
+	width: 660px;
+	margin: 0 auto;
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: 600;
+	text-align: center;
+	color: #2F2F2F;
+	margin-bottom: 30px;
+}
+.company-feature {
+	margin: 100px 0 130px; 
+}
+.feature-box {
+	float: left;
+	position: relative;
+	width: 320px;
+	height: 460px;
+	background: #f1f1f1;
+	text-align: center;
+}
+.feature-box h2{
+	font-size: 36px;
+	text-transform: uppercase;	
+	font-weight: bold;
+	color: #fff;
+	margin-top: 260px;
+}
+.feature-box span{
+	font-size: 13px;
+	color: #fff;
+}
+.feature-box p{
+	width: 280px;
+	margin: 10px auto 0;
+	font-size: 16px;
+	color: #373737;
+	line-height: 24px;
+}
+.child {
+	background: url("../images/child.jpg") no-repeat center;
+}
+.music {
+	background: url("../images/music.jpg") no-repeat center;
+}
+.future {
+	background: url("../images/future.jpg") no-repeat center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

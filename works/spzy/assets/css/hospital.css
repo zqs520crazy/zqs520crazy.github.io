@@ -1,0 +1,360 @@
+.label {
+    font-weight: 400;
+}
+.label-orange {
+    background-color: #ffa811;
+}
+.label-green {
+    background-color: #7dd320;
+}
+.label-purple {
+    background-color: #b39ddb;
+}
+.label-pink {
+    background-color: #f48fb1;
+}
+
+/* 找医院 列表 */
+
+.page-wrapper.main {
+    margin-top: 20px;
+}
+.page-wrapper.main .mod .mod-heading-inner {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.page-wrapper.main .mod .mod-body {
+    padding: 0 39px;
+}
+.mod .mod-body .mod-list {
+    list-style: none;
+    padding-left: 0;
+}
+.mod .mod-body .mod-item {
+    padding: 25px 0 25px;
+    border-bottom: 1px solid #eeeeee;
+}
+.mod .mod-body .mod-item .info {
+    margin-left: 20px;
+    max-width: 640px;
+}
+.mod .mod-body .mod-item .info .name a {
+    max-width: 100%;
+    overflow: hidden;
+    line-height: 45px;
+    height: 45px;
+    font-size: 18px;
+    color: #3a3a3a;
+}
+.mod .mod-body .mod-item .info .name a:focus,
+.mod .mod-body .mod-item .info .name a:hover {
+    color: #1aa0f7;
+}
+
+.mod .mod-body .mod-item .info .name span {
+    margin-left: 5px;
+    color: #999;
+}
+.mod .mod-body .mod-item .info .prop {
+    font-size: 16px;
+    color: #676767;
+    margin-bottom: 2px;
+}
+
+.mod .mod-body .mod-item .opt {
+    width: 255px;
+    margin-right: 50px;
+    border-left: 1px solid #eeeeee;
+}
+.mod .mod-body .mod-item .opt p {
+    text-align: right;
+    font-size: 16px;
+    color: #676767;
+    margin-bottom: 5px;
+}
+.mod .mod-body .mod-item .opt p.reserve {
+    margin-top: 15px;
+}
+.mod .mod-body .mod-item .opt a {
+    border: 1px solid #1ea7eb;
+    color: #1ea7eb;
+    padding: 8px 10px;
+    line-height: 1em;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.mod .mod-body .mod-item .opt a:focus,
+.mod .mod-body .mod-item .opt a:hover {
+    text-decoration: none;
+    background-color: #1ea7eb;
+    color: #fff;
+}
+.mod .mod-body .mod-item .opt a em {
+    font-style: normal;
+}
+
+
+/* 找医院 详情 */
+
+.info-wrp {
+    background-color: #fff;
+    position: relative;
+    height: 250px;
+}
+
+.cover {
+    position: absolute;
+    top: 35px;
+    left: 25px;
+}
+.cover .tags {
+    margin-top: 20px;
+}
+.cover .tags .label {
+    font-size: 10px;
+    margin-right: 20px;
+    padding: 1px 3px 2px;
+}
+
+.desc-info {
+    width: 920px;
+    background-color: #fff;
+    padding-left: 280px;
+    padding-top: 5px;
+}
+.desc-info .info .name {
+    padding-top: 25px;
+    margin-bottom: 15px;
+}
+.desc-info .info .title {
+    float: left;
+    font-size: 20px;
+}
+.desc-info .info .hos-rating {
+    float: left;
+    margin-left: 20px;
+    padding-top: 4px;
+}
+.desc-info .info .prop.pull-left {
+    margin-bottom: 15px;
+}
+.desc-info .info .prop.tel {
+    margin-right: 30px;
+}
+.desc-info .info .prop.addr {
+    margin-right: 10px;
+}
+.desc-info .info .prop a {
+    color: #1aa1f6;
+}
+.desc-info .info .prop .lbl {
+    color: #666;
+}
+
+.state-info {
+    position: relative;
+    border: 1px solid #dddddd;
+    border-top: 10px solid #ffa726;
+    width: 188px;
+    height: 188px;
+    margin-top: 28px;
+    margin-right: 48px;
+    padding-top: 30px;
+}
+.state-info:before,
+.state-info:after {
+    position: absolute;
+    display: block;
+    content: " ";
+    background-color: #e8e8e8;
+    width: 8px;
+    height: 30px;
+    left: 32px;
+    top: -20px;
+}
+.state-info:after {
+    left: auto;
+    right: 32px;
+}
+.state-info ul {
+    list-style-type: none;
+    width: 100%;
+    padding-left: 40px;
+    margin-bottom: 25px;
+}
+.state-info ul>li {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.state-info ul>li em {
+    color: #333;
+    font-style: normal;
+}
+.state-info .btn-wrp {
+    text-align: center;
+}
+.state-info .btn-wrp .btn {
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    padding-top: 4px;
+    background-color: #01dd61;
+    border-color: #01dd61;
+}
+
+/* 详情 预约挂号 */
+
+.page-wrapper.reserve {
+    margin-top: 20px;
+}
+.page-wrapper.reserve .mod {
+    margin-bottom: 0;
+}
+.page-wrapper.reserve .mod .mod-body {
+    padding: 0 30px;
+}
+
+.page-wrapper.reserve .search-info {
+    padding-top: 20px;
+    width: 750px;
+}
+
+.help-info {
+    padding-top: 25px;
+}
+.help-info .title {
+    color: #3a3a3a;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.help-info .rule-wrp {
+    color: #666;
+}
+.help-info .rule-wrp ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.help-info .rule-wrp ul li {
+    line-height: 26px;
+}
+
+/* 详情 医生列表 */
+
+.page-wrapper.doctors {
+    margin-top: 20px;
+}
+.page-wrapper.doctors .mod .mod-body {
+    padding: 25px 36px;
+}
+.page-wrapper.doctors .mod-body .mod-body-inner {
+    width: 1200px;
+}
+.page-wrapper.doctors .mod .mod-body .mod-list {
+    list-style: none;
+    padding-left: 0;
+}
+.page-wrapper.doctors .mod .mod-body .mod-list>li {
+    width: 200px;
+    height: 260px;
+    float: left;
+    margin-bottom: 24px;
+    margin-right: 24px;
+}
+
+
+/* 详情右边栏(暂时废弃) */
+
+.side-content {
+    width: 310px;
+}
+.side-content .mod {
+    margin-bottom: 20px;
+}
+
+.side-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.side-content .mod .mod-heading .ico {
+    vertical-align: top;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.side-content .mod.help ul>li>a {
+    line-height: 1.8em;
+    color: #666;
+}
+.side-content .mod.help ul>li>a:focus,
+.side-content .mod.help ul>li>a:hover {
+    text-decoration: none;
+    color: #1aa0f7;
+}
+
+.side-content .mod.reco ul>li {
+    margin-bottom: 20px;
+}
+.side-content .mod.reco ul>li:last-child {
+    margin-bottom: 5px;
+}
+.side-content .act .cover {
+    text-align: center;
+}
+.side-content .act .cover a {
+    display: block;
+    overflow: hidden;
+}
+.side-content .act .detail {
+    border: 1px solid #e4e4e4;
+    border-top: none;
+    padding: 5px 7.5px;
+}
+.side-content .act .progress-wrp {
+    margin-top: 0;
+}
+.side-content .act .progress,
+.side-content .act .progress-bar {
+    border-radius: 5px;
+    height: 5px;
+}
+.side-content .act .progress {
+    width: 205px;
+    margin-bottom: 7.5px;
+}
+.side-content .act .progress-bar {
+    background-color: #a2c538;
+}
+.side-content .act .progress-label {
+    font-size: 12px;
+    margin-top: 2px;
+}
+.side-content .act .name {
+}
+.side-content .act p {
+    margin-bottom: 0;
+}
+.side-content .act .text {
+    color: #afafaf;
+    font-size: 12px;
+    position: relative;
+}
+.side-content .act .text .text-danger {
+    color: #ff6c00;
+}
+.side-content .act .help-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #ff6c00;
+    font-size: 12px;
+    color: #fff;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+.side-content .act .help-btn:focus,
+.side-content .act .help-btn:hover {
+    text-decoration: none;
+}

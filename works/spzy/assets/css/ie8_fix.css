@@ -1,0 +1,51 @@
+.form-signin .input-group .form-control {
+    padding-top: 10px !important;
+    padding-bottom: 30px !important;
+}
+
+.pagination .input-group .form-control {
+    padding-bottom: 7px;
+}
+
+/* 我的资料 */
+
+.user-info .info-panel .control-label {
+    padding-top: 6px;
+}
+
+.user-info .info-panel .form-inline .radio {
+    padding-bottom: 2px;
+}
+.user-info .info-panel .form-inline .radio label {
+    min-width: 40px;
+}
+
+/* APP 下载页面 */
+
+.user-app-info .links .btn i {
+    background-size: 100% 100%;
+}
+
+.user-app-info .links .btn.android i {
+    background-position: 0 0;
+    background-image: url(../images/app/android_light_ie8.png);
+}
+.user-app-info .links .btn.android:focus i,
+.user-app-info .links .btn.android:hover i {
+    background-position: 0 0;
+    background-image: url(../images/app/android_white.png);
+}
+
+.user-app-info .links .btn.ios i {
+    background-position: 0 0;
+    background-image: url(../images/app/ios_light_ie8.png);
+}
+.user-app-info .links .btn.ios:focus i,
+.user-app-info .links .btn.ios:hover i {
+    background-position: 0 0;
+    background-image: url(../images/app/ios_white.png);
+}
+
+.ie8br {
+    /* behavior: url(assets/css/pie.htc); */
+}

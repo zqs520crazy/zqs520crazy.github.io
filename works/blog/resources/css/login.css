@@ -1,0 +1,102 @@
+/* CSS Document */
+@charset "utf-8";
+body,div,input,p,a{
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei UI";
+}/*标签重置*/
+body{
+	background: #ccc;
+}
+#bg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#loginBox{
+	width: 260px;
+	height: 240px;
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -180px;
+	margin-left: -130px;
+	text-align: center;
+}
+#loginBox img{
+	width: 210px;
+	height: 46px;
+	margin-bottom: 14px;
+}
+.name_input, .password_input{
+	width: 260px;
+	height: 45px;
+	font-size: 14px;
+	border: none;
+	text-indent: 1em;
+	outline: none;	/* 取消掉谷歌浏览器外框的选中效果 */
+}
+.name_input{
+	border-bottom: 1px solid #E3E3E3;
+	/* 设置圆角效果 */
+	/* Gecko browsers */
+	-moz-border-radius-topleft: 2px;
+	-moz-border-radius-topright: 2px;
+	/* Webkit browsers */
+	-webkit-border-top-left-radius: 2px;
+	-webkit-border-top-right-radius: 2px;
+	/* W3C syntax */
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+.password_input{
+	/* 设置圆角效果 */
+	/* Gecko browsers */
+	-moz-border-radius-bottomleft: 2px;
+	-moz-border-radius-bottomright: 2px;
+	/* Webkit browsers */
+	-webkit-border-bottom-left-radius: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	/* W3C syntax */
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+.login_btn{
+	width: 260px;
+	height: 45px;
+	border: none;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	background: #529ECC;
+	margin-top: 16px;
+}
+.reg_box, .login_btn{
+	/* 圆角效果 */
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+.reg_box{
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	display: block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	background: #ccc;
+	/* 兼容主流浏览器的透明度设置 */
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+
+
