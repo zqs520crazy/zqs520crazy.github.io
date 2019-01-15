@@ -14,7 +14,7 @@ html,body {
 
 /* 定义全局样式变量 */
 :root{
-  --workcolor: #389ad7; /*works主色*/
+  --workcolor: #3dfaff; /*works主色*/
   --labcolor: #ffec00; /*labs主色*/
 }
 
@@ -92,6 +92,7 @@ body.labs {
     background: #fff;
     box-shadow: 0 3px 6px 2px rgba(0,0,0,.02);
     padding: 15px 12px;
+    padding-right: 20px;
     text-align: left;
 	background: url(../imgs/arow_basic.png) 99% center no-repeat #fff;
     background-size: 20px;
@@ -106,7 +107,7 @@ body.labs {
 }
 .box p {
  	font-size: 14px;
-    color: #646464;
+    color: #767676;
 }
 
 
@@ -126,15 +127,45 @@ body.labs {
 
 
 /* 响应式样式 */
-@media screen and (max-width:1280px) {
-    .wrapper {
-		width: 90%;
+@media screen and (max-width:1280px) {   
+	.top h1 span{
+		font-size: 48px;
+	}
+	.top h1 span:before {
+		width: 10px;
+		height: 24px;
+		left: -40px;
+		top: 22px;
+	}
+	.top h1 span:after {
+		width: 10px;
+		height: 24px;
+		right: -40px;
+		top: 22px;
+	}
+	.top #oDiv p {
+		font-size: 20px;
 	}
 }
 
 @media screen and (max-width:960px) {
     .wrapper {
 		width: 90%;
+	}
+	.top h1 span{
+		font-size: 42px;
+	}
+	.top h1 span:before {
+		width: 10px;
+		height: 24px;
+		left: -30px;
+		top: 16px;
+	}
+	.top h1 span:after {
+		width: 10px;
+		height: 24px;
+		right: -30px;
+		top: 16px;
 	}
 }
 
@@ -144,9 +175,27 @@ body.labs {
 	}
 }
 
-@media screen and (max-width:480px) {
-    .wrapper {
-		width: 96%;
+@media screen and (max-width:480px) {   
+	.top {
+		padding: 80px 10px 30px;
+	}
+    .top h1 span{
+		font-size: 32px;
+	}
+	.top h1 span:before {
+		width: 6px;
+		height: 20px;
+		left: -20px;
+		top: 12px;
+	}
+	.top h1 span:after {
+		width: 6px;
+		height: 20px;
+		right: -20px;
+		top: 12px;
+	}
+	.top #oDiv p {
+		font-size: 16px;
 	}
 
 
@@ -157,7 +206,6 @@ body.labs {
 	.copyright p {
 		font-size: 12px;
 		color: #000;
-		opacity: 0.4;
 	}
 }
 
