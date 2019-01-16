@@ -77,12 +77,17 @@ html,body {
 }
 .article h3 {
 	font-size: 16px;
+	color: #444;
 }
 .article p {
 	font-size: 16px;
 	color: #535353;
 	line-height: 32px;
 	margin: 20px 0;
+}
+.article p a {
+	font-size: 16px;
+	color: var(--maincolor);
 }
 .article .img-box {
 	text-align: center;

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>文章详情 - QING点</title>
+    <meta name="keywords" content="QING点,资源分享,工作经验,文章资讯,交互设计" /> 
+    <meta name="Description" content="QING点是一个专注于分享文章的个人博客网站,联系邮箱:zqs520crazy@163.com" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no;">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="../../resources/imgs/favicon.ico">
+    <link href="../../resources/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../../resources/css/article.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="Top">
+        <div class="header">
+            <div class="wrapper">
+                <div class="title">
+                    <h1>交互设计控件大盘点，梳理控件的名称和使用事项</h1>
+                    <p>2018-06-24</p>
+                </div>
+            </div>  
+        </div>        
+    </div>
+    <div id="Main">
+        <div class="wrapper">
+            <div class="content">
+                <div class="article">
+                    <div class="ps-row">本文系转载或参考，<a href="https://weibo.com/ftium4"  target="_blank">作者微博</a></div>
+
+                    <h2>参考文章：</h2>
+                    <p><a href="https://www.uisdc.com/ui-element-popover"  target="_blank">《「这个控件叫什么」系列之Popover/气泡弹出框/弹出式气泡》</a></p>
+                    <p><a href="https://www.uisdc.com/badge-az-index-segment-controls"  target="_blank">《「这个控件叫什么」系列之小红点+索引导航+分段控件》</a></p>
+                    <p><a href="https://www.uisdc.com/skeleton-screen-page-indicator"  target="_blank">《「这个控件叫什么」系列之加载占位图+页面指示器》</a></p>
+                    <p><a href="https://www.uisdc.com/stepper-and-switch"  target="_blank">《「这个控件叫什么」系列之步进器+SWITCH》</a></p>
+                    <p><a href="https://www.uisdc.com/ui-element-toast?_t=t"  target="_blank">《「这个控件叫什么」系列之TOAST》</a></p>
+                    <p><a href="https://www.uisdc.com/soft-keyboard-design-element"  target="_blank">《「这个控件叫什么」系列之虚拟键盘/软键盘/SOFT KEYBOARD》</a></p>
+                    <p><a href="https://www.uisdc.com/ui-element-action-sheet"  target="_blank">《「这个控件叫什么」系列之动作菜单/动作面板》</a></p>
+
+                    <h1>1、Popover（气泡弹出框/弹出式气泡/气泡）</h1>
+                    <h2>iOS平台</h2>
+                    <p>Popover（气泡弹出框/弹出式气泡/气泡）是由一个矩形和三角箭头组成的弹出窗口，箭头指向的地方通常是导致Popover弹出的控件或区域。通过点击Popover内的按钮或非Popover的屏幕其他区域可关闭Popover。</p>
+                    <div class="img-box"><img src="1-1.png" class="middle-pic"></div>
+                    <p>点击某控件或区域弹出Popover后，Popover出现在使其触发的控件附近，箭头的指向很好的表达了Popover和触发控件的潜在关系，用户的注意力能马上被吸引过来。而且把手指或鼠标指针从触发控件移动到Popover的距离很近，操作非常顺手、效率高。</p>
+                    <div class="img-box"><img src="1-2.png" class="middle-pic"></div>
+                    <p>如果界面中有多个条目，而且每个条目都有多个相关选项，使用Popover承载多个情境下的相关选项是个不错的方案。在手机上，相比于Action Sheet，Popover的三角箭头能明确的指示当前操作的是哪个条目，不易出错。Popover显示区域较小呈现的选项有限，为了防止误操作不建议在Popover里启用滚动，如果选项很多，建议使用Action Sheet。</p>
+                    <div class="img-box"><img src="1-3.png" class="middle-pic"></div>
+                    <p>Popover的三角箭头这一独特特性，同样适合作为提示引导或者展示附属信息。每当上线新功能，用Popover能很好的吸引用户注意力，引导用户了解新功能。界面图形较多的情况下，用Popover简短的展示附属文字信息，能帮助用户很好的理解图形的含义。</p>
+                    <div class="img-box"><img src="1-4.png" class="middle-pic"></div>
+                    <h2>Android平台</h2>
+                    <p>Material design中Contextual menus（情境菜单，详见 https://material）和Popover用法类似，除了没有三角箭头指示触发区域外，另一个不同是Contextual menus会根据App的当前状态，来动态调整菜单选项的数量，例如文本选择，文本编辑类App有全选、剪贴、复制和粘贴三个选项，但是在网页选中文本只有复制一个选项，因为此时不能剪贴和粘贴。</p>
+                    <div class="img-box"><img src="1-5.png" class="middle-pic"></div>
+                    <p>在App bar点击“更多”图标展开的菜单被称为Overflow menu（溢出菜单），App bar图标太多放不下，其他图标从App bar“溢出”到“更多”里去了，是个比较形象的命名。</p>
+                    <div class="img-box"><img src="1-6.png" class="middle-pic"></div>
+
+                    <h1>2、Badge/徽标/小红点</h1>
+                    <h2>iOS平台</h2>
+                    <p>「小红点」是这个控件在国内最通俗的称呼，正式的名称为「Badge」（徽标），Badge是指通常出现在图标或文字右上角的红色圆点、数字或者文字，表示有新内容或者待处理的信息。</p>
+                    <div class="img-box"><img src="2-1.png" class="middle-pic"></div>
+                    <h2>Android平台</h2>
+                    <p>iOS最开始设计并没有通知中心（iOS5.0之后才有通知中心），仅靠桌面图标上的Badge表示App是否有新消息，而Android设计之初就有通知中心，可在通知中心内聚合查看所有App的通知，所以不需要额外的Badge提示用户有新消息。</p>
+                    <div class="img-box"><img src="2-2.png" class="small-pic"></div>
+
+                    <h1>3、A-Z index/字母索引导航</h1>
+                    <p>A-Z index（字母索引导航）能将信息以首字母进行分类组织并提供导航。字母索引历史悠久，早在我们的实体书籍如字典、词典等就运用这种信息组织方式。正因如此，A-Z index是用户非常熟悉的一种导航方式。在移动UI里，A-Z index通常以竖轴形式出现在屏幕右侧，点击字母能将内容滚动到该字母的锚点位置。A-Z index适用于对数据量为几十到几千之间的单词、词组或短语等类型的导航，且用户能对这些数据的首字母进行精确回忆。例如：国家、省份或城市的名称、姓名、昵称等。</p>
+                    <div class="img-box"><img src="3-1.png" class="small-pic"></div>
+
+                    <h1>4、Segment Controls/分段控件</h1>
+                    <p>Segment Controls（分段控件/分段选择器/分段选择控件）是iOS原生控件之一，Segment Controls是一组分段（segment ）的线性集合，每一个分段的作用是互斥的，即点击某分段使之处于触发状态，那么同一个Segment Controls的其他分段将恢复正常状态，所以Segment Controls本质上是一个单选组件。横向排布所有选项，相比于下拉菜单（ drop-down menu）有更好的可见性。</p>
+                    <div class="img-box"><img src="4-1.png" class="middle-pic"></div>
+                    <p>Segment Controls通常用于切换不同的视图，或者在表单中作为单选组件使用。Segment Controls需要限制分段数量控制在5个以内，因为较宽的分段更容易点击，为了提高可用性，建议在手机屏幕上每个Segment Controls的分段控制在5个以内。因此分段的文案长度需要精简，建议每个分段控制在2-4个汉字。一个分段就像是一个按钮，按钮内当然可以使用文字或者图标代表其含义，但是请不要在同一个Segment Controls中混用文字和图标，避免让用户觉得混乱和不一致。</p>
+                    <div class="img-box"><img src="4-2.png" class="middle-pic"></div>
+                    <h2>Tabs和Segment Controls的区别</h2>
+                    <div class="img-box"><img src="4-3.png" class="middle-pic"></div>
+                    <div class="img-note">▲ 左为Tabs，右为Segment Controls</div>
+                    <p>经常国内发现App把Tabs和Segment Controls弄混的情况，给用户带来困扰，其实这两个控件有诸多不同。如下：</p>
+                    <ul>
+                        <li>来源不同：Tabs来自Android规范，早在Android 2.0时代，官方的通讯录App就使用顶部Tab导航，之前Android 4.0规范和最新的Material Design都将Tabs作为推荐的导航形式。而Segment Controls则来源于iOS规范。</li>
+                        <li>操作方式不同：Segment Controls只能通过点击控件本身的分段来进行操作，而Tabs除了点击控件本身外，还可以通过屏幕内左右滑动切换不同的视图。</li>
+                        <li>适用场景不同：Segment Controls除了适用于表单的单选组件，其作为视图切换控制时，一般来说，起到的是分割和筛选同类数据的作用。例如App Store的排行榜，[总排行榜]这个长列表数据集，通过Segment Controls把长列表分割成付费的、免费的和畅销的几个子列表数据集。</li>
+                        <li>数量限制不同：在手机屏幕里，Segment Controls分段限制在5个以内，而Tabs可以通过Scrollable tabs这种形式，扩展更多的Tab数量。</li>
+                    </ul>
+                    <div class="img-box"><img src="4-4.png" class="middle-pic"></div>
+                    <div class="img-note">▲ Scrollable tabs</div>
+
+                    <h1>5、Skeleton Screen/加载占位图</h1>
+                    <p>Skeleton Screen（加载占位图）是近年流行的加载控件，通常表现形式是在界面上待加载区域填充灰色的占位图，与线框图的效果非常相似。Skeleton Screen本质上是界面加载过程中的过渡效果。</p>
+                    <div class="img-box"><img src="5-1.png" class="small-pic"></div>
+                    <h2>Skeleton Screen的由来</h2>
+                    <h3>Launch Screen（启动屏幕）</h3>
+                    <p>当你启动一个App时，需要从手机存储器和网络加载所需的控件和多数据，由于手机性能和网络状况的差异，加载需要等待无法避免。为了解决等待加载过程中出现白屏或者界面闪烁造成的割裂感，iOS规范中规定把界面控件框架的轮廓做成静态图片用于Launch Screen（在Google的Material design规范里被称作Placeholder UI），把Launch Screen放在用户点击启动App之后和App真正正常启动完成之间做过渡，从而消灭白屏和界面闪烁，给用户一种App启动很快的错觉。（然而国内的App不遵循iOS规范，在Launch Screen里放广告，这又是另外一个商业话题了）</p>
+                    <p>如果我们能在加载前把内容的大概轮廓预先展现出来，然后再逐步的加载真正的内容，这样既用户一种内容正在逐渐加载即将呈现的期待，降低了焦躁情绪，又使得界面加载的过程变得更顺畅，感官上会觉得比其他加载方式更快。这就是Skeleton Screen！</p>
+                    <div class="img-box"><img src="5-2.png" class="middle-pic"></div>
+                    <p>非控件轮廓区域的内容变动很大，以上图浏览器为例，Launch Screen仅仅显示工具栏和地址栏，网页内容区域留下了大量空白，显然这不是最好的界面加载过渡方案。</p>
+                    <h3>Progress Indicator（进度指示器）</h3>
+                    <p>如果Launch Screen持续时间有点长，刚好用户又盯着Launch Screen大量空白的内容区域，可能会认为App出BUG了——虽然App后台正在辛劳的加载最新的数据。因此我们需要使用Progress Indicator来告知用户目前正在加载。Progress Indicator分为Activity Indicator（活动指示器）和Progress Bar（进度条）两种，前者就是我们非常熟悉的“菊花转”。</p>
+                    <div class="img-box"><img src="5-3.png" class="middle-pic"></div>
+                    <div class="img-note">▲ Activity Indicator和Progress Bar</div>
+                    <p>有了富含动效的Progress Indicator，用户就知道我们的App并没有出BUG，而是在辛勤的加载数据，再过不久就能正常的显示内容了。Progress Indicator设计出发点是好的，但是带给用户的体验未必优秀。Progress Indicator的出现就意味着需要等待，当用户注意力集中在Progress Indicator时，就好像学生盯着下课前五分钟的钟表，滴答滴答，时间似乎变得更慢了。我们当然不愿意让用户望着Progress Indicator产生焦躁的情绪。</p>
+                    <h2>Skeleton Screen应运而生</h2>
+                    <p>如果我们能在加载前把内容的大概轮廓预先展现出来，然后再逐步的加载真正的内容，这样既用户一种内容正在逐渐加载即将呈现的期待，降低了焦躁情绪，又使得界面加载的过程变得更顺畅，感官上会觉得比其他加载方式更快。这就是Skeleton Screen！</p>
+                    <div class="img-box"><img src="5-4.gif" class="middle-pic"></div>
+
+                    <h1>6、Page Indicator/Page Controls/页面指示器</h1>
+                    <h2>iOS平台</h2>
+                    <p>Page Indicator（页面指示器，iOS规范称为Page Controls）是附着在轮播图、一组卡片或者页面的底部，用来表示页面总数量和指示当前停留的页面。通常由一组等距的小圆点组成，小圆点的数量代表页面总数，其中深色或实心的小圆点代表当前页面。</p>
+                    <div class="img-box"><img src="6-1.png" class="middle-pic"></div>
+                    <p>用户可以通过左右滑动切换上一个/下一个页面，或者点击Page Indicator本身来切换，一般来说移动端点击Page Indicator顺序切换上一个/下一个页面，而PC端可以精确点击其中一个小圆点到达特定的页面。</p>
+                    <p>Page Indicator超过10个指示点很难在一屏内展示，超过20个页面用户浏览起来会非常耗时。如果超过20个页面请考虑使用其他形式或控件展示。一般来说用户在移动端习惯于使用左右滑动操作Page Indicator，因此要注意同页面内会不会与其他支持左右滑动的控件（例如：顶部Tabs、地图、轮播图等）产生手势冲突。</p>
+                    <p>如果Page Indicator指示的某个页面较为特殊，可以为其定制特别的样式，例如锁屏页用户可以不解锁直接向左滑动打开相机，因此为相机的指示点设计了特殊样式突出这个功能。天气App中一眼就明白第一个指示点是当前GPS定位地址。</p>
+                    <div class="img-box"><img src="6-2.png" class="middle-pic"></div>
+
+                    <h1>7、Stepper/步进器</h1>
+                    <h2>iOS平台</h2>
+                    <p>Stepper（步进器）由一个增加按钮、一个减少按钮和一个由按钮控制的数值组成。每次点击增加按钮（或减少按钮）数字增长（或减少）的数量是恒定的。</p>
+                    <div class="img-box"><img src="7-1.png" class="middle-pic"></div>
+                    <h2>Android平台</h2>
+                    <p>Google在Material Design里把Stepper 定义为步骤指示器。（详细请阅读：https://material.io/guidelines/components/steppers.html ）</p>
+                    <div class="img-box"><img src="7-2.png" class="middle-pic"></div>
+                    <p>考虑到除Material Design以外的设计规范都将Stepper 定义为步进器，因此我觉得Material Design的称呼方法不是主流，建议大家用Step Indicator来称呼步骤指示器。</p>
+
+                    <h1>8、Switch/开关/滑动开关/切换开关</h1>
+                    <p>Switch（开关/滑动开关/切换开关）有两个互斥的选项（例如开/关、是/否、启动/禁用），它是用来打开或关闭选项的控件。选择其中一个选项会导致立即执行操作。</p>
+                    <div class="img-box"><img src="8-1.png" class="middle-pic"></div>
+                    <p>Switch与RadioButton（单选按钮）、CheckBox（复选框）最大的区别是：Switch操作后，程序立即执行相关操作。而RadioButton和CheckBox一般用在表单里，仅反映当前的选择状态，如果要执行操作并生效，需要点击额外的提交按钮。</p>
+                    <div class="img-box"><img src="8-2.png" class="middle-pic"></div>
+                    <div class="img-note">▲ Switch与RadioButton、CheckBox</div>
+
+
+                    <h1>9、Toast/吐司</h1>
+                    <h2>iOS里的HUD</h2>
+                    <p>仔细阅读iOS设计指南就会发现并没有Toast这个控件，但iOS中确实有类似于Toast样式出现，例如iOS的音量调节提示。 iOS 把这个组件叫做 UIProgressHUD（HUD意思很可能是heads up display），可惜这个组件是系统私有的，第三方App无法直接获取使用，因此出现了各种模仿它的第三方控件，例如MBProgressHUD、 SVProgressHUD还有JGProgressHUD，从此以后HUD就成了iOS开发者里达成共识的半官方概念。</p>
+                    <div class="img-box"><img src="9-1.png" class="small-pic"></div>
+                    <div class="img-note">▲ UIProgressHUD</div>
+                    <h2>被泛化的Toast</h2>
+                    <p>你要是执着的把HUD念做Toast，大家也能理解，因为如今Toast的概念已经泛化，早已打破了Android的规范。在Android正统的规范中Toast：</p>
+                    <ul>
+                        <li>出现在屏幕底部。</li>
+                        <li>只能放文字不能带图标，文字要精简不宜太长。</li>
+                        <li>不是模态的，可以透过Toast对其他控件进行操作。</li>
+                        <li>短时间后会自动消失。</li>
+                        <li>不能对Toast进行交互，不能手动操作让Toast主动消失。</li>
+                    </ul>
+                    <p>在市面上很容易找到打破这个规则的Toast样式，例如加载：出现在屏幕中间、带图标，是模态的，如果网速很慢，Toast可能会持续很长时间，可以通过操作让其主动消失。泛化使得Toast原本的定义变得模糊，拓展了很多新的使用场景。控件定义和用途的变化也在随着时间演化，演化出符合业务和用户习惯的新形式反过来又会促成新的控件定义和规范，目前在移动平台里，似乎所有半透明矩形提示和反馈都可以被称作Toast。连iOS官方的Apple Store App都开始使用类似Toast的控件。</p>
+                    <div class="img-box"><img src="9-2.png" class="middle-pic"></div>
+                    <p>除了Toast概念的泛化，最近不少iOS App在尝试将Toast的位置由屏幕底部和中间改到顶部，这样做有几个好处：1.出现位置稳定。不会因为软键盘出现导致原本在屏幕底部或中间的Toast被遮盖或浮动到其他位置。2.更容易引起用户注意。iOS持续录音、GPS被使用、正在通话状态、还有活动指示器和系统push通知都出现在屏幕顶部，iOS用户更习惯于在顶部感知反馈信息。3.不干扰用户浏览主体内容。Toast出现在屏幕顶部不会遮挡主体内容。</p>
+                    <div class="img-box"><img src="9-3.png" class="middle-pic"></div>
+                    <h2>Snackbar</h2>
+                    <p>Snackbar可以理解为是加强版的Toast。样式和规则与Toast非常相似，不同主要有两点：1.Snackbar支持主动滑动关闭。2.Snackbar可以附带一个操作（也可以不带）。</p>
+                    <div class="img-box"><img src="9-4.png" class="small-pic"></div>
+                    <p>在最新的Google Material Design里，Snackbar和Toast被放在一起来介绍，而且Snackbar的篇幅要远多于Toast，后者被打上了Android Only的标记，Snackbar能代替很多Toast的使用场景。（ https://material.io/guidelines/components/snackbars-toasts.html）</p>
+
+
+                    <h1>10、Soft Keyboard（Virtual Keyboard/软键盘/虚拟键盘）</h1>
+                    <p>Soft Keyboard（Virtual Keyboard/软键盘/虚拟键盘）并不是真实的物理键盘（Physical Keyboard），而是在屏幕内拥有键盘样式和功能的控件，它比真正的键盘尺寸更小，而且没有手感很难盲操作。在触屏当道的移动端Soft Keyboard也可以简称为Keyboard。</p>
+                    <p>在某个场景下，用户输入的内容类型往往是有限的，某些键盘按键可能完全用不到，保留所有按键不仅浪费移动端珍贵的屏幕空间，多余的选择也降低了用户输入的效率。使用恰当的键盘类型不仅提升输入体验，而且能增强服务器提交数据的校验安全性。iOS、Android提供多种键盘类型布局，常用的键盘类型布局有：</p>
+                    <ul>
+                        <li>默认键盘：常规的全键盘，不做任何限制。</li>
+                        <li>文本键盘：相比默认键盘取消了表情符号，适合输入密码。</li>
+                        <li>整数键盘：只能输入数字0-9。</li>
+                        <li>浮点数键盘：在整数键盘基础上增加了小数点。</li>
+                        <li>电话号码键盘：在数字键盘基础上增加了“*” 和 “#” 。</li>
+                        <li>邮箱地址键盘：在常规全键盘基础上增加了“@”和“.”。</li>
+                        <li>URL键盘：输入网址用的，在常规全键盘上增加或突出“.com”、“.”和“/”等。</li>
+                        <li>数字和符号键盘：相比数字键盘多了很多标点符号。</li>
+                    </ul>
+                    <div class="img-box"><img src="10-1.png" class="middle-pic"></div>
+                    <p>键盘上除了输入内容的按键，还有另外一类功能按键。例如在PC端Tab键可以在表单内的多个输入框之间切换，回车键可以换行或者发送内容。Soft Keyboard可以对动作键的具体功能进行定制，常见的定制功能有：</p>
+                    <ul>
+                        <li>回车（return/enter）：用来换行。</li>
+                        <li>搜索（search）： 点击后执行搜索动作。</li>
+                        <li>下一项（next）：通常用在在多个输入框的表单中切换到下一个输入框。/li>
+                        <li>发送（send）：一般用在通讯App中将内容发送出去。</li>
+                        <li>前往（go）：任务过程中到下一个步骤的动作，例如输入网址后，前往打开的网页。</li>
+                        <li>完成（done）：任务完成后终结动作。例如表单提交。</li>
+                    </ul>
+                    <div class="img-box"><img src="10-2.png" class="middle-pic"></div>
+                    <p>在移动端，Soft Keyboard约占五分之二的屏幕面积，这意味着Soft Keyboard在唤起前后，界面布局会产生很大的变化，因此要注意键盘唤起后界面元素位置的变化，不要让键盘遮挡当前获取焦点的输入框，以免用户看不到自己输入的内容。</p>
+
+
+                    <h1>11、Action Sheet（动作菜单/动作面板/行动列表）</h1>
+                    <h2>iOS平台</h2>
+                    <p>Action Sheet（动作菜单/动作面板/行动列表）是由用户操作后触发的一种特定的模态弹出框 ，呈现一组与当前情境相关的两个或多个选项。用户可以使用Action Sheet启动某个任务，或者确认是否开始执行某个可能具有破坏性的操作。Action Sheet属于iOS规范，近年来Android平台也出现了类似功能的控件。</p>
+                    <div class="img-box"><img src="11-1.png" class="middle-pic"></div>
+                    <p>移动设备屏幕空间是宝贵的，不可能把所有选项都罗列在一个页面上，如果反其道而行把相关程度非常高的操作分割到多个页面上，又会造成操作繁琐体验不连续的感觉。Action Sheet能承载较多内容，而且仅覆盖当前屏幕的一部分，即不会对用户心流有很大的干扰，操作也非常便捷。适合呈现与当前任务相关的多个选项。</p>
+                    <div class="img-box"><img src="11-2.png" class="middle-pic"></div>
+                    <p>用户在使用过程中，出现删除、未保存退出等可能产生潜在风险的行为时，应当弹出Action Sheet，让用户有机会停下来充分考虑当前操作可能导致的危险结果，并将危险操作用红色标注，为他们提供其它替代的安全选项。Action Sheet是可以连续弹出的，例如第一个Action Sheet中选择删除，第二个Action Sheet中确认删除。此外，如果危险的情况并非由用户主动发起或者严重影响系统本身的完整性，应该使用Alert（这是Alert和Aciton Sheet最大的区别）。</p>
+                    <div class="img-box"><img src="11-3.png" class="middle-pic"></div>
+                    <div class="img-note">▲ Action Sheet和Alert</div>
+                    <h2>Android平台</h2>
+                    <p>Android有2个使用场景和Action Sheet相似的控件。第一个是Modal Bottom Sheet（模态底部菜单），和Action Sheet最大的区别是没有“取消”按钮，因为Android有物理Back导航键。
+（详见：https://material.io/guidelines/components/bottom-sheets.html#bottom-sheets-modal-bottom-sheets ）</p>
+                    <div class="img-box"><img src="11-4.png" class="small-pic"></div>
+                    <p>另一个是Simple dialogs（简易对话框），从屏幕中央弹出，没有“取消”按钮，通过点击空白区域关闭。微博、豆瓣的Android版使用了这个控件。
+（详见：https://material.io/guidelines/components/dialogs.html#dialogs-simple-menus ）</p>
+                    <div class="img-box"><img src="11-5.png" class="middle-pic"></div>
+
+                </div>
+            </div>
+            <div class="copyright">
+                <p>COPYRIGHT © <script>document.write(new Date().getFullYear())</script> ZHANGQS ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
