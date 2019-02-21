@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>为蓝出行-邀请中心</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no;">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="resources/imgs/favicon.ico">
+    <link href="resources/reset.css" rel="stylesheet" type="text/css">
+    <link href="resources/invite.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="bg">
+    <div id="mainPart">
+        <div class="wrapper">
+            <div class="topic-pic"><img src="resources/imgs/topic.png"></div>
+            <p class="invite-code">我的邀请码：<span>12MHJ9</span></p>
+            <div class="explain-box">
+                <div class="title"><h1>邀请攻略说明</h1></div>
+                <div class="explain-con">
+                    <div class="step-row">
+                        <div class="img"><img src="resources/imgs/ex_ico_1.png"></div>
+                        <div class="text">
+                            <h2>分享活动链接给好友</h2>
+                            <p>点击底部邀请按钮，将活动分享给好友</p>
+                        </div>
+                    </div>
+                    <div class="step-row">
+                        <div class="img"><img src="resources/imgs/ex_ico_2.png"></div>
+                        <div class="text">
+                            <h2>好友通过邀请成功注册</h2>
+                            <p>好友通过您分享的链接成功注册为蓝账号</p>
+                        </div>
+                    </div>
+                    <div class="step-row">
+                        <div class="img"><img src="resources/imgs/ex_ico_3.png"></div>
+                        <div class="text">
+                            <h2>好友成功完成充电</h2>
+                            <p>邀请的好友通过APP成功完成一次充电</p>
+                        </div>
+                    </div>
+                    <div class="step-row">
+                        <div class="img"><img src="resources/imgs/ex_ico_4.png"></div>
+                        <div class="text">
+                            <h2>获得邀请奖励</h2>
+                            <p>20元充电奖励将发放到您的账户中</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="invite-con">
+                    <div class="invite-list">
+                        <div class="flex-list bottom-border">
+                            <div class="phone">受邀好友</div>
+                            <div class="time">受邀时间</div>
+                        </div>
+                        <div class="flex-list">
+                            <div class="phone">182****0757</div>
+                            <div class="time">2018-10-18 12:24:28</div>
+                        </div>
+                        <div class="flex-list">
+                            <div class="phone">182****0757</div>
+                            <div class="time">2018-10-18 12:24:28</div>
+                        </div>
+                        <div class="flex-list">
+                            <div class="phone">182****0757</div>
+                            <div class="time">2018-10-18 12:24:28</div>
+                        </div>
+                        <div class="flex-list">
+                            <div class="phone">182****0757</div>
+                            <div class="time">2018-10-18 12:24:28</div>
+                        </div>
+                        <div class="flex-list">
+                            <div class="phone">182****0757</div>
+                            <div class="time">2018-10-18 12:24:28</div>
+                        </div>
+                        <div class="flex-list">
+                            <div class="phone">182****0757</div>
+                            <div class="time">2018-10-18 12:24:28</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tips">只展示最新的6条邀请记录</div>
+            </div>
+            <div class="explain-box">
+                <div class="title"><h1>邀请规则说明</h1></div>
+                <div class="rule-con">
+                    <ul>
+                        <li>邀请注册的好友数量无上限，一个手机号对应到一个 唯一的为蓝账号。</li>
+                        <li>邀请奖励将在被邀请人成功注册后自动发放到用户账 户(可在我的-钱包-优惠券里面查看)。</li>
+                        <li>若发现恶意注册或采用非正常手段推荐好友，为蓝有 权取消用户所得奖励。</li>
+                        <li>在法律允许的范围内，该活动的最终解释权归成都为 蓝科技有限公司所有。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="bottomBar">
+        <div class="wrapper">
+            <a href="javacript:void(0)" class="invite-btn">立即邀请好友</a>
+        </div>        
+    </div>
+
+    <script src="../resources/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            isIPhoneX();
+        });
+        function isIPhoneX(fn){
+            var u = navigator.userAgent;
+            var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+            if (isIOS) {        
+                if (screen.height == 812 && screen.width == 375){
+                    $("#bottomBar").css("padding-bottom","34px");
+                }else{
+                    //不是iphoneX
+                } 
+            }
+        }
+    </script>
+
+</body>
+</html>

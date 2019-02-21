@@ -1,0 +1,66 @@
+/* CSS Document
+@charset "utf-8";
+
+By I_amzQs
+2018-10-23
+*/
+
+/* style reset */
+html{
+	font-size: 62.5%;
+}
+html,body {
+	font-family: Helvetica;
+}
+html,body,div,ul,li,dl,dt,dd,h1,h2,i,a,img,span,p,hr,textarea {margin:0; padding:0;}
+a,img {border:none; outline:none;}
+ul li {list-style: none;}
+.clear {clear:both;}
+a {
+	text-decoration: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0.05);
+    -webkit-user-select: none;
+    -moz-user-focus: none;
+    -moz-user-select: none;
+}
+input,input:focus,input:active{user-select: text;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+input[type=submit],input[type=button]{
+	-webkit-appearance:none;
+	outline:none;
+}
+
+/* 通用样式style */
+.bg-gray {
+	background: #f7f7f7;
+}
+.bg-white {
+	background: #ffffff;
+}
+.btn {
+	display: block;
+}
+.arow {
+	background: url(../imgs/arow_basic.png) 96% center no-repeat #fff;
+	background-size: 20px;
+}
+.m-t-n {
+	padding-top: 52px;
+}
+.t-gray {
+	color: #666;
+}
+.text-ellipsis {
+	width: 100%;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.right {
+	float: right;
+}
+.left {
+	float: left;
+}
+
+
+/* style end */

@@ -1,0 +1,192 @@
+/* CSS Document
+@charset "utf-8";
+
+By I_amzQs
+2018-11-06
+*/
+
+
+/* 邀请中心样式style */
+html,body {
+    width:100%;
+    height:100%
+}
+body#bg {
+	margin: 0 auto;
+    max-width: 650px;
+    background-image: url("imgs/bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#mainPart {
+	background: url("imgs/top_bg.png") top center no-repeat #ffefb3;
+	background-size: 100%;
+	padding-top: 50px;
+	padding-bottom: 68px;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+.topic-pic {
+	width: 100%;
+	text-align: center;
+}
+.topic-pic img {
+	width: 92%;
+}
+.invite-code {
+	font-size: 12px;
+	color: #e5851d;
+	margin: 24px 0;
+	text-align: center;
+}
+.explain-box {
+	width: 100%;
+	margin: 0 auto 30px;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0px 6px 20px #f5da76;
+}
+.title {
+	background: #fff5e9;
+	text-align: center;
+	padding: 22px 0;
+	border-radius: 10px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.title h1 {
+	display: inline-block;
+	font-size: 16px;
+	color: #6e4d2a;
+	font-weight: 600;
+}
+.title h1:before {
+	content: " ";
+	display: inline-block;
+	width: 16px;
+	height: 11px;
+	margin-right: 5px;
+	background: url("imgs/title.png") center no-repeat;
+	background-size: 100%;
+}
+.title h1:after {
+	content: " ";
+	display: inline-block;
+	width: 16px;
+	height: 11px;
+	margin-left: 5px;
+	background: url("imgs/title.png") center no-repeat;
+	background-size: 100%;
+}
+.explain-con {
+	padding: 32px 20px;
+}
+.step-row {
+	display: flex;
+	display: -webkit-flex;
+	margin-bottom: 30px;
+}
+.step-row:last-child {
+	margin-bottom: 0;
+}
+.step-row .text {
+	flex: 1;
+}
+.step-row .img img {
+	width: 43px;
+	margin-right: 20px;
+}
+.step-row .text h2 {
+	font-size: 15px;
+	color: #191919;
+	margin-bottom: 4px;
+}
+.step-row .text p {
+	font-size: 12px;
+	color: #9e9e9e;
+}
+.invite-con {
+	padding: 0 20px;
+}
+.invite-list {
+	background: #fff7f6;
+	font-size: 12px;
+	color: #bdabaa;
+	padding: 20px 18px;
+}
+.flex-list {
+	display: flex;
+	display: -webkit-flex;
+	margin-bottom: 15px;
+	border: none;
+}
+.bottom-border {
+	padding-bottom: 14px;
+	border-bottom: 1px dashed #f6d4d1;
+}
+.flex-list:last-child {
+	margin-bottom: 0px;
+}
+.flex-list .phone {
+	width: 45%;
+	text-align: center;
+}
+.flex-list .time {
+	flex: 1;
+	text-align: center;
+}
+.tips {
+	font-size: 12px;
+	color: #d1d1d1;
+	text-align: center;
+	margin-top: 12px;
+	padding-bottom: 30px;
+}
+.rule-con {
+	padding: 24px 20px;
+}
+.rule-con ul li {
+	list-style: disc inside;
+	line-height: 20px;
+	font-size: 12px;
+	color: #6a6a6a;
+	margin-bottom: 16px;
+}
+.rule-con ul li:last-child {
+	margin-bottom: 0;
+}
+
+#bottomBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 650px;
+    background: rgba(255,255,255,0.6);
+    box-shadow: 0px -2px 4px rgba(151,151,151,0.12); 
+    z-index: 9999;     
+}
+
+.invite-btn {
+	display: block;
+	margin-top: -3px;
+	width: 100%;
+	line-height: 48px;
+	border-radius: 30px;
+	color: #fef2e1;
+	font-weight: 600;
+	font-size: 15px;
+	text-align: center;
+	letter-spacing: 2px;
+	background: #fda000;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #fda000, #ff7a01);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #fda000, #ff7a01); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	box-shadow: 0px 5px 0px #fd5800;
+}
+
+/* style end */

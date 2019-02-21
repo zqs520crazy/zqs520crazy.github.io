@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>为蓝出行2018年度个人充电报告</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no;">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="resources/imgs/favicon.ico">
+    <link href="resources/reset.css" rel="stylesheet" type="text/css">
+    <link href="resources/report2018.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="bg">
+    <div id="mainPart">
+        <div class="pic-box">
+            <div><img src="resources/imgs/title.png" class="title-pic"></div>
+            <div><img src="resources/imgs/story.png" class="story-pic"></div>
+        </div>
+
+        <div class="botton-box">
+            <a href="javacript:void(0)" class="get-btn">立即获取报告</a>
+            <p>报告根据用户2018年充电订单数据生成</p>
+        </div>    
+    </div>
+
+    <script src="resources/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            isIPhoneX();
+        });
+        function isIPhoneX(fn){
+            var u = navigator.userAgent;
+            var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+            if (isIOS) {        
+                if (screen.height == 812 && screen.width == 375){
+                    $("#bottomBar").css("padding-bottom","34px");
+                }else{
+                    //不是iphoneX
+                } 
+            }
+        }
+    </script>
+
+</body>
+</html>
