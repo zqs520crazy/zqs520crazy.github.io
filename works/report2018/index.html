@@ -9,13 +9,28 @@
     <link rel="shortcut icon" href="resources/imgs/favicon.ico">
     <link href="resources/reset.css" rel="stylesheet" type="text/css">
     <link href="resources/report2018.css" rel="stylesheet" type="text/css">
+    <style>
+        #sBox {
+            margin-top: -30px;
+            animation: picUpdown 1.5s infinite alternate;
+            -webkit-animation: picUpdown 1.5s infinite alternate;
+        }
+        @keyframes picUpdown{
+            from{margin-top:0px;}
+            to{margin-top:10px;}
+        }
+        @-webkit-keyframes picUpdown{
+            from{margin-top:100px;}
+            to{margin-top:70px;}
+        }
+    </style>
 </head>
 
 <body id="bg">
     <div id="mainPart">
         <div class="pic-box">
             <div><img src="resources/imgs/title.png" class="title-pic"></div>
-            <div><img src="resources/imgs/story.png" class="story-pic"></div>
+            <div id="sBox"><img src="resources/imgs/story.png" class="story-pic"></div>
         </div>
 
         <div class="botton-box">
