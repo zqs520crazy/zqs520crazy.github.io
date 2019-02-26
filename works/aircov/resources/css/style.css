@@ -1,0 +1,341 @@
+@charset "utf-8";
+* {
+	margin: 0;padding: 0;
+}
+html, body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #2b2736;
+	height: 100%;
+}
+#body {
+	background-color: #2b2736;
+	font-family: "Microsoft YaHei UI";
+}
+:root{
+  --maincolor: #3498db; /*定义全局颜色*/
+}
+
+#topBar {	
+	background-color: #3d384c;
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	height: 86px;
+  	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+#sideBar {
+	background-color: #3c394c;
+	position: fixed;
+	height: 100%;
+	width: 240px;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+  	box-shadow: 12px 0px 15px 0px rgba(0, 0, 0, 0.13);
+}
+#mainPart {
+	padding-left: 240px;
+	width: 100%;
+	height: 100%;
+	padding-top: 120px;
+	float: left;
+}
+
+/************ 顶部 ************/
+.header-wrapper {
+	min-width: 960px;
+	margin-left: 240px;
+	padding: 24px 60px;
+	display: flex;
+	display: -webkit-flex;
+  	flex-flow:  row nowrap;
+  	justify-content: space-between;
+}
+.head-box img {
+	display: inline-block;
+	width: 42px;
+	height: 42px;
+	border-radius: 40px;
+	margin-right: 4px;
+	border: 2px solid rgba(255,255,255,0.6);
+}
+.head-box i {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+i.out {
+	background: url(../imgs/ico-out.png) center center no-repeat;
+}
+.search {
+	width: 260px;
+	height: 38px;
+	padding: 10px;
+	background: rgba(255, 255, 255, 0.08);
+	border: none;
+	outline: none;
+	color: #fff;
+}
+input::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 0.38);;
+}
+
+/************ 左侧导航 ************/
+.logo-box {
+	width: 160px;
+	text-align: center;
+	text-align: center;
+	margin: 36px auto;
+}
+.logo-box img {
+	width: 32px;
+	vertical-align: middle;
+	margin-right: 10px;
+	margin-top: -4px;
+}
+.logo-box span {
+	display: inline-block;
+	color: #fff;
+	font-size: 18px;
+}
+.nav-box {
+	margin-top: 72px;
+}
+.nav-box li {
+	margin-top: 0px;
+}
+.nav-box li a{
+	display: block;
+	padding: 16px;
+	font-size: 16px;
+	text-align: left;
+	text-decoration: none;
+	color: #9e9fb1;
+}
+.nav-box li a.active {
+	color: var(--maincolor);
+	border-right: 4px solid var(--maincolor);
+}
+.nav-box li a i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-left: 30px;
+	margin-right: 20px;
+	vertical-align: middle;
+	margin-top: -2px;
+}
+i.ico1 {
+	background: url(../imgs/ico-d.png) center center no-repeat;
+}
+i.ico2 {
+	background: url(../imgs/ico-t.png) center center no-repeat;
+}
+i.ico22 {
+	background: url(../imgs/ico-tt.png) center center no-repeat;
+}
+i.ico3 {
+	background: url(../imgs/ico-r.png) center center no-repeat;
+}
+i.ico4 {
+	background: url(../imgs/ico-m.png) center center no-repeat;
+}
+i.ico5 {
+	background: url(../imgs/ico-s.png) center center no-repeat;
+}
+
+
+.wrapper {
+	position: relative;
+	min-width: 960px;
+	padding: 20px 60px;
+}
+.title-row {
+	display: flex;
+	display: -webkit-flex;
+  	flex-flow:  row nowrap;
+  	justify-content: space-between;
+}
+.title-row b {
+	display: inline-block;
+	font-size: 38px;
+	color: #fff;
+	font-weight: 400;
+}
+.title-row span {
+	display: inline-block;
+	float: right;
+	font-size: 18px;
+	color: rgba(255,255,255,0.4);
+	font-weight: 400;
+	text-align: right;
+	margin-top: 32px;
+}
+.data-row {
+	display: flex;
+	display: -webkit-flex;
+	margin-top: 30px; 
+}
+.data-box {
+	flex: 1;
+	background: #3f3d4a;
+	padding: 16px 30px;
+	border-radius: 4px;
+	margin-left: 12px;
+	margin-right: 12px;
+}
+.data-box:first-child {
+	margin-left: 0px;
+}
+.data-box:last-child {
+	margin-right: 0px;
+}
+.data-box h2 {
+	color: #f4f3f8;
+	font-size: 18px;
+}
+.data-box p {
+	font-size: 24px;
+	font-family: sans-serif;
+}
+.completion-title {
+	margin-top: 60px;
+	display: flex;
+	display: -webkit-flex;
+  	flex-flow:  row nowrap;
+  	justify-content: space-between;
+}
+.title-icon {
+	display: inline-block;
+	height: 42px;
+	width: 42px;
+	background: url(../imgs/ico-star.png) center center #3498db;
+	background-size: 68%;
+	background-repeat: no-repeat;
+	border-radius: 4px;
+	margin-right: 12px;
+}
+.title-text {
+	display: inline-block;
+}
+.title-text p {
+	font-size: 18px;
+	color: #fff;
+	margin-bottom: 0px;
+}
+.title-text span {
+	font-size: 12px;
+	color: #666;
+}
+.completion-row {
+	margin-top: 24px;
+	display: flex;
+	display: -webkit-flex;
+}
+.completion-box {
+	flex: 1;
+	background: #3f3d4a;
+	padding: 30px 30px;
+	border-radius: 4px;
+	margin-left: 12px;
+	margin-right: 12px;
+	position: relative;
+}
+.completion-box .more {
+	position: absolute;
+	right: 38px;
+	top: 40px;
+	width: 30px;
+	height: 30px;
+	background: url(../imgs/ico-more.png) center center;
+	opacity: 0.5;
+}
+.completion-box .head-box {
+	display: flex;
+	display: -webkit-flex;
+	margin-bottom: 40px;
+}
+.completion-box .head {
+	display: inline-block;
+	width: 42px;
+	height: 42px;
+	line-height: 42px;
+	border-radius: 40px;
+	background: #2f3030;
+	margin-right: 24px;
+	text-align: center;
+	color: var(--maincolor);
+	font-weight: 600;
+	vertical-align:middle;
+}
+.completion-box .name {
+	display: inline-block;
+}
+.completion-box .name p {
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 0;
+}
+.completion-box .name span {
+	font-size: 14px;
+	color: #787878;
+}
+.completion-box:first-child {
+	margin-left: 0px;
+}
+.completion-box:last-child {
+	margin-right: 0px;
+}
+.completion-box .data-bar {
+	margin-top: 20px;
+	display: block;
+
+}
+.completion-box .data-bar .name {
+	font-size: 14px;
+	color: #787878;
+	width: 66px;
+	float: left;
+}
+.completion-box .data-bar .bar {
+	width: 68%;
+	height: 10px;
+	float: left;
+	background: #514f5c;
+	border-radius: 20px;
+	margin-top: 4px;
+	position: relative;
+}
+.completion-box .data-bar .num {
+	font-size: 14px;
+	color: #999;
+	float: left;
+	margin-left: 16px;	
+}
+.completion-box .data-bar:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+.completion-box .data-bar .bar .num-bar {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 10px;
+	border-radius: 20px;
+}
+.num-1 {
+	background: #3bba63;
+	width: 100%;
+}
+.num-2 {
+	background: #f1664f;
+	width: 100%;
+}
+.num-3 {
+	background: #3498db;
+	width: 100%;
+}
