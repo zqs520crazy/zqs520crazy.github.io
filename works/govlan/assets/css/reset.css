@@ -1,0 +1,21 @@
+/* CSS Document */
+@charset "utf-8";
+body,div,input,p,a,ul,li,h1,h2,h3,button,textarea,dl,dt,dd {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei UI";
+}
+a,img,button {
+	border: none;
+	outline: none;
+}
+input, textarea {
+	outline: none;
+}
+ul {
+	list-style: none;
+}
+.clear {
+	clear: both;
+}
+
