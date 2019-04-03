@@ -19,7 +19,7 @@
         <div class="header">
             <div class="wrapper">
                 <div class="title">
-                    <h1>张青松交互作品集</h1>
+                    <h1>张青松交互设计作品集</h1>
                     <p>交互设计的目的是让产品的内在变得更好用</p>
                 </div>
             </div>  
@@ -96,6 +96,22 @@
             </div>
         </div>
     </div>
+
+    <!-- JS代码部分 -->
+    <script src="../../resources/js/jquery-1.11.1.min.js"></script>
+    <script src="../../resources/js/jquery.gradientify.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#Top").gradientify({
+                gradients: [
+                    { start: [67,152,219], stop: [115,213,248] },
+                    { start: [49,76,172], stop: [242,159,191] },
+                    { start: [255,103,69], stop: [240,154,241] },
+                    { start: [33,229,241], stop: [235,236,117] }
+                ]
+            });
+        });
+    </script>
 
 </body>
 </html>
