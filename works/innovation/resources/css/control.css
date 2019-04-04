@@ -1,0 +1,197 @@
+/* CSS Document
+@charset "utf-8";
+
+By I_amzQs
+2016-07-18
+成都方米科技有限公司
+*/
+html,body {
+	height:100%;
+}
+.con-wrapper {
+	position: absolute;;
+	width: 100%;
+	height: 100%;
+	background: #f4f3ef;
+	left: 0;
+	top: 0;
+}
+.connect-status {
+	height: 100%;
+    line-height: 58px;
+    text-align: center;
+	color: red;
+}
+.road-name {
+	font-size: 16px;
+	color: #232323;
+	line-height: 60px;
+	padding-left: 20px;
+}
+h3 {
+	font-size: 16px;
+	color: #666;
+	font-weight: normal;
+	padding-left: 20px;
+	height: 40px;
+	line-height: 40px;
+}
+.light-model-row {
+	width: 100%;
+	height: auto;
+	background: #f8f8f8;
+	padding: 20px 0;
+}
+.light-model-row span {
+	display: inline-block;
+	width: 24%;
+	text-align: center;
+}
+.light-model-row p {
+	line-height: 42px;
+}
+.light-model-row button {
+	width: 50px;
+	height: 20px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.light-switch {
+	position: relative;
+	background: url(../imgs/btn_off.png);
+}
+.light-on {
+	background: url(../imgs/btn_on.png);
+}
+.text-off {
+	color: #999;
+}
+.text-on {
+	color: #333;
+}
+.adjust-row {
+	height: 56px;
+	line-height: 56px;
+	margin: 10px 0;
+	padding: 0 70px;
+	background: #f8f8f8;
+	/*display: none;*/
+}
+.adjust-row .light-status {
+	color: #999;
+}
+.adjust-row .light-status span {
+	font-size: 16px;
+	color: #45c8dc;
+	margin-right: 6px;
+}
+.btn-row {
+	height: 68px;
+	line-height: 68px;
+	margin: 20px 0;
+	padding-right: 70px;
+	background: #f8f8f8;
+}
+.btn-row input {
+	width: 92px;
+	height: 38px;
+	color: #fff;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+	background: #45c8dc;
+	margin-left: 740px;
+}
+.slider-light-wrap {
+	width: 540px;
+	height: 40px;
+	float: right;
+  margin-top: -8px;
+	margin-right: 10px;
+}
+
+/* 第二段路 */
+
+
+.light-model-row-2 {
+	width: 100%;
+	height: auto;
+	background: #f8f8f8;
+	padding: 20px 0;
+}
+.light-model-row-2 span {
+	display: inline-block;
+	width: 24%;
+	text-align: center;
+}
+.light-model-row-2 p {
+	line-height: 42px;
+}
+.light-model-row-2 button {
+	width: 50px;
+	height: 20px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.light-switch-2 {
+	position: relative;
+	background: url(../imgs/btn_off.png);
+}
+.light-on-2 {
+	background: url(../imgs/btn_on.png);
+}
+.text-off-2 {
+	color: #999;
+}
+.text-on-2 {
+	color: #333;
+}
+.adjust-row-2 {
+	height: 56px;
+	line-height: 56px;
+	margin: 10px 0;
+	padding: 0 70px;
+	background: #f8f8f8;
+	/*display: none;*/
+}
+.adjust-row-2 .light-status-2 {
+	color: #999;
+}
+.adjust-row-2 .light-status-2 span {
+	font-size: 16px;
+	color: #45c8dc;
+	margin-right: 6px;
+}
+.btn-row-2 {
+	height: 68px;
+	line-height: 68px;
+	margin: 20px 0;
+	padding-right: 70px;
+	background: #f8f8f8;
+}
+.btn-row-2 input {
+	width: 92px;
+	height: 38px;
+	color: #fff;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+	background: #45c8dc;
+	margin-left: 740px;
+}
+.slider-light-wrap-2 {
+	width: 540px;
+	height: 40px;
+	float: right;
+  margin-top: -8px;
+	margin-right: 10px;
+}
+
+
+
+
+
+
+/* style end */

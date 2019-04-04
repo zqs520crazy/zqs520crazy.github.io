@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>川脉web客户端</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" >
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link href="resources/css/style.css" rel="stylesheet" type="text/css">
+	<link href="resources/css/slider.css" rel="stylesheet" type="text/css">
+	<link href="resources/css/setting.css" rel="stylesheet" type="text/css">
+	<script src="resources/js/jquery-1.11.1.min.js"></script>
+	<script src="resources/js/common.js"></script>
+</head>
+
+<body>
+<!-- start of header -->
+<div class="header-bg">
+  <div class="header">
+    <div class="logo">
+      <a href="home.html">
+        <span class="logo-img-box"><img src="resources/imgs/logo_ywx.png" alt=""></span>
+        雾天行车防撞预警系统
+      </a>
+    </div>
+    <div class="user-head">
+      <a href="user-center.html">
+        <img src="resources/imgs/user-img.png" alt="" align="absmiddle">
+        <span>请登录</span>
+      </a>
+    </div>
+    <ul class="nav-wrapper">
+      <li><a href="home.html"><img src="resources/imgs/iconfont_home.png" alt=""><span>首页</span></a></li>
+      <li><a href="control.html"><img src="resources/imgs/iconfont_kongzhi.png" alt=""><span>控制</span></a></li>
+      <li class="nav-active"><a href="setting.html"><img src="resources/imgs/iconfont_shezhi.png" alt=""><span>设置</span></a></li>
+      <li><a href="search.html"><img src="resources/imgs/iconfont_chaxun.png" alt=""><span>查询</span></a></li>
+    </ul>
+    <div class="clear"></div>
+  </div>
+</div>
+<!-- end of header -->
+
+<!-- start of con-wrapper -->
+<div class="con-wrapper setting">
+  <div class="container">
+    <div class="left-con">
+      <ul class="left-bar">
+        <li class="bar-active"><a href="setting.html"><img src="resources/imgs/icon_gnkz.png" alt=""><p>参数设置</p></a></li>
+        <li><a href="sms-setting.html"><img src="resources/imgs/icon_dxsz.png" alt=""><p>短信设置</p></a></li>
+      </ul>
+    </div>
+    <div class="right-con" style="background:#f8f8f8">
+      <div class="filter-row">
+        <div class="select-box">
+          <select>
+            <option value="G42沪蓉高速梁山段">G42沪蓉高速梁山段</option>
+            <option value="G68沪蓉高速黑沟子段">G68沪蓉高速黑沟子段</option>
+            <option value="G70沪蓉高速H段">G70沪蓉高速H段</option>
+          </select>
+        </div>
+        <div class="luduan-msg">
+          <span class="begin-point">K8121+211</span>
+          <span class="zhi">至</span>
+          <span class="end-point">K9128+212</span>
+        </div>
+        <div class="clear"></div>
+      </div>
+
+      <div class="cssz-wrapper">
+        <h3>预警方案设置</h3>
+        <div class="njd-row">
+          <div class="njd-box">
+            <h2>能见度设置</h2>
+            <div>小于<input type="text" placeholder="请输入">米</div>
+            <div>小于<input type="text" placeholder="请输入">米</div>
+            <div>小于<input type="text" placeholder="请输入">米</div>
+            <div>小于<input type="text" placeholder="请输入">米</div>
+          </div>
+          <div class="ldtj-box">
+            <h2>亮度调节</h2>
+            <div class="slider-wrap">
+              <div class="slider-box">
+            		<div class="srs-minus step-zdy">-</div>
+            		<div class="srs-plus step-zdy">+</div>
+            		<div class="srs-track">
+            			<div class="srs-bar"></div>
+            			<div class="srs-thumb"></div>
+            		</div>
+            		<div class="srs-num"><span>20</span>%</div>
+            	</div>
+            </div>
+            <div class="slider-wrap">
+              <div class="slider-box">
+            		<div class="srs-minus step-zdy">-</div>
+            		<div class="srs-plus step-zdy">+</div>
+            		<div class="srs-track">
+            			<div class="srs-bar"></div>
+            			<div class="srs-thumb"></div>
+            		</div>
+            		<div class="srs-num"><span>50</span>%</div>
+            	</div>
+            </div>
+            <div class="slider-wrap">
+              <div class="slider-box">
+            		<div class="srs-minus step-zdy">-</div>
+            		<div class="srs-plus step-zdy">+</div>
+            		<div class="srs-track">
+            			<div class="srs-bar"></div>
+            			<div class="srs-thumb"></div>
+            		</div>
+            		<div class="srs-num"><span>60</span>%</div>
+            	</div>
+            </div>
+            <div class="slider-wrap">
+              <div class="slider-box">
+            		<div class="srs-minus step-zdy">-</div>
+            		<div class="srs-plus step-zdy">+</div>
+            		<div class="srs-track">
+            			<div class="srs-bar"></div>
+            			<div class="srs-thumb"></div>
+            		</div>
+            		<div class="srs-num"><span>100</span>%</div>
+            	</div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        <h3>夜晚模式设置</h3>
+        <div class="time-cot">
+          <div class="kaideng-l">
+            开灯时间
+            <select>
+              <option value="00:00">00:00</option>
+              <option value="01:00">01:00</option>
+              <option value="02:00">02:00</option>
+              <option value="03:00">01:00</option>
+              <option value="04:00">02:00</option>
+              <option value="05:00">01:00</option>
+              <option value="...">...</option>
+              <option value="24:00">24:00</option>
+            </select>
+          </div>
+          <div class="guandeng-r">
+            关灯时间
+            <select>
+              <option value="00:00">00:00</option>
+              <option value="01:00">01:00</option>
+              <option value="02:00">02:00</option>
+              <option value="03:00">01:00</option>
+              <option value="04:00">02:00</option>
+              <option value="05:00">01:00</option>
+              <option value="...">...</option>
+              <option value="24:00">24:00</option>
+            </select>
+          </div>
+          <div class="clear"></div>
+          <div class="ldtj">
+            <span>黄灯亮度调节</span>
+            <div class="slider-wrap slider-wrap2">
+              <div class="slider-box">
+            		<div class="srs-minus step-zdy">-</div>
+            		<div class="srs-plus step-zdy">+</div>
+            		<div class="srs-track">
+            			<div class="srs-bar"></div>
+            			<div class="srs-thumb"></div>
+            		</div>
+            		<div class="srs-num"><span>0</span>%</div>
+            	</div>
+            </div>
+          </div>
+        </div>
+
+        <h3>定时尾跟设置</h3>
+        <div class="time-cot">
+          <div class="kaideng-l">
+            开灯时间
+            <select>
+              <option value="00:00">00:00</option>
+              <option value="01:00">01:00</option>
+              <option value="02:00">02:00</option>
+              <option value="03:00">01:00</option>
+              <option value="04:00">02:00</option>
+              <option value="05:00">01:00</option>
+              <option value="...">...</option>
+              <option value="24:00">24:00</option>
+            </select>
+          </div>
+          <div class="guandeng-r">
+            关灯时间
+            <select>
+              <option value="00:00">00:00</option>
+              <option value="01:00">01:00</option>
+              <option value="02:00">02:00</option>
+              <option value="03:00">01:00</option>
+              <option value="04:00">02:00</option>
+              <option value="05:00">01:00</option>
+              <option value="...">...</option>
+              <option value="24:00">24:00</option>
+            </select>
+          </div>
+          <div class="clear"></div>
+          <div class="ldtj">
+            <span>尾跟亮度调节</span>
+            <div class="slider-wrap slider-wrap2">
+              <div class="slider-box">
+            		<div class="srs-minus step-zdy">-</div>
+            		<div class="srs-plus step-zdy">+</div>
+            		<div class="srs-track">
+            			<div class="srs-bar"></div>
+            			<div class="srs-thumb"></div>
+            		</div>
+            		<div class="srs-num"><span>35</span>%</div>
+            	</div>
+            </div>
+          </div>
+        </div>
+
+        <h3>高级设置</h3>
+        <div class="gjsz">
+          <div class="gj-cot">
+            <span>信息更新时间（秒）</span>
+            <div class="slider-wrap slider-wrap2">
+              <div class="slider-box">
+            		<div class="srs-minus step-5">-</div>
+            		<div class="srs-plus step-5">+</div>
+            		<div class="srs-track">
+            			<div class="srs-bar"></div>
+            			<div class="srs-thumb"></div>
+            		</div>
+            		<div class="srs-num"><span>15</span></div>
+            	</div>
+            </div>
+          </div>
+          <div class="gj-cot">
+            <span>事件报警门限</span>
+            <div class="slider-wrap slider-wrap2">
+              <div class="slider-box">
+            		<div class="srs-minus step-1">-</div>
+            		<div class="srs-plus step-1">+</div>
+            		<div class="srs-track">
+            			<div class="srs-bar"></div>
+            			<div class="srs-thumb"></div>
+            		</div>
+            		<div class="srs-num"><span>215</span></div>
+            	</div>
+            </div>
+          </div>
+          <div class="gj-cot">
+            <span>通信故障门限</span>
+            <div class="slider-wrap slider-wrap2">
+              <div class="slider-box">
+            		<div class="srs-minus step-1">-</div>
+            		<div class="srs-plus step-1">+</div>
+            		<div class="srs-track">
+            			<div class="srs-bar"></div>
+            			<div class="srs-thumb"></div>
+            		</div>
+            		<div class="srs-num"><span>125</span></div>
+            	</div>
+            </div>
+          </div>
+          <div class="gj-cot">
+            <span>红外故障门限</span>
+            <div class="slider-wrap slider-wrap2">
+              <div class="slider-box">
+            		<div class="srs-minus step-1">-</div>
+            		<div class="srs-plus step-1">+</div>
+            		<div class="srs-track">
+            			<div class="srs-bar"></div>
+            			<div class="srs-thumb"></div>
+            		</div>
+            		<div class="srs-num"><span>21</span></div>
+            	</div>
+            </div>
+          </div>
+      </div>
+
+      <div class="btn-row">
+        <input type="submit" value="保存设置">
+      </div>
+
+    </div>
+
+    </div>
+    <div class="clear"></div>
+</div>
+</div>
+<!-- end of con-wrapper -->
+</body>
+
+<script src="resources/js/slider.js"></script>
+</html>

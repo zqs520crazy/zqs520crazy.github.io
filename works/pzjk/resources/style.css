@@ -1,0 +1,135 @@
+/* CSS Document
+@charset "utf-8";
+
+By I_amzQs
+2016-07-07
+*/
+
+/* style reset */
+html{
+	font-size: 62.5%;
+}
+div,ul,li,dl,dt,dd,h1,h2,a,img,span,p,hr,input{margin:0; padding:0;}
+a,img{border:none; outline:none;}
+ul li {list-style: none;}
+.m-p-0 {
+	margin:0; padding:0;
+}
+.clear {clear:both;}
+a {text-decoration: none;}
+input,input:focus,input:active{user-select: text;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+input[type=submit],input[type=button],input[type=number],input[type=text]{
+	-webkit-appearance:none;
+	outline:none;
+}
+
+/* register style */
+.register-page {
+	background: #ec2742;
+}
+.top-head {
+	background: url(img/top-bg.png) bottom center no-repeat;
+	height: 80px;
+	background-size: 120%;
+	position: relative;
+}
+.head-box {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 28px;
+}
+.head-box img {
+	width:86px;
+	border: 2px solid #fff;
+	border-radius: 4px;
+}
+.head-box p {
+	font-size: 1.8rem;
+	line-height: 46px;
+	color: #fff;
+}
+.form-wrap{
+	margin: 100px 20px 0;
+	background: #000;
+	background-color:rgba(0,0,0,0.3);
+	border-radius: 4px;
+	padding: 20px 20px 10px;
+}
+.ui-form-item {
+	position: relative;
+	margin-bottom: 10px;
+	width: 100%;
+}
+.form-input {
+	border: none;
+	width: 100%;
+	height: 42px;
+	line-height: 42px;
+	border-radius: 4px;
+	outline: none;
+	font-size: 1.6rem;
+	color: #121212;
+	text-indent: 10px
+}
+.get-code-btn {
+	position: absolute;
+	right: 4px;
+	top: 10px;
+	font-size: 1.4rem;
+	color: #3090e6;
+	border: none;
+	background: none;
+}
+.form-btn {
+	border: none;
+	width: 100%;
+	height: 46px;
+	border-radius: 4px;
+	outline: none;
+	font-size: 1.6rem;
+	color: #fff;
+	background: #3090e6;
+	margin-top: 10px;
+}
+.tips-wrap {
+	padding: 20px;
+	text-align: center;
+	font-size: 1.6rem;
+	color: #fff;
+	line-height: 28px;
+}
+.tips-wrap a {
+	color: #fbd751;
+	font-size: 1.6rem;
+}
+
+/* success style */
+.success-page {
+	background: url(img/success-bg.png) top center no-repeat #fff;
+	background-size: 120%;
+}
+.success-box {
+	text-align: center;
+	margin: 50% 40px;
+}
+.success-box h2 {
+	font-size: 2.0rem;
+	color: #5882D0;
+	line-height: 32px;
+}
+.success-box p {
+	font-size: 1.6rem;
+	color: #666666;
+	line-height: 32px;
+}
+.success-box a {
+	display: block;
+	font-size: 1.6rem;
+	padding: 6px 0;
+	color: #fff;
+	line-height: 32px;
+	background: #d9284e;
+	border-radius: 4px;
+	margin-top: 14px;
+}

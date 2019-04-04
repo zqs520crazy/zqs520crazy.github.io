@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>川脉web客户端</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" >
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link href="resources/css/style.css" rel="stylesheet" type="text/css">
+	<link href="resources/css/search.css" rel="stylesheet" type="text/css">
+	<script src="resources/js/jquery-1.11.1.min.js"></script>
+	<script src="resources/js/DatePicker/WdatePicker.js"></script>
+	<script src="resources/js/common.js"></script>
+</head>
+
+<body>
+<!-- start of header -->
+<div class="header-bg">
+  <div class="header">
+    <div class="logo">
+      <a href="home.html">
+        <span class="logo-img-box"><img src="resources/imgs/logo_ywx.png" alt=""></span>
+        雾天行车防撞预警系统
+      </a>
+    </div>
+    <div class="user-head">
+      <a href="user-center.html">
+        <img src="resources/imgs/user-img.png" alt="" align="absmiddle">
+        <span>请登录</span>
+      </a>
+    </div>
+    <ul class="nav-wrapper">
+      <li><a href="home.html"><img src="resources/imgs/iconfont_home.png" alt=""><span>首页</span></a></li>
+      <li><a href="control.html"><img src="resources/imgs/iconfont_kongzhi.png" alt=""><span>控制</span></a></li>
+      <li><a href="setting.html"><img src="resources/imgs/iconfont_shezhi.png" alt=""><span>设置</span></a></li>
+      <li class="nav-active"><a href="search.html"><img src="resources/imgs/iconfont_chaxun.png" alt=""><span>查询</span></a></li>
+    </ul>
+    <div class="clear"></div>
+  </div>
+</div>
+<!-- end of header -->
+
+<!-- start of con-wrapper -->
+<div class="con-wrapper search">
+  <div class="container">
+    <div class="left-con">
+      <ul class="left-bar">
+        <li><a href="search.html"><img src="resources/imgs/icon_ydjb.png" alt=""><p>拥堵警报</p></a></li>
+        <li><a href="traffic-flow.html"><img src="resources/imgs/icon_xcll.png" alt=""><p>行车流量</p></a></li>
+        <li class="bar-active"><a href="weather-info.html"><img src="resources/imgs/icon_qxxx.png" alt=""><p>气象信息</p></a></li>
+        <li><a href="trouble-info.html"><img src="resources/imgs/icon_sbgz.png" alt=""><p>设备故障</p></a></li>
+        <li><a href="admin-log.html"><img src="resources/imgs/icon_glrz.png" alt=""><p>管理日志</p></a></li>
+      </ul>
+    </div>
+    <div class="right-con">
+      <div class="filter-row">
+        <div class="select-box">
+          <select>
+            <option value="G42沪蓉高速梁山段">G42沪蓉高速梁山段</option>
+            <option value="G68沪蓉高速黑沟子段">G68沪蓉高速黑沟子段</option>
+            <option value="G70沪蓉高速H段">G70沪蓉高速H段</option>
+          </select>
+        </div>
+        <div class="date-msg">
+          <span class="begin-date"><input class="Wdate" type="text" onClick="WdatePicker()" value="请选择开始时间"></span>
+          <span class="zhi">至</span>
+          <span class="end-date"><input class="Wdate" type="text" onClick="WdatePicker()" value="请选择结束时间"></span>
+        </div>
+        <a href="javascript:void(0)" class="search-data-btn">查询</a>
+        <a href="javascript:void(0)" class="export-data-btn">导出到Excel</a>
+        <div class="clear"></div>
+      </div>
+
+      <div class="data-show-wrapper">
+        <h2>气象信息统计</h2>
+        <div class="weather-box">
+          <div>
+            <img src="resources/imgs/statistical_temperature.png" alt="">
+            <p>最高值：50℃</p>
+            <p>最低值：20℃</p>
+            <p>平均值：35℃</p>
+          </div>
+          <span>温度统计</span>
+        </div>
+        <div class="weather-box">
+          <div>
+            <img src="resources/imgs/statistical_humidity.png" alt="">
+            <p>最高值：42%RH</p>
+            <p>最低值：40%RH</p>
+            <p>平均值：41%RH</p>
+          </div>
+          <span>湿度统计</span>
+        </div>
+        <div class="weather-box">
+          <div>
+            <img src="resources/imgs/statistical_pressure.png" alt="">
+            <p>最高值：986hPa</p>
+            <p>最低值：640hPa</p>
+            <p>平均值：813pHa</p>
+          </div>
+          <span>气压统计</span>
+        </div>
+        <div class="weather-box">
+          <div>
+            <img src="resources/imgs/statistical_rainfall.png" alt="">
+            <p>最高值：43mm</p>
+            <p>最低值：8mm</p>
+            <p>平均值：25.5mm</p>
+          </div>
+          <span>雨量统计</span>
+        </div>
+      </div>
+
+      <div class="last-sevsen-day">
+        <h2>过去七天气象走势图</h2>
+        <ul class="weather-tab">
+      		<li class="select"><img src="resources/imgs/iconfont_trend_wendu.png" alt="" align="absmiddle" >温度(%)</li>
+      		<li><img src="resources/imgs/iconfont_trend_shidu.png" alt="" align="absmiddle">湿度(%RH)</li>
+      		<li><img src="resources/imgs/iconfont_trend_qiya.png" alt="" align="absmiddle">气压(hPa)</li>
+      		<li><img src="resources/imgs/iconfont_trend_yuliang.png" alt="" align="absmiddle">雨量(mm)</li>
+      	</ul>
+        <div class="weather-trend-row">
+          <div class="weather-trend-box"><canvas id="wdFlow" height="180" width="816"></canvas></div>
+          <div class="weather-trend-box weather-hidden"><canvas id="sdFlow" height="180" width="816"></canvas></div>
+          <div class="weather-trend-box weather-hidden"><canvas id="qyFlow" height="180" width="816"></canvas></div>
+          <div class="weather-trend-box weather-hidden"><canvas id="ylFlow" height="180" width="816"></canvas></div>
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="ydjb-table">
+          <thead>
+            <tr>
+              <th>时间</th>
+              <th>星期</th>
+              <th>日均温度</th>
+              <th>日均湿度</th>
+              <th>日均气压</th>
+              <th>日均雨量</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2016-07-11</td>
+              <td>周一</td>
+              <td>28℃</td>
+              <td>45%RH</td>
+              <td>845hPa</td>
+              <td>27mm</td>
+            </tr>
+            <tr>
+              <td>2016-07-10</td>
+              <td>周日</td>
+              <td>30℃</td>
+              <td>41%RH</td>
+              <td>771hPa</td>
+              <td>31mm</td>
+            </tr>
+            <tr>
+              <td>2016-07-09</td>
+              <td>周六</td>
+              <td>28℃</td>
+              <td>45%RH</td>
+              <td>845hPa</td>
+              <td>27mm</td>
+            </tr>
+            <tr>
+              <td>2016-07-11</td>
+              <td>周二</td>
+              <td>30℃</td>
+              <td>41%RH</td>
+              <td>771hPa</td>
+              <td>31mm</td>
+            </tr>
+            <tr>
+              <td>2016-07-10</td>
+              <td>周日</td>
+              <td>30℃</td>
+              <td>41%RH</td>
+              <td>771hPa</td>
+              <td>31mm</td>
+            </tr>
+            <tr>
+              <td>2016-07-09</td>
+              <td>周六</td>
+              <td>28℃</td>
+              <td>45%RH</td>
+              <td>845hPa</td>
+              <td>27mm</td>
+            </tr>
+            <tr>
+              <td>2016-07-11</td>
+              <td>周二</td>
+              <td>30℃</td>
+              <td>41%RH</td>
+              <td>771hPa</td>
+              <td>31mm</td>
+            </tr>
+            <tr>
+              <td>2016-07-10</td>
+              <td>周日</td>
+              <td>30℃</td>
+              <td>41%RH</td>
+              <td>771hPa</td>
+              <td>31mm</td>
+            </tr>
+            <tr>
+              <td>2016-07-09</td>
+              <td>周六</td>
+              <td>28℃</td>
+              <td>45%RH</td>
+              <td>845hPa</td>
+              <td>27mm</td>
+            </tr>
+            <tr>
+              <td>2016-07-11</td>
+              <td>周二</td>
+              <td>30℃</td>
+              <td>41%RH</td>
+              <td>771hPa</td>
+              <td>31mm</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="page-wrapper">
+        <ul class="page">
+            <li><a class="a-style a-style-m" href="#">上一页</a></li>
+            <li class="active"><a class="a-style a-style-s" href="#">1</a></li>
+            <li><a class="a-style a-style-s" href="#">2</a></li>
+            <li><a class="a-style a-style-s" href="#">……</a></li>
+            <li><a class="a-style a-style-s" href="#">5</a></li>
+            <li><a class="a-style a-style-m" href="#">下一页</a></li>
+            <li>
+              <a class="a-style a-style-jump" href="#">转到</a><input class="ipt-jump" type="text">
+            </li>
+            <li><a href="#" class="btn-go">GO</a></li>
+          </ul>
+      </div>
+
+    </div><!-- end of right-con -->
+    <div class="clear"></div>
+</div>
+</div>
+<!-- end of con-wrapper -->
+
+<!-- 数据折线图 -->
+<script src="resources/js/chart.js"></script>
+<script type="text/javascript">
+  var wdChart = new Chart(document.getElementById("wdFlow").getContext("2d"));
+  var sdChart = new Chart(document.getElementById("sdFlow").getContext("2d"));
+  var qyChart = new Chart(document.getElementById("qyFlow").getContext("2d"));
+  var ylChart = new Chart(document.getElementById("ylFlow").getContext("2d"));
+
+	var lineChartData = {
+		labels : ["13","14","15","16","17","18","19"],
+		datasets : [
+			{
+				label: "traffic dataset",
+				fillColor : "rgba(133,233,239,0.2)",	//折线图填充色
+				strokeColor : "rgba(69,200,220,1)",	//线条颜色
+				pointColor : "rgba(255,255,255,1)",	//数据点填充颜色
+				pointStrokeColor : "#45c8dc",	//数据点边框颜色
+				pointHighlightFill : "#45c8dc",	//鼠标放上数据点时颜色
+				pointHighlightStroke : "rgba(69,200,220,1)",	//鼠标放上数据点时线条颜色
+				data : [34.8,33.6,35.0,34.1,34.2,33.8,33.7]
+			}
+		]
+	};
+  var lineChartData2 = {
+		labels : ["13","14","15","16","17","18","19"],
+		datasets : [
+			{
+				label: "rain dataset",
+				fillColor : "rgba(133,233,239,0.2)",	//折线图填充色
+				strokeColor : "rgba(69,200,220,1)",	//线条颜色
+				pointColor : "rgba(255,255,255,1)",	//数据点填充颜色
+				pointStrokeColor : "#45c8dc",	//数据点边框颜色
+				pointHighlightFill : "#45c8dc",	//鼠标放上数据点时颜色
+				pointHighlightStroke : "rgba(69,200,220,1)",	//鼠标放上数据点时线条颜色
+				data : [200.2,210.8,209.4,203.1,198.8,199.8,206.4]
+			}
+		]
+	};
+  var lineChartData3 = {
+		labels : ["13","14","15","16","17","18","19"],
+		datasets : [
+			{
+				label: "temp dataset",
+				fillColor : "rgba(133,233,239,0.2)",	//折线图填充色
+				strokeColor : "rgba(69,200,220,1)",	//线条颜色
+				pointColor : "rgba(255,255,255,1)",	//数据点填充颜色
+				pointStrokeColor : "#45c8dc",	//数据点边框颜色
+				pointHighlightFill : "#45c8dc",	//鼠标放上数据点时颜色
+				pointHighlightStroke : "rgba(69,200,220,1)",	//鼠标放上数据点时线条颜色
+				data : [42,41,42,40,41,42,43]
+			}
+		]
+	};
+  var lineChartData4 = {
+		labels : ["13","14","15","16","17","18","19"],
+		datasets : [
+			{
+				label: "temp dataset",
+				fillColor : "rgba(133,233,239,0.2)",	//折线图填充色
+				strokeColor : "rgba(69,200,220,1)",	//折线线条颜色
+				pointColor : "rgba(255,255,255,1)",	//数据点填充颜色
+				pointStrokeColor : "#45c8dc",	//数据点边框颜色
+				pointHighlightFill : "#45c8dc",	//鼠标放上数据点时颜色
+				pointHighlightStroke : "rgba(69,200,220,1)",	//鼠标放上数据点时线条颜色
+				data : [32.1,31.9,32.3,32.0,32.2,32.0,32.1]
+			}
+		]
+	};
+
+  var options = {
+    responsive: true,
+    scaleShowGridLines : true,	// 是否显示网格线
+    scaleGridLineColor : "rgba(225,225,225,.6)",	// 网格线的颜色
+    scaleShowLabels : true,	// 是否显示y轴的标签
+    bezierCurve : true,	// 是否曲线
+    scaleLabel : "<%=value%>",	// 标签显示值
+    scaleFontColor : "#999", 	// 标签字体的颜色
+    scaleFontSize : 12,	// 标签字体的大小
+  }
+
+  var wdLine = wdChart.Line(lineChartData, options);
+  var sdLine = sdChart.Line(lineChartData2, options);
+  var qyLine = qyChart.Line(lineChartData3, options);
+  var ylLine = ylChart.Line(lineChartData4, options);
+
+</script>
+</body>
+</html>

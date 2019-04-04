@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>步步到</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="resources/css/style.css"  rel="stylesheet" type="text/css">
+    <!-- <link href="resources/css/reset.css"  rel="stylesheet" type="text/css"> -->
+    <script type="text/javascript" src="resources/script/jquery.min.js"></script>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="resources/script/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $('#index_content').fadeIn('slow');
+            $('#myCarousel').carousel({
+                wrap: true,
+                pause: 'none',
+                interval: 8000
+            });
+            var _self = this;
+            this.picNum = 1;
+            setInterval(function () {
+                if (_self.picNum == 1) {
+                    $(".carousel_text").html("快速响应，闪电送达"); 
+                    _self.picNum = 2;
+                } else if (_self.picNum == 2) {
+                    $(".carousel_text").html("随时随地，灵活自由"); 
+                    _self.picNum = 3;
+                } else if (_self.picNum == 3) {
+                    $(".carousel_text").html("专人专送，即送即达"); 
+                    _self.picNum = 1;
+                }
+                $("#phone_pic").attr('src', 'resources/images/Group-' + _self.picNum + '.jpg'); 
+            }, 2000);
+            $('.download_and_pic').hover(function () {
+                $('.download_and_pic').css('background-position', 'left bottom');
+            }, function () {
+                $('.download_and_pic').css('background-position', 'left top');
+            });
+            $('.download_ios_pic').hover(function () {
+                $('.download_ios_pic').css('background-position', 'right bottom');
+            }, function () {
+                $('.download_ios_pic').css('background-position', 'right top');
+            });
+        });
+    </script>
+    </head> 
+<body>
+<div id="header">
+    <div class="container">
+        <div class="top">
+            <img class="top-logo" src="resources/images/logo.png">
+            <ul class="top-nav">
+                <li><a href="index.html" class="active">步步到</a></li>
+                <li><a href="recruit.html">快递人招募</a></li>
+                <li><a href="question.html">常见问题</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<div id="index_content">
+    <div class="index_banner">
+        <div id="myCarousel" class="carousel slide">
+           <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>   
+           <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item active main_b1">
+                    <div class="main1_container">
+                        <div class="phone_carousel index_first">
+                            <img src="resources/images/Group-1.jpg" alt="" id="phone_pic" />
+                        </div>
+                        <div class="main1_text_wrapper index_first">
+                            <p class="index_title">步步到</p>
+                            <p class="carousel_text">专人专送，即送即达</p>
+                            <div class="download-pic">
+                                <div class="download_and_pic"></div>
+                                <div class="download_ios_pic"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="item main_b2"></div>
+                <div class="item main_b3"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="service" >
+    <div class="container service-row">
+	</div>
+</div>
+
+<div id="flow" >
+    <div class="container flow-row">
+	</div>
+</div>
+
+<div id="bottom">
+    <div class="container">
+        <div class="bottom-row">
+            <div class="bottom-row-col">
+                <h2>下载步步到</h2>
+                <img class="code" src="resources/images/code.jpg">
+            </div>
+            <div class="bottom-row-col">
+                <h2>关注步步到</h2>
+                <p>新浪微博: bubudao</p><p>腾讯微博: bubudao</p><p>微信公众号: bubudao</p>
+            </div>
+            <div class="bottom-row-col">
+                <h2>商务合作</h2>
+				<p>请按以下联系方式，与商务人员取得联系</p><p>商务联系：028-68809198</p><p>商务邮箱：business@mohee.cn</p>
+			</div>
+			<div class="bottom-row-col2">
+				<h2>意见反馈</h2>
+                <p>联系邮箱：service@mohe.cn</p><p>联系电话：400-840－2030</p><p>意见反馈：点击这里</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="footer">@2015-2016    成都魔盒信息技术有限公司    蜀ICP备13013415号<div/>
+</div>
+</body>
+</html>

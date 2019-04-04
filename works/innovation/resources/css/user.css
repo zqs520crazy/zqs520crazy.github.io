@@ -1,0 +1,335 @@
+/* CSS Document
+@charset "utf-8";
+
+By I_amzQs
+2016-07-18
+成都方米科技有限公司
+*/
+html,body {
+	height:100%;
+}
+.con-wrapper {
+	position: absolute;;
+	width: 100%;
+	height: 100%;
+	background: #f4f3ef;
+	left: 0;
+	top: 0;
+}
+.profile-wrapper {
+	margin: 90px 20px;
+	background: #f9f9f9;
+	padding: 20px;
+}
+.profile-left-box img {
+	width: 160px;
+	height: 160px;
+	border: 8px solid #eee;
+}
+.profile-left-box {
+	float: left;
+	width: 180px;
+}
+.profile-right-box {
+	float: right;
+	width: 570px;
+}
+.quit-sys {
+	display: block;
+	width: 160px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	background: #45c8dc;
+	margin: 10px auto;
+	border-radius: 2px;
+	font-size: 14px;
+}
+.change-psw {
+	display: block;
+	width: 160px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #45c8dc;
+	margin: 10px auto;
+}
+.profile-right-box h2 {
+	color: #232323;
+	line-height: 40px;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+.profile-right-box div {
+	color: #232323;
+	line-height: 56px;
+	font-size: 18px;
+	border-bottom: 1px solid #ddd;
+}
+.profile-right-box div span {
+	color: #898989;
+	float: right;
+	text-align: right;
+}
+
+/* contacts style */
+.search-wrapper {
+	display: inline-block;
+	height: 58px;
+	width: 340px;
+	position: relative;
+}
+.search-box {
+	position: absolute;
+	top: 11px;
+	left: 20px;
+	width: 260px;
+	height: 34px;
+	line-height: 32px;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+.search-input {
+	width: 170px;
+	height: 32px;
+	padding-left: 10px;
+	border: none;
+	font-size: 14px;
+}
+.search-btn {
+	position: absolute;
+	right: -1px;
+	top: -1px;
+	height: 36px;
+	line-height: 36px;
+	width: 68px;
+	cursor: pointer;
+	color: #fff;
+	border: 1px solid #45c8dc;
+	background: #45c8dc;
+}
+.btn-wrapper {
+	margin-left: 92px;
+	display: inline-block;
+	height: 58px;
+	position: relative;
+}
+.btn-wrapper a {
+	float: left;
+	margin-top: 11px;
+  width: 120px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 14px;
+  text-align: center;
+  background: #fff;
+  color: #666;
+  border-radius: 2px;
+	border: 1px solid #45c8dc;
+	margin-left: 14px;
+}
+.btn-wrapper a img {
+	margin-right: 4px;
+}
+
+/* permissions style */
+.add-new-admin {
+	display: inline-block;
+	width: 120px;
+	height: 36px;
+	font-size: 14px;
+	line-height: 36px;
+	text-align: center;
+	background: #45c8dc;
+	color: #fff;
+	margin: 11px 14px;
+	border-radius: 2px;
+}
+.table-wrapper {
+
+}
+.ydjb-table {
+	width: 100%;
+	border-collapse:collapse;
+}
+.ydjb-table thead {
+
+}
+.ydjb-table thead tr th {
+	font-size: 16px;
+	color: #343434;
+	font-weight: normal;
+	line-height: 60px;
+}
+.ydjb-table thead tr th select {
+	width: 92px;
+	color: #636363;
+	font-size: 16px;
+	border: 1px solid #ddd;
+	outline: none;
+	font-family:"Microsoft YaHei",微软雅黑;
+}
+.ydjb-table tbody tr {
+	border-bottom: 1px solid #ddd;
+}
+.ydjb-table tbody tr td {
+	font-size: 14px;
+	color: #666;
+	font-weight: normal;
+	line-height: 46px;
+	text-align: center;
+}
+.ydjb-table tbody tr td .edit-btn {
+	color: #459ef7;
+	margin-right: 20px;
+}
+.ydjb-table tbody tr td .delete-btn {
+	color: #f1535d;
+}
+
+/* dialog style */
+.add-admin-box {
+	position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 100;
+  margin-top: -220px;
+  margin-left: -170px;
+	width: 340px;
+	height: 420px;
+  background: #fff;
+  text-align: left;
+}
+.dialog-hidden {
+	display: none;
+}
+.dialog-form div input {
+	width: 276px;
+	padding: 0 10px;
+	margin: 14px auto 0;
+	height: 34px;
+	line-height: 34px;
+}
+.dialog-form div select {
+	width: 300px;
+	height: 38px;
+	margin: 14px auto 0px;
+	outline: none;
+	font-family:"Microsoft YaHei",微软雅黑;
+}
+.dialog-form div input[type=checkbox] {
+	width: 14px;
+	margin-left: 10px;
+	margin-right: 12px;
+	height: 14px;
+	line-height:14px;
+}
+.luduan-list {
+	height: 80px;
+	overflow-y: auto;
+	background: #f9f9f9;
+}
+.luduan-box h4 {
+	color: #454545;
+	line-height: 34px;
+	font-weight: bold;
+}
+.luduan-box p {
+	font-size: 14px;
+  font-weight: normal;
+  color: #636363;
+  line-height: 18px;
+}
+.add-newpeo-box,.edit-peo-box {
+	position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 100;
+  margin-top: -190px;
+  margin-left: -170px;
+	width: 340px;
+	height: 310px;
+  background: #fff;
+  text-align: left;
+}
+.dialog-form div span {
+	position: absolute;
+	top: 18px;
+	right: 1px;
+	display: none;
+	padding: 0 2px;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	background: #fff;
+	font-size: 12px;
+	color: #f1535d;
+}
+.add-newfz-box {
+	position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 100;
+  margin-top: -100px;
+  margin-left: -170px;
+	width: 340px;
+	height: 150px;
+  background: #fff;
+  text-align: left;
+}
+.edit-fz-box {
+	position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 100;
+  margin-left: -170px;
+	width: 340px;
+	height: auto;
+  background: #fff;
+  text-align: left;
+	padding-bottom: 10px;
+}
+.edit-fz-form p {
+	font-size: 14px;
+	line-height: 20px;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+.edit-fz-form div button {
+	position: absolute;
+	right: 1px;
+	top: 15px;
+	padding: 8px 6px;
+	cursor: pointer;
+	color: #f1535d;
+	font-size: 14px;
+	background: #fff;
+	border: none;
+	outline: none;
+	font-family:"Microsoft YaHei",微软雅黑;
+}
+.form-fz-box {
+	max-height: 160px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: #f9f9f9;
+	padding-bottom: 10px;
+}
+.change-psw-box {
+	position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 100;
+  margin-top: -140px;
+  margin-left: -170px;
+	width: 340px;
+	height: 260px;
+  background: #fff;
+  text-align: left;
+}
+
+
+
+
+/* style end */

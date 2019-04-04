@@ -1,0 +1,219 @@
+/* CSS Document */
+@charset "utf-8";
+
+body,div,p,ul,li,dl,dt,dd,h1,h2,h3,a,img,span{margin:0; padding:0;}/*标签重置*/
+a, img{border:none;}	/*对图片边框的重置*/
+li{list-style:none}
+.clear{clear: both}
+*{font-family: "Microsoft Yahei";}
+html, body{ margin:0; height:100%; }
+
+
+#header{
+	height: 80px;
+	line-height: 80px;
+	background: #fff;
+	z-index: 99;
+}
+.container{
+	width: 1000px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#logo{
+	width: 200px;
+	height: 60px;
+	float: left;
+	color: #2DBEEA;
+	font-size: 20px;
+	text-decoration: none;
+}
+#logo img{	
+	width: 107px;
+	height: 40px;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+#navBar {
+	height: 80px;
+	float: right;
+	list-style: none;
+}
+#navBar li{
+	float: right;
+}
+#navBar li a{
+	display:inline-block;
+	height:78px;
+	line-height:80px;
+	text-align:center;
+	font-size:16px; 
+	color:#666; 
+	text-decoration:none;
+	float:left;
+	margin-left: 42px;
+	padding: 0 20px;
+}
+#navBar li .cur{
+	color: #F54337;
+	border-bottom: 2px solid #F54337
+}
+
+/*首页展示区域*/
+.main-bg {
+	padding-top: 20px;
+	background-image: url(../images/main-bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;	
+	min-width: 1100px;
+}
+
+.content-box-left {
+	float: left;
+}
+.content-box-right {
+	float: right;
+}
+.lunpic-box {
+	position: relative;
+	width: 360px;
+	height: 680px;
+	background: url(../images/phone-bg.png) no-repeat
+}
+.lunpic-grid {
+	position: absolute;
+	top: 90px;
+	left: 20px;
+	width: 280px;
+	height: 500px;
+}
+.con-box {
+	margin-top: 150px;
+	margin-right: 200px;
+}
+.con-box h2{font-size: 30px; font-weight: 300;  margin:30px -20px;}
+.con-box h2 span{font-size: 40px; font-weight: normal; margin: 0 20px;}
+
+.down-btn {
+	width: 190px;
+	height: 60px;
+	background: #ff6d49;
+	color: #fff;
+	line-height: 64px;
+	text-align: center;
+	font-size: 28px;
+	margin-top: 40px;
+	border-radius: 6px;
+}
+.btn-ios {
+	margin-top: 50px;
+}
+.down-btn:hover{
+	cursor: pointer;
+	color: #ff6d49;
+	background: #fff;
+}
+.cord {
+	width: 160px;
+	height: 160px;
+	border: 6px solid #fff;
+	margin-top: -170px;
+	margin-left: 240px;
+}
+.row{
+	height: 100%;
+	min-height: 800px;
+	min-width: 1000px;
+	position: relative;
+	overflow: hidden;
+}
+.box {
+	position: relative;
+	display: none;
+	width: 1000px;
+	margin: 0 auto;
+}
+.row-grid1 {
+	position: absolute;
+	top: 290px;
+	left: 0px;
+	width: 500px;
+	height: 200px;
+	display: none;
+}
+.row-grid2 {
+	position: absolute;
+	top: 290px;
+	right: -140px;
+	width: 500px;
+	height: 200px;
+	display: none;
+}
+.row-grid3 {
+	position: absolute;
+	top: 290px;
+	left: 0;
+	width: 500px;
+	height: 200px;
+	display: none;
+}
+.grid-h2 {
+	font-size: 40px;
+	font-weight: 400;
+	color: #28D4E2;
+}
+.grid-h5 {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #666;
+	margin-top: 10px;
+}
+
+
+/*      关于我们CSS       */
+.about-bg {
+	height: 100%;
+}
+.about-title {
+	font-size: 26px;
+	line-height: 26px;
+	color: #333;
+	border-bottom: 1px solid #ccc;
+	padding: 40px 0 10px;
+	margin-bottom: 40px;
+}
+.about-us-logo {
+	float: left;
+}
+.about-us-con {
+	font-size: 16px;
+	color: #666;
+	text-indent: 0em;
+	line-height: 28px;
+	margin-bottom: 10px;
+}
+.contact-box {
+	color: #666;
+	line-height: 28px;
+}
+
+
+/*底部内容*/
+#bottom{
+	background: #3B3B3C;
+}
+#footer{
+	height:80px;
+	line-height: 80px;
+	font-size: 14px;
+	text-align: center;
+	color: #999999;
+}
+
+
+
+
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>步步到</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="resources/css/style.css"  rel="stylesheet" type="text/css">
+    <!-- <link href="resources/css/reset.css"  rel="stylesheet" type="text/css"> -->
+    <script type="text/javascript" src="resources/script/jquery-1.3.2.min.js"></script>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        $(function(){
+            $('.banner').fadeIn('slow');
+            $(".title-panel").click(function(){
+                $(".title-panel").not(this).next().slideUp(400);
+                $(this).next().stop(true,true).slideToggle(400);
+            })
+        });
+    </script>
+</head> 
+<body>
+<div id="header">
+    <div class="container">
+        <div class="top">
+            <img class="top-logo" src="resources/images/logo.png">
+            <ul class="top-nav">
+                <li><a href="index.html">步步到</a></li>
+                <li><a href="recruit.html" class="active">快递人招募</a></li>
+                <li><a href="question.html">常见问题</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<div id="content">
+    <div class="banner recruit-bg"></div>
+    <div class="container">
+        <div class="block">
+            <div class="block_title">广纳“派”达人</div>
+            <div class="block_body">
+                <p class="recruit_text">步步到派送员招募令</p>
+                <p class="recruit_detail">
+                    步步到自由“派”达人虚位待你<br>
+                    24小时的海量订单等你来抢<br>
+                    派送距离“一步之遥”，丰厚收入“一步入账”<br>
+                    全职or兼职由你选择
+                </p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block_title">报名流程</div>
+            <div class="block_body">
+                <p class="recruit_wrapper">
+                    <span class="login_text">下载步步到APP填写资料</span>
+                    <img src="resources/images/icon_arow.png"  class="login_pic" alt="" />
+                    <span class="login_text">等待认证认证通过</span>
+                    <img src="resources/images/icon_arow.png"  class="login_pic" alt="" />
+                    <span class="login_text">定点培训</span>
+                </p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block_title">招募条件</div>            
+            <div class="block_body">
+                <ul>
+                    <dt>1、年龄范围：</dt>
+                    <dd>男性：18周岁至55周岁</dd>
+                    <dd>女性：18周岁至45周岁</dd>
+                </ul>
+                <ul>
+                    <dt>2、基本条件：</dt>
+                    <dd>（1）熟悉本地路况；</dd>
+                    <dd>（2）言行礼貌，操作规范，具有一定的服务意识者优先；</dd>
+                    <dd>（3）遵纪守法，遵守职业道德；</dd>
+                    <dd>（4）具备能安装app端口程序的安卓/苹果智能手机；</dd>
+                    <dd>（5）有摩托车，电动车，汽车者优先。</dd>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="bottom">
+    <div class="container">
+        <div class="bottom-row">
+            <div class="bottom-row-col">
+                <h2>下载步步到</h2>
+                <img class="code" src="resources/images/code.jpg">
+            </div>
+            <div class="bottom-row-col">
+                <h2>关注步步到</h2>
+                <p>新浪微博: bubudao</p><p>腾讯微博: bubudao</p><p>微信公众号: bubudao</p>
+            </div>
+            <div class="bottom-row-col">
+                <h2>商务合作</h2>
+				<p>请按以下联系方式，与商务人员取得联系</p><p>商务联系：028-68809198</p><p>商务邮箱：business@mohee.cn</p>
+			</div>
+			<div class="bottom-row-col2">
+				<h2>意见反馈</h2>
+                <p>联系邮箱：service@mohe.cn</p><p>联系电话：400-840－2030</p><p>意见反馈：点击这里</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="footer">@2015-2016    成都魔盒信息技术有限公司    蜀ICP备13013415号<div/>
+</div>
+</body>
+</html>

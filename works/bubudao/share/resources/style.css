@@ -1,0 +1,113 @@
+/* CSS Document */
+@charset "utf-8";
+
+* { /*±êÇ©ÖØÖÃ*/
+	margin:0; padding:0; 
+}
+img {border:none;}	/*¶ÔÍ¼Æ¬±ß¿òµÄÖØÖÃ*/
+html {font-size: 100%;}
+ul,li {list-style:none;}
+.clear {clear:both;}
+.img {
+}
+html { 
+	overflow-x: hidden; 
+	overflow-y: hidden; 
+}
+body {    
+	font-family: "Microsoft YaHei UI";
+}
+
+@media only screen and (max-width:1024px) {
+	body {
+		margin: 0 auto;
+		/*width: 50%;*/
+		background: url(bg.jpg) no-repeat #d4f9e5;
+    	background-size: 100%;
+	}
+	.box-one {
+		width: 80%;	
+	    margin: 0 auto;
+	    border-radius: 3px;
+	    padding: 20px;
+	    margin-top: 15px;
+		text-align: center;
+	}
+	.title {
+		font-size: 4em;
+		color: #333;
+		margin-top: 0.8em;
+	}
+	.download-btn {
+		display: block;
+		width: 90%;
+		height: 3em;
+		font-size: 2.5em;
+	    border-radius: 4px;
+		line-height: 3em;
+		background: #00BF71;
+		color: #fff;
+		text-decoration: none;
+		margin: 1em auto;	
+	}
+	.invite-txt {
+		font-size: 2.6em;
+		color: #333;
+		margin-top: 1em;	
+	}
+	.invite-code {
+		font-size: 3em;
+		color: #fd6722;
+		margin-top: 0.4em;
+	}
+	.invite-code span { 
+		color: #555;
+}
+}
+@media only screen and (min-width:1024px) {
+	body {
+		margin: 0 auto;
+		width: 80%;
+		background: url(bg.jpg) no-repeat #d4f9e5;
+		background-attachment: fixed;
+    	background-position: 50% 40%;
+	}
+	.box-one {
+		width: 50%;	
+	    margin: 0 auto;
+	    border-radius: 3px;
+	    padding: 20px;
+	    /*margin-top: 5px;*/
+		text-align: center;
+	}
+	.title {
+		font-size: 2em;
+		color: #333;
+		margin-top: 0.8em;
+	}
+	.download-btn {
+		display: block;
+		width: 90%;
+		height: 2em;
+		font-size: 1.5em;
+	    border-radius: 4px;
+		line-height: 2em;
+		background: #00BF71;
+		color: #fff;
+		text-decoration: none;
+		margin: 1em auto;	
+	}
+	.invite-txt {
+		font-size: 1.6em;
+		color: #333;
+		margin-top: 1em;	
+	}
+	.invite-code {
+		font-size: 1.6em;
+		color: #fd6722;
+		margin-top: 0.4em;
+	}
+	.invite-code span { 
+		color: #555;
+
+｝

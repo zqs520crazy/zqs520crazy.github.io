@@ -1,0 +1,17 @@
+/* CSS Document */
+@charset "utf-8";
+
+body,div,p,a,ul,li,h1,h2,button,span {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei UI", Arial, Sans-serif;
+}/*±Í«©÷ÿ÷√*/
+a,img,button {
+	border: none;
+}
+ul, ol {
+	list-style: none;
+}
+.clear {
+	clear: both;
+}

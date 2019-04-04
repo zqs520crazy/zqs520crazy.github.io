@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>川脉web客户端</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" >
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link href="resources/css/style.css" rel="stylesheet" type="text/css">
+	<link href="resources/css/home.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=a39ad8275aa92280eb09d7e7a5694edc"></script>
+	<script src="resources/js/jquery-1.11.1.min.js"></script>
+	<script src="resources/js/common.js"></script>
+	<script src="resources/js/map.js"></script>
+	<script src="resources/js/jquery.nicescroll.js"></script>
+</head>
+
+<body>
+<!-- start of header -->
+<div class="header-bg">
+  <div class="header">
+    <div class="logo">
+      <a href="home.html">
+        <span class="logo-img-box"><img src="resources/imgs/logo_ywx.png" alt=""></span>
+        雾天行车防撞预警系统
+      </a>
+    </div>
+    <div class="user-head">
+      <a href="user-center.html">
+        <img src="resources/imgs/user-img.png" alt="" align="absmiddle">
+        <span>请登录</span>
+      </a>
+    </div>
+    <ul class="nav-wrapper">
+      <li class="nav-active"><a href="home.html"><img src="resources/imgs/iconfont_home.png" alt=""><span>首页</span></a></li>
+      <li><a href="control.html"><img src="resources/imgs/iconfont_kongzhi.png" alt=""><span>控制</span></a></li>
+      <li><a href="setting.html"><img src="resources/imgs/iconfont_shezhi.png" alt=""><span>设置</span></a></li>
+      <li><a href="search.html"><img src="resources/imgs/iconfont_chaxun.png" alt=""><span>查询</span></a></li>
+    </ul>
+    <div class="clear"></div>
+  </div>
+</div>
+<!-- end of header -->
+
+<!-- 滚动突发事件 -->
+<div class="marquee-row">
+  <marquee width="98%" height="30px" direction="left" scrollamount="5">
+    G42老山梁子段出现大量拥堵
+  </marquee>
+  <a href="javascript:void(0)" ></a>
+</div>
+
+<!-- start of map-wrapper -->
+<div class="map-wrapper">
+  <div class="map" id="map">
+  <span class="map_marker">1</span>
+  </div>
+  <!-- 地图js -->
+  <script>
+    var map = new AMap.Map('map', {
+        resizeEnable: true,
+        zoom: 9,
+
+    });
+  </script>
+
+  <div class="search-box">
+    <form>
+        <input type="text" placeholder="请输入路段名称" class="search-input">
+        <input type="" class="search-btn" value="">
+    </form>
+  </div>
+
+  <!-- 搜索结果 -->
+  <div class="search-result-wrapper">
+    <a href="javascript:void(0)" class="result-row">
+      <div class="left-box">1</div>
+      <div class="right-box">
+        <h2>路段名称：G70沪蓉高速H段</h2>
+        <p>
+          高速全称：G70沪蓉高速<br/>
+          起止桩号：K1603+200 至 K1606+200
+        </p>
+      </div>
+    </a>
+    <a href="javascript:void(0)" class="result-row">
+      <div class="left-box">2</div>
+      <div class="right-box">
+        <h2>路段名称：老山梁子段</h2>
+        <p>
+          高速全称：G42沪蓉高速<br/>
+          起止桩号：K1603+200 至 K1606+200
+        </p>
+      </div>
+    </a>
+    <a href="javascript:void(0)" class="result-row">
+      <div class="left-box">3</div>
+      <div class="right-box">
+        <h2>路段名称：老山梁子段</h2>
+        <p>
+          高速全称：G42沪蓉高速<br/>
+          起止桩号：K1603+200 至 K1606+200
+        </p>
+      </div>
+    </a>
+    <a href="javascript:void(0)" class="result-row">
+      <div class="left-box">4</div>
+      <div class="right-box">
+        <h2>路段名称：G70沪蓉高速H段</h2>
+        <p>
+          高速全称：G70沪蓉高速<br/>
+          起止桩号：K1603+200 至 K1606+200
+        </p>
+      </div>
+    </a>
+    <a href="javascript:void(0)" class="result-row">
+      <div class="left-box">5</div>
+      <div class="right-box">
+        <h2>路段名称：老山梁子段</h2>
+        <p>
+          高速全称：G42沪蓉高速<br/>
+          起止桩号：K1603+200 至 K1606+200
+        </p>
+      </div>
+    </a>
+    <a href="javascript:void(0)" class="result-row">
+      <div class="left-box">6</div>
+      <div class="right-box">
+        <h2>路段名称：G70沪蓉高速H段</h2>
+        <p>
+          高速全称：G70沪蓉高速<br/>
+          起止桩号：K1603+200 至 K1606+200
+        </p>
+      </div>
+    </a>
+    <a href="javascript:void(0)" class="result-row">
+      <div class="left-box">7</div>
+      <div class="right-box">
+        <h2>路段名称：老山梁子段</h2>
+        <p>
+          高速全称：G42沪蓉高速<br/>
+          起止桩号：K1603+200 至 K1606+200
+        </p>
+      </div>
+    </a>
+    <a href="javascript:void(0)" class="result-row">
+      <div class="left-box">8</div>
+      <div class="right-box">
+        <h2>路段名称：老山梁子段</h2>
+        <p>
+          高速全称：G42沪蓉高速<br/>
+          起止桩号：K1603+200 至 K1606+200
+        </p>
+      </div>
+    </a>
+    <a href="javascript:void(0)" class="result-row">
+      <div class="left-box">9</div>
+      <div class="right-box">
+        <h2>路段名称：老山梁子段</h2>
+        <p>
+          高速全称：G42沪蓉高速<br/>
+          起止桩号：K1603+200 至 K1606+200
+        </p>
+      </div>
+    </a>
+  </div>
+  <!-- 搜索结果结束 -->
+
+  <!-- 路段详情 -->
+  <div class="road-detail-wrapper">
+    <div class="title-box">
+      <div class="title-l">
+        <h2>老山黑市梁子段</h2>
+        <p>
+          高速全称：G42沪蓉高速<br/>
+          起止桩号：K1603+200 至 K1606+200
+        </p>
+      </div>
+      <div class="title-r">
+        <img src="resources/imgs/light_hdcl.png" alt="">
+        <p>红灯常亮</p>
+      </div>
+    </div>
+
+    <div class="now-record-row">
+      <div class="record-box">
+        <div class="record-num">1249</div>
+        <p>当前车流量(辆/小时)</p>
+      </div>
+      <div class="record-box">
+        <div class="record-num">1020</div>
+        <p>当前能见度(米)</p>
+      </div>
+    </div>
+
+    <div class="statistics-row">
+      <img src="resources/imgs/btn_pre.png" class="pre-btn switch-btn">
+      <img src="resources/imgs/btn_next.png" class="next-btn switch-btn">
+      <div class="chart-box chart-cll cur">
+        <h2>1过去七天车流量(辆)</h2>
+        <div class="chart"><canvas id="trafficFlow" height="130" width="320"></canvas></div>
+      </div>
+      <div class="chart-box chart-yl">
+        <h2>2过去七天雨量(mm)</h2>
+        <div class="chart"><canvas id="rainData" height="130" width="320"></canvas></div>
+      </div>
+      <div class="chart-box chart-wd">
+        <h2>3过去七天温度(℃)</h2>
+        <div class="chart"><canvas id="tempData" height="130" width="320"></canvas></div>
+      </div>
+    </div>
+
+    <div class="weather-row">
+      <div class="weather-box weather-left-box">
+        <div><img src="resources/imgs/icon_wd.png" align="absmiddle">温度<p class="blue">24.8℃</p></div>
+        <div><img src="resources/imgs/icon_fs.png" align="absmiddle">风速<p class="blue">2.4km/h</p></div>
+      </div>
+      <div class="weather-box weather-middle-box">
+        <div><img src="resources/imgs/icon_yl.png" align="absmiddle">雨量<p class="blue">200.02mm</p></div>
+        <div><img src="resources/imgs/icon_fx.png" align="absmiddle">风向<p class="blue">东风18.12°</p></div>
+      </div>
+      <div class="weather-box weather-right-box">
+        <div><img src="resources/imgs/icon_qy.png" align="absmiddle">气压<p class="blue">35mPa</p></div>
+        <div><img src="resources/imgs/icon_sd.png" align="absmiddle">湿度<p class="blue">24%</p></div>
+      </div>
+    </div>
+
+    <a href="javascript:void(0)" class="show-luduan-pic">查看实时图片</a>
+  </div>
+  <!-- 路段详情结束 -->
+
+<!-- end of map-wrapper -->
+
+<!-- 弹窗js -->
+<div class="dialog-bg dialog-hidden">
+  <div class="luduan-pic-box dialog-box">
+    <img src="resources/imgs/test-pic.png">
+    <div class="dialog-cancel-btn"></div>
+    <p>当前图片获取时间：2016-06-18 10:20:37<br>该图片5分钟更新一次</p>
+  </div>
+</div>
+
+<script type="text/javascript">
+	$(".show-luduan-pic").click(function(){
+  	$(".dialog-bg").fadeIn(200);
+    var ldpicWidth = $(".luduan-pic-box").find("img").width(); //获取图片的宽度
+    //alert(ldpicWidth);
+    var boxLeft = ldpicWidth/2;
+    $(".luduan-pic-box").css({"margin-left":-boxLeft,"width":ldpicWidth});
+
+	});
+  $(".dialog-cancel-btn").click(function(){
+    $(".dialog-bg").fadeOut(200);
+  });
+
+  $(".search-result-wrapper, .road-detail-wrapper").niceScroll({
+      cursorcolor: "#ccc",//#CC0071 光标颜色
+      cursoropacitymax: 1, //改变不透明度非常光标处于活动状态（scrollabar“可见”状态），范围从1到0
+      touchbehavior: false, //使光标拖动滚动像在台式电脑触摸设备
+      cursorwidth: "5px", //像素光标的宽度
+      cursorborder: "0", // 	游标边框css定义
+      cursorborderradius: "5px",//以像素为光标边界半径
+      autohidemode: false //是否隐藏滚动条
+  });
+
+</script>
+
+<!-- 数据折线图 -->
+<script src="resources/js/chart.js"></script>
+<script type="text/javascript">
+  var traffic = new Chart(document.getElementById("trafficFlow").getContext("2d"));
+  var rain = new Chart(document.getElementById("rainData").getContext("2d"));
+  var temp = new Chart(document.getElementById("tempData").getContext("2d"));
+
+	var lineChartData = {
+		labels : ["13","14","15","16","17","18","19"],
+		datasets : [
+			{
+				label: "traffic dataset",
+				fillColor : "rgba(223,234,240,0.8)",	//折线图填充色
+				strokeColor : "rgba(69,200,220,1)",	//线条颜色
+				pointColor : "rgba(255,255,255,1)",	//数据点填充颜色
+				pointStrokeColor : "#45c8dc",	//数据点边框颜色
+				pointHighlightFill : "#45c8dc",	//鼠标放上数据点时颜色
+				pointHighlightStroke : "rgba(69,200,220,1)",	//鼠标放上数据点时线条颜色
+				data : [1201,1451,1210,1183,1320,1279,1403]
+			}
+		]
+	};
+  var lineChartData2 = {
+		labels : ["13","14","15","16","17","18","19"],
+		datasets : [
+			{
+				label: "rain dataset",
+				fillColor : "rgba(223,234,240,0.8)",	//折线图填充色
+				strokeColor : "rgba(69,200,220,1)",	//线条颜色
+				pointColor : "rgba(255,255,255,1)",	//数据点填充颜色
+				pointStrokeColor : "#45c8dc",	//数据点边框颜色
+				pointHighlightFill : "#45c8dc",	//鼠标放上数据点时颜色
+				pointHighlightStroke : "rgba(69,200,220,1)",	//鼠标放上数据点时线条颜色
+				data : [200.2,210.8,209.4,203.1,198.8,199.8,206.4]
+			}
+		]
+	};
+  var lineChartData3 = {
+		labels : ["13","14","15","16","17","18","19"],
+		datasets : [
+			{
+				label: "temp dataset",
+				fillColor : "rgba(223,234,240,0.8)",	//折线图填充色
+				strokeColor : "rgba(69,200,220,1)",	//线条颜色
+				pointColor : "rgba(255,255,255,1)",	//数据点填充颜色
+				pointStrokeColor : "#45c8dc",	//数据点边框颜色
+				pointHighlightFill : "#45c8dc",	//鼠标放上数据点时颜色
+				pointHighlightStroke : "rgba(69,200,220,1)",	//鼠标放上数据点时线条颜色
+				data : [32.1,31.9,32.3,32.0,32.2,32.0,32.1]
+			}
+		]
+	};
+
+  var options = {
+    responsive: true,
+    scaleShowGridLines : true,	// 是否显示网格线
+    scaleGridLineColor : "rgba(200,200,200,.2)",	// 网格线的颜色
+    scaleShowLabels : false,	// 是否显示y轴的标签
+    bezierCurve : true,	// 是否曲线
+    scaleLabel : "<%=value%>",	// 标签显示值
+    scaleFontColor : "#999", 	// 标签字体的颜色
+    scaleFontSize : 12,	// 标签字体的大小
+  }
+
+  var trafficLine = traffic.Line(lineChartData, options);
+  var rainLine = rain.Line(lineChartData2, options);
+  var tempLine = temp.Line(lineChartData3, options);
+
+</script>
+
+</body>
+</html>

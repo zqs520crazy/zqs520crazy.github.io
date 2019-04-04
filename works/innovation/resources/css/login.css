@@ -1,0 +1,89 @@
+/* CSS Document
+@charset "utf-8";
+
+By I_amzQs
+2016-07-18
+成都方米科技有限公司
+*/
+html,body {
+	height:100%;
+}
+body {
+	background: url(../imgs/login_bg.png) center center no-repeat #f9f9f9;
+	background-size: 68%;
+}
+.login-wrapper {
+	position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 100;
+  margin-top: -210px;
+  margin-left: -200px;
+	width: 400px;
+	height: 320px;
+  background: #fff;
+  text-align: center;
+	box-shadow: 0px 2px 2px #ddd;
+}
+.login-wrapper img {
+	margin-top: 30px;
+}
+.login-wrapper p {
+	line-height: 40px;
+}
+.login-wrapper form {
+	width: 320px;
+	margin: 10px auto;
+}
+.login-wrapper form .form-input {
+	position: relative;
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	margin-bottom: 12px;
+}
+.login-wrapper form div span {
+	position: absolute;
+	top: 2px;
+	right: 1px;
+	display: none;
+	padding: 0 2px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	font-size: 12px;
+	color: #f1535d;
+}
+.login-wrapper form .form-input input {
+	width: 84%;
+	height: 38px;
+	margin-left: 36px;
+	border: none;
+}
+.form-pho-row {
+	background: url(../imgs/icon_pho.png) 8px 6px no-repeat;
+}
+.form-pwd-row {
+	background: url(../imgs/icon_pwd.png) 8px 6px no-repeat;
+}
+.form-btn input {
+	width: 100%;
+	line-height: 42px;
+	background: #45c8dc;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 2px;
+	margin-top: 2px;
+	margin-bottom: 14px;
+}
+a {
+	color: #45c8dc;
+}
+
+
+/* style end */

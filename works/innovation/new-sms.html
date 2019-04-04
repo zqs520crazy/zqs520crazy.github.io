@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>川脉web客户端</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" >
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link href="resources/css/style.css" rel="stylesheet" type="text/css">
+	<link href="resources/css/setting.css" rel="stylesheet" type="text/css">
+	<script src="resources/js/jquery-1.11.1.min.js"></script>
+	<script src="resources/js/common.js"></script>
+</head>
+
+<body>
+<!-- start of header -->
+<div class="header-bg">
+  <div class="header">
+    <div class="logo">
+      <a href="home.html">
+        <span class="logo-img-box"><img src="resources/imgs/logo_ywx.png" alt=""></span>
+        雾天行车防撞预警系统
+      </a>
+    </div>
+    <div class="user-head">
+      <a href="user-center.html">
+        <img src="resources/imgs/user-img.png" alt="" align="absmiddle">
+        <span>请登录</span>
+      </a>
+    </div>
+    <ul class="nav-wrapper">
+      <li><a href="home.html"><img src="resources/imgs/iconfont_home.png" alt=""><span>首页</span></a></li>
+      <li><a href="control.html"><img src="resources/imgs/iconfont_kongzhi.png" alt=""><span>控制</span></a></li>
+      <li class="nav-active"><a href="setting.html"><img src="resources/imgs/iconfont_shezhi.png" alt=""><span>设置</span></a></li>
+      <li><a href="search.html"><img src="resources/imgs/iconfont_chaxun.png" alt=""><span>查询</span></a></li>
+    </ul>
+    <div class="clear"></div>
+  </div>
+</div>
+<!-- end of header -->
+
+<!-- start of con-wrapper -->
+<div class="con-wrapper setting">
+  <div class="container">
+    <div class="left-con">
+      <ul class="left-bar">
+        <li><a href="setting.html"><img src="resources/imgs/icon_gnkz.png" alt=""><p>参数设置</p></a></li>
+        <li class="bar-active"><a href="sms-setting.html"><img src="resources/imgs/icon_dxsz.png" alt=""><p>短信设置</p></a></li>
+      </ul>
+    </div>
+    <div class="right-con">
+      <div class="filter-row">
+        <div class="select-box">
+          <select>
+            <option value="G42沪蓉高速梁山段">G42沪蓉高速梁山段</option>
+            <option value="G68沪蓉高速黑沟子段">G68沪蓉高速黑沟子段</option>
+            <option value="G70沪蓉高速H段">G70沪蓉高速H段</option>
+          </select>
+        </div>
+        <div class="luduan-msg">
+          <span class="begin-point">K8121+211</span>
+          <span class="zhi">至</span>
+          <span class="end-point">K9128+212</span>
+        </div>
+        <div class="clear"></div>
+      </div>
+
+      <div class="sms-wrapper">
+        <div class="sms-row1">
+          <div class="sms-row-left">
+            发送条件
+            <select>
+              <option value="1">能见度低于400米</option>
+              <option value="2">能见度低于300米</option>
+              <option value="3">能见度低于200米</option>
+              <option value="4">能见度低于100米</option>
+            </select>
+          </div>
+          <div class="sms-row-right">
+            发送方式
+            <select>
+              <option value="1">短信发送</option>
+              <option value="2">邮件发送</option>
+            </select>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="sms-row2">
+          <div class="contact-text">发送给</div>
+          <div class="contact-box">
+            <span>
+              王誉霖<br>18716407734
+              <button class="delete-contact"></button>
+            </span>
+            <span>
+              王誉霖<br>18716407734
+              <button class="delete-contact"></button>
+            </span>
+            <span>
+              王誉霖<br>18716407734
+              <button class="delete-contact"></button>
+            </span>
+            <span>
+              王誉霖<br>18716407734
+              <button class="delete-contact"></button>
+            </span>
+            <span>
+              王誉霖<br>18716407734
+              <button class="delete-contact"></button>
+            </span>
+            <span>
+              王誉霖<br>18716407734
+              <button class="delete-contact"></button>
+            </span>
+            <span>
+              王誉霖<br>18716407734
+              <button class="delete-contact"></button>
+            </span>
+            <span>
+              王誉霖<br>18716407734
+              <button class="delete-contact"></button>
+            </span>
+            <a href="javascript:void(0)" class="add-contact-btn">添加联系人</a>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="sms-and-email-wrapper">
+      <h2>短信/邮件内容</h2>
+      <div class="text-wrapper">
+        <p>您好</p>
+        <p>我是沪蓉高速老乔山段管理员，在｛<span style="color: #f93467">预警发生时间自动填充，例如：2011年11月11日 11点11分11秒</span>｝，沪蓉高速老乔山段K0
+92-122 至 K212-212，当前能见度低于200米，</p>
+        <textarea placeholder="请在此输入后续短信/邮件内容" maxlength="300"></textarea>
+      </div>
+      <button class="keep-sms-btn">保存</button>
+      </div>
+  </div>
+  </div>
+</div>
+<!-- end of con-wrapper -->
+
+<!-- 弹窗js -->
+<div class="dialog-bg dialog-hidden">
+  <div class="add-contact-box dialog-box">
+    <h3>添加联系人</h3>
+    <table class="contact-table" border="0">
+      <thead>
+      <tr>
+        <th align="left" width="76px"><input type="checkbox" id="checkAll"></th>
+        <th align="left" width="110px">姓名</th>
+        <th align="left" width="130px">
+          <select>
+            <option value="1" selected="selected">分组信息</option>
+            <option value="2">好友</option>
+            <option value="3">同事</option>
+            <option value="4">领导</option>
+          </select>
+        </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td align="left" width="74px"><input type="checkbox" name="item"></td>
+          <td align="left" width="116px">王永鹏</td>
+          <td align="left" width="130px">好友</td>
+        </tr>
+        <tr>
+          <td align="left" width="74px"><input type="checkbox" name="item"></td>
+          <td align="left" width="116px">王永鹏</td>
+          <td align="left" width="130px">好友</td>
+        </tr>
+        <tr>
+          <td align="left" width="74px"><input type="checkbox" name="item"></td>
+          <td align="left" width="116px">王永鹏</td>
+          <td align="left" width="130px">好友</td>
+        </tr>
+        <tr>
+          <td align="left" width="74px"><input type="checkbox" name="item"></td>
+          <td align="left" width="116px">王永鹏</td>
+          <td align="left" width="130px">好友</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="dialog-bottom">
+      <!-- 已选<span class="choose-number">0</span>位 -->
+      <a href="javascript:void(0)" class="dialog-ok-btn">确定</a>
+    </div>
+    <div class="dialog-cancel-btn"></div>
+  </div>
+</div>
+
+<script type="text/javascript">
+	$(".add-contact-btn").click(function(){
+		$(".dialog-bg").fadeIn(200);
+	});
+  $(".dialog-cancel-btn").click(function(){
+    $(".dialog-bg").fadeOut(200);
+  })
+</script>
+
+</body>
+</html>

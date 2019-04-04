@@ -1,0 +1,207 @@
+/* CSS Document
+@charset "utf-8";
+
+By I_amzQs
+2016-07-18
+成都方米科技有限公司
+*/
+html,body {
+	height:100%;
+}
+.con-wrapper {
+	position: absolute;;
+	width: 100%;
+	height: 100%;
+	background: #f4f3ef;
+	left: 0;
+	top: 0;
+}
+.date-msg {
+	float: left;
+	height: 100%;
+	border-right: 1px solid #ddd;
+}
+.date-msg span{
+	display: inline-block;
+	float: left;
+}
+.zhi {
+	height: 100%;
+	line-height: 58px;
+	text-align: center;
+}
+.begin-date,.end-date {
+	background: #f7f7f7;
+	width: 120px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	font-size: 14px;
+	color: #999;
+	padding: 0 10px;
+	margin: 11px 14px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.search-data-btn {
+	display: inline-block;
+	width: 86px;
+	height: 36px;
+	font-size: 14px;
+	line-height: 36px;
+	text-align: center;
+	background: #45c8dc;
+	color: #fff;
+	margin: 11px 14px;
+	border-radius: 2px;
+	border: none;
+	cursor: pointer;
+}
+.export-data-btn {
+	display: inline-block;
+	width: 78px;
+	height: 36px;
+	font-size: 14px;
+	line-height: 36px;
+	text-align: center;
+	color: #45c8dc;
+	margin: 11px 14px;
+	border-radius: 2px;
+}
+.table-wrapper {
+
+}
+.ydjb-table {
+	width: 100%;
+	border-collapse:collapse;
+}
+.ydjb-table thead {
+
+}
+.ydjb-table thead tr th {
+	font-size: 16px;
+	color: #343434;
+	font-weight: normal;
+	line-height: 60px;
+}
+.ydjb-table thead tr th select {
+	width: 92px;
+	color: #636363;
+	font-size: 16px;
+	border: 1px solid #ddd;
+	outline: none;
+	font-family:"Microsoft YaHei",微软雅黑;
+}
+.ydjb-table tbody tr {
+	border-bottom: 1px solid #ddd;
+}
+.ydjb-table tbody tr td {
+	font-size: 14px;
+	color: #666;
+	font-weight: normal;
+	line-height: 46px;
+	text-align: center;
+}
+.data-show-wrapper {
+	padding: 0 20px 20px;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+}
+.data-show-wrapper h2 {
+	line-height: 50px;
+	color: #666;
+	font-size: 14px;
+}
+.traffic-box {
+	display: inline-block;
+	width: 32.9%;
+	text-align: center;
+	margin: 0 0 10px;
+	vertical-align:top;
+}
+.traffic-box div {
+	width: 96px;
+	height: 96px;
+	line-height: 96px;
+	border: 4px solid #45c8dc;
+	border-radius: 50%;
+	margin: 0 auto;
+	font-size: 20px;
+	overflow: hidden;
+}
+.traffic-box div span {
+	font-size: 12px;
+}
+.traffic-box p {
+	margin-top: 10px;
+	color: #999;
+	line-height: 20px;
+}
+.weather-box {
+	display: inline-block;
+	width: 18%;
+	text-align: center;
+	margin: 26px 26px 10px;
+	vertical-align:top;
+}
+.weather-box div {
+	border: 1px solid #b6e8f0;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.weather-box div img {
+	margin-top: -22px;
+}
+.weather-box div p {
+	line-height: 24px;
+	font-size: 14px;
+}
+.weather-box span {
+	color: #666;
+}
+.last-sevsen-day {
+	padding: 0 20px 20px;
+	margin-top: 14px;
+}
+.last-sevsen-day h2 {
+	line-height: 50px;
+	color: #666;
+	font-size: 14px;
+}
+.weather-tab {
+	margin-top: -40px;
+	margin-left: 180px;
+}
+.weather-tab li {
+	display: inline-block;
+	padding: 6px 4px;
+	color: #999;
+	font-size: 12px;
+	margin-right: 10px;
+	cursor: pointer;
+	-moz-user-select: none;
+}
+.weather-tab li img {
+	margin-right: 4px;
+	margin-top: -2px;
+}
+.weather-tab li.select {
+	border-bottom: 2px solid #64c1cf;
+}
+.weather-trend-row {
+	margin-top: 20px;
+	padding: 10px;
+	height: 160px;
+}
+.weather-trend-box {
+	/*display: none;*/
+}
+.weather-trend-box img {
+	width: 100%;
+}
+
+
+
+
+/* style end */

@@ -1,0 +1,359 @@
+/* CSS Document
+@charset "utf-8";
+
+By I_amzQs
+2016-07-18
+成都方米科技有限公司
+*/
+html,body {
+	height:100%;
+}
+.marquee-row {
+	position: absolute;;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	color: #dc4545;
+	font-size: 14px;
+	left: 0;
+	top: 70px;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 238;
+}
+.marquee-row a {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 34px;
+	height: 30px;
+	border: none;
+	background: url(../imgs/icon_marquee_x.png) center center no-repeat #000;
+}
+.map-wrapper {
+	position: absolute;;
+	width: 100%;
+	height: 100%;
+	background: #f4f3ef;
+	left: 0;
+	top: 0;
+}
+.map {
+	width: 100%;
+	height: 100%;
+}
+.search-box {
+	position: absolute;
+	top: 112px;
+	left: 30px;
+	width: 400px;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	box-shadow: 0px 2px 2px #ddd;
+}
+.search-input {
+	width: 316px;
+	height: 32px;
+	padding-left: 10px;
+	border: none;
+	font-size: 14px;
+}
+.search-btn {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 40px;
+	width: 68px;
+	cursor: pointer;
+	color: #fff;
+	border: none;
+	background: url(../imgs/iconfont_chaxun.png) 20px 6px no-repeat #45c8dc;
+}
+.adjust-row {
+	background: #fff;
+}
+.search-result-wrapper {
+	position: absolute;
+	top: 164px;
+	left: 30px;
+	background: #fff;
+	padding: 10px 18px 18px;
+	width: 364px;
+	box-shadow: 0px 2px 2px #ddd;
+	max-height: 68%;
+	overflow: auto;
+	overflow-x: hidden;
+	z-index: 999;
+	display: none;
+}
+.search-result-wrapper a:hover {
+	background: #f9f9f9;
+}
+.result-row {
+	display: block;
+	padding: 12px 0;
+	border-bottom: 1px solid #eee;
+}
+.left-box {
+	display: inline-block;
+	width: 18px;
+	height: 24px;
+	font-size: 12px;
+	line-height: 19px;
+	text-align: center;
+	background: url(../imgs/icon_map_location.png) no-repeat;
+	background-size: cover;
+	vertical-align: top;
+	color: #fff;
+}
+.right-box {
+	width: 310px;
+	margin-left: 10px;
+	display: inline-block;
+	vertical-align: top;
+}
+.right-box h2 {
+	font-size: 16px;
+	color: #38b1c4;
+	font-weight: 500;
+}
+.right-box p {
+	color: #666;
+	line-height: 20px;
+	font-size: 14px;
+	margin-top: 4px;
+}
+
+/* road detail style */
+.road-detail-wrapper {
+	position: absolute;
+	top: 164px;
+	left: 30px;
+	background: #fff;
+	width: 400px;
+	box-shadow: 0px 2px 2px #ddd;
+	padding-bottom: 30px;
+	overflow: auto;
+	overflow-x: hidden;
+	display: none;
+	z-index: 999;
+	max-height: 78%;
+}
+.title-box {
+	background: #45c8dc;
+	padding: 20px;
+}
+.title-l {
+	width: 80%;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	color: #fff;
+}
+.title-l h2 {
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 4px;
+}
+.title-r {
+	width: 18%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+}
+.title-r img {
+	width: 32px;
+	height: 32px;
+	margin-bottom: 6px;
+}
+.now-record-row {
+	padding: 14px 36px;
+	border-bottom: 1px solid #eee;
+}
+.record-box {
+	display: inline-block;
+	width: 40.2%;
+	text-align: left;
+	font-size: 14px;
+	color: #888;
+	margin: 10px 14px;
+	vertical-align: top;
+}
+.record-num {
+	font-size: 28px;
+	font-weight: bold;
+	color: #2fd9e7;
+}
+.record-box p {
+}
+.statistics-row {
+	padding: 14px 4px;
+	border-bottom: 1px solid #eee;
+	position: relative;
+}
+.switch-btn {
+	position: absolute;
+	top: 50%;
+	margin-top: 0;
+	cursor: pointer;
+}
+.pre-btn {
+	left: 14px;
+}
+.next-btn {
+	right: 14px;
+}
+.chart-box {
+	width: 320px;
+	height: 160px;
+	margin: 0 auto;
+}
+.chart-box h2 {
+	font-size: 12px;
+	color: #999;
+	line-height: 24px;
+}
+.chart-yl, .chart-wd {
+	/*display: none;*/
+}
+.chart-box .chart img {
+	width: 100%;
+}
+.weather-row {
+	padding: 18px 0;
+	position: relative;
+}
+.weather-box div {
+	margin-bottom: 12px;
+}
+.weather-left-box {
+	display: inline-block;
+	width: 28%;
+	vertical-align: top;
+	margin-left: 14px;
+}
+.weather-middle-box {
+	display: inline-block;
+	width: 34%;
+	vertical-align: top;
+	margin-left: 6px;
+}
+.weather-right-box {
+	display: inline-block;
+	width: 26%;
+	vertical-align: top;
+}
+.weather-box div {
+	font-size: 14px;
+	color: #898989;
+}
+.weather-box img {
+	margin-right: 6px;
+}
+.weather-box p.blue {
+	margin-left: 23px;
+	color: #45c8dc;
+}
+.show-luduan-pic {
+	display: block;
+  border-radius: 4px;
+  border: 1px solid #45c8dc;
+	color: #45c8dc;
+	text-align: center;
+  width: 178px;
+  height: 34px;
+  line-height: 34px;
+	margin: 0 auto;
+	font-size: 14px;
+	background: #fff;
+	outline: none;
+	cursor: pointer;
+}
+.show-luduan-pic:hover {
+	background: #45c8dc;
+	color: #fff;
+}
+
+/* map style */
+.map {
+	position: relative;
+}
+.map_marker {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	width: 28px;
+	height: 38px;
+	line-height: 30px;
+	background: url(../imgs/icon_marker.png) no-repeat;
+	z-index: 999;
+}
+
+/* dialog style */
+.dialog-hidden {
+	display: none;
+}
+.luduan-pic-box {
+	position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 100;
+  margin-top: -220px;
+  margin-left: -290px;
+	width: 580px;
+	height: 400px;
+  background: #fff;
+  text-align: left;
+	padding: 2px;
+}
+.luduan-pic-box img {
+	height: 400px;
+}
+.luduan-pic-box p {
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+}
+
+/* responsive style */
+@media screen and (max-width: 1920px) {
+	.search-result-wrapper {
+		max-height: 76%;
+	}
+	.road-detail-wrapper {
+		max-height: 76%;
+	}
+}
+@media screen and (max-width: 1600px) {
+	.search-result-wrapper {
+		max-height: 72%;
+	}
+	.road-detail-wrapper {
+		max-height: 72%;
+	}
+}
+@media screen and (max-width: 1366px) {
+	.search-result-wrapper {
+		max-height: 68%;
+	}
+	.road-detail-wrapper {
+		max-height: 68%;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.search-result-wrapper {
+		max-height: 64%;
+	}
+	.road-detail-wrapper {
+		max-height: 64%;
+	}
+}
+
+/* style end */

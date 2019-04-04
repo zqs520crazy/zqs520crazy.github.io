@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>乐汇通-通达天下</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="resources/css/style.css"/>
+<script type="text/javascript" src="resources/js/jquery-1.8.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(window).scroll(function() {
+	var a = $(window).scrollTop();
+	//alert(a);
+	if(a > 300){
+		$("#grid1").fadeIn();
+	} 
+	if (a>1000){
+		$("#grid2").fadeIn();
+	}
+	if (a>2000){
+		$("#grid3").fadeIn();
+	}
+	
+  });
+});
+</script>
+</head>
+<body>
+<!-- 导航条 -->
+<div id="header">
+	<div class="container">
+		<a id="logo" href="#"><img src="resources/images/logo.png" align="absmiddle"></a>
+		<ul id="navBar">
+			<li><a href="about.html">关&nbsp&nbsp于</a></li>
+			<li><a href="index.html" class="cur">首&nbsp&nbsp页</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- 首页展示区域 -->
+<div class="main-bg" >
+	<div class="container">
+		<div class="content-box-left lunpic-box"></div>
+		<div class="content-box-right con-box">	
+			<h2 style="color: #fff;"><span>乐</span>购,<span>汇</span>集,<span>通</span>达</h2>
+			<div class="down-btn btn-and">Android</div>
+			<div class="down-btn btn-ios">iPhone</div>
+			<img class="cord" src="resources/images/mobile_code.png">
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+<!-- APP功能展示区域 -->
+<div class="row" style="background: url(resources/images/row1_bg.jpg) no-repeat center #fff;">
+	<div class="box">
+		<div class="row-grid1" id="grid1">
+			<h2 class="grid-h2">效果展示1</h2>
+			<h5 class="grid-h5">这里会是特点的简写这里会是特点的简写这里会是特点的简写</h5>
+		</div>
+	</div>
+</div>
+
+<div class="row" style="background: url(resources/images/row2_bg.jpg) no-repeat center #fff;">
+	<div class="box">
+		<div class="row-grid2" id="grid2">
+			<h2 class="grid-h2">效果展示2</h2>
+			<h5 class="grid-h5">这里会是特点的简写这里会是特点的简写这里会是特点的简写</h5>
+		</div>
+	</div>
+</div>
+
+<div class="row" style="background: url(resources/images/row3_bg.jpg) no-repeat center #fff;">
+	<div class="box">
+		<div class="row-grid3" id="grid3">
+			<h2 class="grid-h2">效果展示3</h2>
+			<h5 class="grid-h5">这里会是特点的简写这里会是特点的简写这里会是特点的简写</h5>
+		</div>
+	</div>
+</div>
+
+<!-- 底部内容区域 -->
+<div id="bottom">
+	<div class="container">
+		<div id="footer">
+			Copyright © 2011-2014 乐汇通 All Rights Reserved
+		</div>
+	</div>
+</div>
+</body>
+</html>

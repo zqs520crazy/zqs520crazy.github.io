@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>川脉web客户端</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" >
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link href="resources/css/style.css" rel="stylesheet" type="text/css">
+	<link href="resources/css/user.css" rel="stylesheet" type="text/css">
+	<script src="resources/js/jquery-1.11.1.min.js"></script>
+	<script src="resources/js/common.js"></script>
+</head>
+
+<body>
+<!-- start of header -->
+<div class="header-bg">
+  <div class="header">
+    <div class="logo">
+      <a href="home.html">
+        <span class="logo-img-box"><img src="resources/imgs/logo_ywx.png" alt=""></span>
+        雾天行车防撞预警系统
+      </a>
+    </div>
+    <div class="user-head">
+      <a href="user-center.html">
+        <img src="resources/imgs/user-head.png" alt="" align="absmiddle">
+        <span>王誉霖</span>
+      </a>
+    </div>
+    <ul class="nav-wrapper">
+      <li><a href="home.html"><img src="resources/imgs/iconfont_home.png" alt=""><span>首页</span></a></li>
+      <li><a href="control.html"><img src="resources/imgs/iconfont_kongzhi.png" alt=""><span>控制</span></a></li>
+      <li><a href="setting.html"><img src="resources/imgs/iconfont_shezhi.png" alt=""><span>设置</span></a></li>
+      <li><a href="search.html"><img src="resources/imgs/iconfont_chaxun.png" alt=""><span>查询</span></a></li>
+    </ul>
+    <div class="clear"></div>
+  </div>
+</div>
+<!-- end of header -->
+
+<!-- start of con-wrapper -->
+<div class="con-wrapper user">
+  <div class="container">
+    <div class="left-con">
+      <ul class="left-bar">
+        <li><a href="user-center.html"><img src="resources/imgs/icon_grzl.png" alt=""><p>个人资料</p></a></li>
+        <li class="bar-active"><a href="contacts.html"><img src="resources/imgs/icon_txl.png" alt=""><p>通讯录</p></a></li>
+        <li><a href="permissions.html"><img src="resources/imgs/icon_qxsz.png" alt=""><p>权限设置</p></a></li>
+      </ul>
+    </div>
+    <div class="right-con">
+      <div class="filter-row">
+        <div class="search-wrapper">
+          <form class="search-box">
+              <input type="text" placeholder="请输入姓名或手机号" class="search-input">
+              <input type="submit" class="search-btn" value="搜索">
+          </form>
+        </div>
+        <div class="btn-wrapper">
+          <a href="javascript:void(0)" class="edit-fz"><img src="resources/imgs/icon_edit.png" alt="" align="absmiddle">编辑分组</a>
+          <a href="javascript:void(0)" class="add-new-fz"><img src="resources/imgs/icon_addfz.png" alt="" align="absmiddle">添加分组</a>
+          <a href="javascript:void(0)" class="add-new-peo"><img src="resources/imgs/icon_addpeo.png" alt="" align="absmiddle">添加联系人</a>
+        </div>
+      </div>
+      <div class="table-wrapper">
+        <table class="ydjb-table">
+          <thead>
+            <tr>
+              <th width="20%">姓名</th>
+              <th width="10%">手机号</th>
+              <th width="30%">邮箱</th>
+              <th width="20%">
+                <select>
+                  <option value="0">分组信息</option>
+                  <option value="1">好友</option>
+                  <option value="2">领导</option>
+                  <option value="3">默认分组</option>
+                </select>
+              </th>
+              <th width="20%">操作</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>王誉霖</td>
+              <td>18716407734</td>
+              <td>zqs520crazy@163.com</td>
+              <td>好友</td>
+              <td>
+                <a href="javascript:void(0)" class="edit-btn dialog-edit-btn">编辑</a>
+                <a href="javascript:void(0)" class="delete-btn  dialog-delete-btn">删除</a>
+              </td>
+            </tr>
+            <tr>
+              <td>王誉霖</td>
+              <td>18716407734</td>
+              <td>zqs520crazy@163.com</td>
+              <td>好友</td>
+              <td>
+                <a href="javascript:void(0)" class="edit-btn dialog-edit-btn">编辑</a>
+                <a href="javascript:void(0)" class="delete-btn  dialog-delete-btn">删除</a>
+              </td>
+            </tr>
+            <tbody>
+            <tr>
+              <td>王誉霖</td>
+              <td>18716407734</td>
+              <td>zqs520crazy@163.com</td>
+              <td>好友</td>
+              <td>
+                <a href="javascript:void(0)" class="edit-btn dialog-edit-btn">编辑</a>
+                <a href="javascript:void(0)" class="delete-btn  dialog-delete-btn">删除</a>
+              </td>
+            </tr>
+            <tr>
+              <td>王誉霖</td>
+              <td>18716407734</td>
+              <td>zqs520crazy@163.com</td>
+              <td>好友</td>
+              <td>
+                <a href="javascript:void(0)" class="edit-btn dialog-edit-btn">编辑</a>
+                <a href="javascript:void(0)" class="delete-btn  dialog-delete-btn">删除</a>
+              </td>
+            </tr>
+            <tbody>
+            <tr>
+              <td>王誉霖</td>
+              <td>18716407734</td>
+              <td>zqs520crazy@163.com</td>
+              <td>好友</td>
+              <td>
+                <a href="javascript:void(0)" class="edit-btn dialog-edit-btn">编辑</a>
+                <a href="javascript:void(0)" class="delete-btn  dialog-delete-btn">删除</a>
+              </td>
+            </tr>
+            <tr>
+              <td>王誉霖</td>
+              <td>18716407734</td>
+              <td>zqs520crazy@163.com</td>
+              <td>好友</td>
+              <td>
+                <a href="javascript:void(0)" class="edit-btn dialog-edit-btn">编辑</a>
+                <a href="javascript:void(0)" class="delete-btn  dialog-delete-btn">删除</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="page-wrapper">
+        <ul class="page">
+            <li><a class="a-style a-style-m" href="#">上一页</a></li>
+            <li class="active"><a class="a-style a-style-s" href="#">1</a></li>
+            <li><a class="a-style a-style-s" href="#">2</a></li>
+            <li><a class="a-style a-style-s" href="#">……</a></li>
+            <li><a class="a-style a-style-s" href="#">5</a></li>
+            <li><a class="a-style a-style-m" href="#">下一页</a></li>
+            <li>
+              <a class="a-style a-style-jump" href="#">转到</a><input class="ipt-jump" type="text">
+            </li>
+            <li><a href="#" class="btn-go">GO</a></li>
+          </ul>
+      </div>
+
+    </div>
+    <div class="clear"></div>
+</div>
+</div>
+<!-- end of con-wrapper -->
+
+<!-- 弹窗js -->
+<div class="dialog-bg dialog-hidden">
+
+  <!-- 添加联系人 -->
+  <div class="add-newpeo-box dialog-box">
+    <h3>添加联系人</h3>
+    <div class="dialog-bottom">
+      <form action="" class="add-newpeo-form dialog-form">
+        <div><input type="text" placeholder="请输入联系人姓名"></div>
+        <div><input type="tel" placeholder="请输入联系人手机号" maxlength="11" class="phone-input"><span>手机号格式不对</span></div>
+        <div><input type="text" placeholder="请设置联系人电子邮箱" class="email-input"><span>邮箱格式不对</span></div>
+        <div>
+          <select>
+            <option value="0">请选择分组信息</option>
+            <option value="1">好友</option>
+            <option value="2">领导</option>
+            <option value="3">默认分组</option>
+          </select>
+        </div>
+      <a href="javascript:void(0)" class="dialog-ok-btn">确定</a>
+      </form>
+    </div>
+    <div class="dialog-cancel-btn"></div>
+  </div>
+  
+  <!-- 编辑联系人 -->
+  <div class="edit-peo-box dialog-box">
+    <h3>编辑联系人</h3>
+    <div class="dialog-bottom">
+      <form action="" class="add-newpeo-form dialog-form">
+        <div><input type="text" placeholder="请输入联系人姓名" value="王誉霖"></div>
+        <div><input type="tel" placeholder="请输入联系人手机号" maxlength="11" class="phone-input" value="18202810757"><span>手机号格式不对</span></div>
+        <div><input type="text" placeholder="请设置联系人电子邮箱" class="email-input"><span>邮箱格式不对</span></div>
+        <div>
+          <select>
+            <option value="0">请选择分组信息</option>
+            <option value="1">好友</option>
+            <option value="2">领导</option>
+            <option value="3">默认分组</option>
+          </select>
+        </div>
+      <a href="javascript:void(0)" class="dialog-ok-btn">确定</a>
+      </form>
+    </div>
+    <div class="dialog-cancel-btn"></div>
+  </div>
+
+  <!-- 添加分组 -->
+  <div class="add-newfz-box dialog-box">
+    <h3>添加分组</h3>
+    <div class="dialog-bottom">
+      <form action="" class="add-newpeo-form dialog-form">
+        <div><input type="text" placeholder="请输入分组名称"></div>
+      <a href="javascript:void(0)" class="dialog-ok-btn">确定</a>
+      </form>
+    </div>
+    <div class="dialog-cancel-btn"></div>
+  </div>
+
+<!-- 编辑分组 -->
+<div class="edit-fz-box dialog-box">
+  <h3>编辑分组</h3>
+  <div class="dialog-bottom">
+    <form action="" class="edit-fz-form dialog-form">
+      <div class="form-fz-box">
+        <div><input type="text" placeholder="请输入分组名称" name="0" value="公司同事"><button type="button" class="delete-fz-btn">删除分组</button></div>
+        <div><input type="text" placeholder="请输入分组名称" name="5" value="领导"><button type="button" class="delete-fz-btn">删除分组</button></div>
+        <div><input type="text" placeholder="请输入分组名称" name="8" value="公司同事2"><button type="button" class="delete-fz-btn">删除分组</button></div>
+        <div><input type="text" placeholder="请输入分组名称" name="1" value="领导2"><button type="button" class="delete-fz-btn">删除分组</button></div>
+        <div><input type="text" placeholder="请输入分组名称" name="254" value="部门同事"><button type="button" class="delete-fz-btn">删除分组</button></div>
+      </div>
+      <p>注意：删除分组后分组里的好友将移动到默认分组中</p>
+    <a href="javascript:void(0)" onclick="editAction()" class="dialog-ok-btn">确定</a>
+    </form>
+  </div>
+  <div class="dialog-cancel-btn"></div>
+</div>
+</div>
+
+<script type="text/javascript">
+	$(".add-new-peo").click(function(){
+    $(".add-newfz-box, .edit-peo-box, .edit-fz-box").css("display","none");
+    $(".add-newpeo-box").fadeIn(200);
+		$(".dialog-bg").fadeIn(200);
+	});
+	$(".dialog-edit-btn").click(function(){
+    $(".add-newpeo-box, .add-newfz-box, .edit-fz-box").css("display","none");
+    $(".edit-peo-box").fadeIn(200);
+		$(".dialog-bg").fadeIn(200);
+	});
+  $(".add-new-fz").click(function(){
+    $(".add-newpeo-box, .edit-peo-box, .edit-fz-box").css("display","none");
+    $(".add-newfz-box").fadeIn(200);
+		$(".dialog-bg").fadeIn(200);
+	});
+  $(".edit-fz").click(function(){
+    $(".add-newpeo-box, .edit-peo-box, .add-newfz-box").css("display","none");
+    $(".edit-fz-box").fadeIn(200);
+	$(".form-fz-box").find("div").show();
+		$(".dialog-bg").fadeIn(200);
+    var fzBoxHeight = $(".edit-fz-box").height();
+    var marginTop = -(fzBoxHeight/2 + 10)+"px";
+    //alert(marginTop);
+    $(".edit-fz-box").css("margin-top",marginTop);
+	});
+  $(".dialog-cancel-btn").click(function(){
+    $(".dialog-bg").fadeOut(200);
+  });
+  $(".delete-fz-btn").click(function(){
+	var deleteFz = $(this).parent();
+	//var deleteId = $(this).parent().find("input").eq(0).attr("name"); //获取删除分组的ID
+	//alert(deleteId);
+	deleteFz.hide();
+  });
+</script>
+<script>
+
+  function editAction()
+  {
+	var deleteDiv = $(".form-fz-box").find("div:hidden");
+	var deleteFz = deleteDiv.find("input");
+	for(i=0;i<deleteFz.length;i++){
+		var fzId = deleteFz.eq(i).attr("name");
+		//alert(fzId);
+	}
+	
+	var input = $(".form-fz-box").find("div input");
+	for (i=0;i<input.length;i++){
+		var fzValue = input.eq(i).val();
+		//alert(fzValue);
+	}
+  }
+
+
+
+
+</script>
+
+</body>
+</html>

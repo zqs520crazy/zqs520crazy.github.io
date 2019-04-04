@@ -1,0 +1,12 @@
+.Wdate{
+	border: none;
+	height: 28px;
+	background: #f7f7f7 url(icon_calendar.png) no-repeat right;
+	width: 120px;
+}
+.Wdate::-ms-clear{display:none;}
+
+.WdateFmtErr{
+	font-weight: normal;
+	color: #45c8dc;
+}

@@ -1,0 +1,370 @@
+/* CSS Document
+@charset "utf-8";
+
+By I_amzQs
+2016-07-18
+成都方米科技有限公司
+*/
+html,body {
+	height:100%;
+}
+.con-wrapper {
+	position: absolute;;
+	width: 100%;
+	height: 100%;
+	background: #f4f3ef;
+	left: 0;
+	top: 0;
+}
+
+/* setting style */
+.cssz-wrapper {
+	width: 580px;
+	margin: 0 auto;
+}
+h3 {
+	font-size: 14px;
+	color: #343434;
+	line-height: 40px;
+	font-weight: normal;
+	border-bottom: 1px solid #ddd;
+}
+.njd-row {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+}
+.njd-row h2 {
+	font-size: 16px;
+	color: #45c8dc;
+	font-weight: normal;
+	line-height: 40px;
+}
+.njd-box {
+	float: left;
+	width: 140px;
+	color: #999;
+	font-size: #12px;
+}
+.njd-box div {
+	height: 48px;
+	line-height: 48px;
+}
+.njd-box input {
+	width: 60px;
+	height: 24px;
+	text-align: center;
+	background: none;
+	color: #232323;
+	border: 1px solid #dedede;
+	margin: 0 10px;
+}
+.ldtj-box {
+	float: right;
+	width: 360px;
+}
+.time-cot {
+	color: #999;
+	font-size: 14px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #ddd;
+}
+.time-cot select {
+	background: transparent;
+	border: 1px solid #d3d3d3;
+  width: 84px;
+  height: 24px;
+	font-size: 14px;
+	color: #429ef4;
+	font-family:"Microsoft YaHei",微软雅黑;
+	outline: none;
+	margin-left: 8px;
+}
+.kaideng-l, .guandeng-r, .ldtj {
+	height: 52px;
+	line-height: 52px;
+}
+.kaideng-l {
+	float: left;
+}
+.guandeng-r {
+	float: left;
+	margin-left: 70px;
+}
+.gjsz {
+	color: #999;
+	font-size: 14px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #ddd;
+}
+.gj-cot {
+	height: 52px;
+	line-height: 52px;
+	margin-bottom: 2px;
+}
+.slider-wrap2 {
+	float: right;
+	width: 320px;
+  height: 20px;
+	margin-top: -10px;
+	margin-right: 40px;
+}
+.btn-row {
+	height: 68px;
+	line-height: 68px;
+	margin: 10px 0 20px;
+}
+.btn-row input {
+	width: 92px;
+	height: 38px;
+	color: #fff;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+	background: #45c8dc;
+	float: right;
+	margin-top: 10px;
+}
+
+/* sms-setting style */
+.add-new-sms {
+	display: inline-block;
+	width: 140px;
+	height: 36px;
+	font-size: 14px;
+	line-height: 36px;
+	text-align: center;
+	background: #45c8dc;
+	color: #fff;
+	margin: 11px 14px;
+	border-radius: 2px;
+}
+.dxsz-wrapper {
+	padding: 20px;
+}
+.sms-box {
+	display: inline-block;
+  border-radius: 2px;
+  background-color: rgb(248, 248, 248);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+	border-top: 3px solid #45c8dc;
+	margin: 12px 15px;
+	padding: 10px 20px;
+}
+.sms-box h2 {
+	width: 198px;
+  font-size: 14px;
+  color: #232323;
+  line-height: 30px;
+  text-align: left;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.sms-box p {
+  font-size: 14px;
+  color: #999;
+  line-height: 24px;
+  text-align: left;
+}
+.sms-box a {
+	position: absolute;
+	bottom: 14px;
+	font-size: 14px;
+}
+.sms-box .edit-sms {
+	right: 60px;
+	color: #45c8dc;
+}
+.sms-box .delete-sms {
+	right: 12px;
+	color: #f7485c;
+}
+
+/* new-sms style */
+.sms-wrapper {
+	padding: 10px 40px 0;
+	background: #f9f9f9;
+	color: #565656;
+}
+.sms-row1 {
+	padding: 16px 0;
+	border-bottom: 1px solid #ddd;
+}
+.sms-row2 {
+	padding: 16px 0 0;
+}
+.sms-row1 select {
+	background: transparent;
+	border: 1px solid #d3d3d3;
+	padding-left: 12px;
+	width: 220px;
+	height: 32px;
+	font-size: 16px;
+	color: #45c8dc;
+	font-family:"Microsoft YaHei",微软雅黑;
+	outline: none;
+	margin-left: 10px;
+}
+.sms-row-left {
+	float: left;
+}
+.sms-row-right {
+	float: right;
+}
+.contact-text {
+	float: left;
+	width: 60px;
+	line-height: 60px;
+}
+.contact-box {
+	float: right;
+	width: 700px;
+	padding: 10px 0;
+}
+.contact-box span {
+	float: left;
+	display: block;
+	width: 88px;
+	height: 38px;
+	line-height: 18px;
+	position: relative;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	font-size: 12px;
+	color: #565656;
+	padding-left: 6px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.contact-box a {
+	display: inline-block;
+	width: 94px;
+	height: 38px;
+	line-height: 38px;
+	font-size: 14px;
+	text-align: center;
+	background: #45c8dc;
+	color: #fff;
+	border: 1px solid #45c8dc;
+	border-radius: 2px;
+	margin-bottom: 20px;
+}
+.contact-box button {
+	position: absolute;
+	border: none;
+	top: -8px;
+	right: -8px;
+	width: 21px;
+	height: 20px;
+	outline: none;
+	cursor: pointer;
+	background: url(../imgs/dialog_cancel2.png);
+}
+.sms-and-email-wrapper {
+	padding: 0 40px;
+	color: #565656;
+}
+h2 {
+	font-size: 16px;
+	color: #666;
+	line-height: 42px;
+	font-weight: normal;
+}
+.text-wrapper {
+	background: #fff;
+	padding: 16px 20px;
+}
+.text-wrapper p {
+	color: #45c8dc;
+	font-size: 14px;
+	line-height: 30px;
+}
+.text-wrapper textarea {
+	width: 718px;
+	height: 160px;
+	padding: 10px;
+	font-size: 14px;
+	color: #232323;
+	outline: none;
+	border: 1px solid #ddd;
+	margin-top: 12px;
+	font-family:"Microsoft YaHei",微软雅黑;
+	resize: none;
+}
+.keep-sms-btn {
+	width: 78px;
+	height: 38px;
+	line-height: 38px;
+	background: #45c8dc;
+	color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 2px;
+	font-family:"Microsoft YaHei",微软雅黑;
+	margin-top: 20px;
+	margin-left: 700px;
+}
+.dialog-hidden {
+	display: none;
+}
+
+/* dialog style */
+.add-contact-box {
+	position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 100;
+  margin-top: -160px;
+  margin-left: -170px;
+	width: 340px;
+	height: 280px;
+  background: #fff;
+  text-align: left;
+}
+.contact-table{
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+}
+.contact-table input[type=checkbox] {
+	margin-left: 18px;
+}
+.contact-table thead {
+	display: block;
+	border-bottom: 1px solid #ddd;
+}
+.contact-table thead tr {
+	display: block;
+	width: 320px;
+	height: 42px;
+	color: #636363;
+	font-size: 16px;
+	line-height: 42px;
+}
+.contact-table thead tr th {
+	font-weight: normal;
+}
+.contact-table thead tr select {
+	width: 86px;
+	color: #636363;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	font-family:"Microsoft YaHei",微软雅黑;
+}
+.contact-table tbody {
+	display: block;
+	height: 142px;
+	overflow-y: scroll;
+}
+.contact-table tbody tr {
+	height: 40px;
+	line-height: 40px;
+}
+
+
+
+
+
+/* style end */

@@ -170,6 +170,11 @@ html,body {
 	text-align: center;
 	opacity: 0.4;
 }
+.copyright p a {
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+}
 
 
 
@@ -304,6 +309,9 @@ html,body {
 		font-size: 12px;
 		color: #fff;
 		opacity: 0.4;
+	}
+	.copyright p a {
+		font-size: 12px;
 	}
 }
 
