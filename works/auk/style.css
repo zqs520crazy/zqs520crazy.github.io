@@ -1,0 +1,377 @@
+/* CSS Document 
+@charset "utf-8";
+
+By I_amzQs
+2016-05-25
+*/
+
+/* 通用CSS样式 */
+html{
+	font-size: 62.5%;
+}
+div,ul,li,dl,dt,dd,h1,h2,a,img,span,p{margin:0; padding:0;}
+a,img{border:none; outline:none;}	
+body{
+	text-align:center;
+}
+.logo-img{
+	width:180px;
+	margin: 34px 0;
+}
+.m-p-0 {
+	margin:0; padding:0;
+}
+.clear {clear:both;}
+a {text-decoration: none;}
+input,input:focus,input:active{user-select: text;}
+
+/* 顶部导航页CSS样式 */
+.top-menu {
+	height: 48px;
+	background: #263842;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+span.top-title {
+	position: absolute;
+	left: 20px;
+	top: 10px;
+	font-size: 1.8rem;
+	color: #06c359;
+}
+span.menu {
+	position: absolute;
+	right: 20px;
+	top: 12px;
+	display: block;
+	cursor: pointer;
+}
+.top-menu ul {
+	display:none;
+}
+.top-menu ul li a {
+	font-size: 1.6rem;
+	display: block;
+	padding: 18px 0;
+	color: #fff;
+}
+.top-menu ul {
+	margin: 48px 0;
+	z-index: 999;
+	position: absolute;
+	width: 100%;
+	background: #263842;
+	text-align: center;    
+    opacity: 0.96; 
+	box-shadow: 0px 10px 10px 0px #ccc;
+}
+
+
+
+/* 登录页CSS样式 */
+.input-wrapper{
+	overflow: hidden;
+    margin: 0 14px;
+    border: #b3b3b3 solid 1px;
+}
+.last-wrapper {
+    border-top: none;	
+}
+.login-input{
+	width:100%;
+	padding: 12px 50px 12px 12px; 
+	border: none;
+	outline: none;	
+    font-size: 1.4rem;
+}
+.btn-wrapper {
+	padding: 20px 14px;
+}
+.login-btn {
+	width: 100%;
+	margin: 0 auto;
+    font-size: 1.6rem;
+    line-height: 43px;
+    text-align: center;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	background: #46dd5b;  
+	outline: none;	
+	border: none;
+}
+.login-btn:active {
+	background: #06c359;
+}
+.forget-btn {
+	font-size: 1.4rem;
+	color: #666;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+
+/* 首页CSS样式 */
+.home-btn {
+	display: block;
+    font-size: 1.6rem;
+    line-height: 48px;
+    text-align: center;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	margin: 0px 8px 20px; 
+}
+.com-info-btn {
+	background: url(h-btn1-bg.png) center left no-repeat #fd903b;
+	background-size: 24% auto;
+}
+.doc-man-btn {
+	background: url(h-btn2-bg.png) center left no-repeat #38c76e;
+	background-size: 24% auto;	
+}
+.not-man-btn {
+	background: url(h-btn3-bg.png) center left no-repeat #00c2d4;
+	background-size: 24% auto;		
+}
+.mine-info-btn {
+	background: url(h-btn4-bg.png) center left no-repeat #9e8bb9;
+	background-size: 24% auto;		
+}
+
+
+/* 单位信息页CSS样式 */
+.com-info-row {
+	text-align: left;
+	border-bottom: 1px solid #dddddd;
+	font-size: 1.6rem;
+	padding: 16px 18px;
+	color: #333333;
+}
+.com-name {
+	color: #666666;
+	float: right;
+}
+.com-pic-row {
+	width: 100%;
+}
+.com-pic-row p {
+	text-align: left;
+	font-size: 1.6rem;
+	padding: 16px 18px;	
+	color: #333333;
+}
+.com-pic-row img {
+	width: 90%;
+	padding: 0px 18px;
+	text-align: center;	
+}
+
+
+/* 医生管理页CSS样式 */
+.doc-list, .news-list {
+	position: relative;
+	padding: 10px 20px 10px 20px;
+	border-bottom: 1px solid #dddddd;
+	font-size: 1.4rem;
+	text-align: left;
+	color: #333;
+}
+.doc-list:last-of-type, .news-list:last-of-type{
+	margin-bottom: 50px;
+}
+.list-row {
+	line-height: 30px;
+	clear:both;
+}
+.row-2,.row-3,.row-4 {
+	width: 74%;
+}
+.d-col {
+	display: block;
+	float: left;
+}
+.doc-name {	
+	width: 50%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.doc-sex {
+	width: 20%;
+}
+.doc-id {
+	width: 30%;
+	color: #fd903b;
+	text-align: right;
+}
+.patient-id {
+	width: 50%;
+	color: #fd903b;
+	text-align: right;
+}
+.doc-time {	
+	font-size: 1.4rem;
+	color: #999;
+}
+.btn-box {
+	position: absolute;
+	right: 20px;
+	top: 48px;
+	width: 92px;
+	height: 40px;
+}
+.btn-box2 {
+	position: absolute;
+	right: 20px;
+	top: 34px;
+	width: 92px;
+	height: 40px;
+}
+.doc-btn {
+	display: block;
+	font-size: 1.2rem;
+	text-align: center;
+	line-height: 28px;
+	text-decoration: none;
+	border-radius: 2px;
+}
+.btn-exid {
+	background: #50cddd;
+	color: #fff;
+	border: 1px solid #50cddd;
+}
+.btn-patient {
+	background: #fff;
+	color: #50cddd;
+	border: 1px solid #50cddd;
+	margin-top: 14px;
+}
+.add-doc-btn,.bottom-btn {
+	display: block;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	line-height: 46px;
+	background: #46dd5b;
+	font-size: 1.6rem;
+	color: #fff;
+	box-shadow: 10px 10px 10px 10px #ccc;
+}
+
+
+
+/* 添加医生页CSS样式 */
+.a-c-h2 {
+	text-align: left;
+	font-size: 2rem;
+	color: #06c359;
+    margin: 20px 14px;
+}
+.a-c-form {
+	text-align: left;
+	font-size: 1.4rem;
+}
+.a-c-form p {
+    margin: 10px 14px;
+}
+.a-c-input {
+	width:100%;
+	padding: 12px 50px 12px 12px; 
+	border: none;
+	outline: none;	
+    font-size: 1.4rem;
+}
+.a-c-select {
+	font-size: 1.6rem;
+	background: none;
+}
+.a-c-btn {
+	display: block;
+    font-size: 1.6rem;
+    line-height: 46px;
+    text-align: center;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	background: #46dd5b;
+	margin: 20px 14px 15px;    
+}
+.a-c-btn:active {
+	background: #06c359;
+}
+
+
+/* 公告管理页CSS样式 */
+.n-col {
+	display: block;
+	width: 50%;
+	float: left;
+}
+.news-id {
+	color: #fd903b;
+}
+.news-to {
+	text-align: right;	
+	color: #fd903b;
+}
+.news-time {	
+	font-size: 1.4rem;
+	color: #999;
+}
+.news-btn {
+	display: block;
+	font-size: 1.4rem;
+	text-align: center;
+	line-height: 34px;
+	text-decoration: none;
+	border-radius: 2px;
+}
+.news-exid {
+	background: #50cddd;
+	color: #fff;
+	border: 1px solid #50cddd;
+}
+.news-delete {
+	background: #fff;
+	color: #50cddd;
+	border: 1px solid #50cddd;
+	margin-top: 14px;
+}
+.a-c-textarea {
+	width:100%;
+	height: 200px;
+	border: none;
+	outline: none;	
+	padding: 10px; 
+    font-size: 1.4rem;
+}
+
+
+/* 个人信息页CSS样式 */
+.quit-box {
+	margin-top: 20px;
+	text-align: center;	
+}
+.quit-btn {
+	font-size: 1.4rem;
+	color: #666;
+}
+/* ¸öÈËÐÅÏ¢Ò³CSSÑùÊ½½áÊø */
+
+
+
+
+
+
+
+
+
+
+
+
+
+

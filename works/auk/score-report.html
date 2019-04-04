@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>H5开发</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no;">
+	<meta name="format-detection" content="telephone=no" />
+</head>
+<style>
+.logo-img{
+	width:180px;
+	margin: 34px 0;
+}
+body{
+	text-align:center;
+}
+.input-wrapper{
+	overflow: hidden;
+    margin: 0 8px;
+    border: #b3b3b3 solid 1px;
+}
+.input-wrapper:last-of-type {
+    border-top: none;
+}
+input{
+	width:100%;
+	padding: 12px 50px 12px 12px; 
+	border: none;
+	outline: none;
+}
+.login-btn {
+	display: block;
+    font-size: 1.2rem;
+    line-height: 43px;
+    text-align: center;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	background: #46dd5b;
+	margin: 20px 8px 15px;    
+}
+.forget-btn {
+	font-size: 1rem;
+	color: #666;
+	cursor: pointer;
+	text-decoration: none;
+}
+</style>
+<body>
+
+<div class="bg">
+<img src="resources/logo.png" class="logo-img">
+</div>
+<form action="" method="get">
+  <div class="input-wrapper"><input type="text" name="user_name" placeholder="请输入账号" /></div>
+  <div class="input-wrapper"><input type="password" name="user_psw" placeholder="请输入密码" /></div>
+  <a href="#" class="login-btn">登录</a>
+  <a href="" class="forget-btn">忘记密码</a>
+</form>
+</html>

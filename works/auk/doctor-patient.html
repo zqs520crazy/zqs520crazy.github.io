@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>医生管理-查看医生病人</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no;">
+	<meta name="format-detection" content="telephone=no" />
+	<link href="style.css"  rel="stylesheet" type="text/css">
+	<script src="jquery-1.11.1.min.js"></script>
+</head>
+
+<body class="m-p-0">
+<nav class="top-menu">
+	<span class="top-title">医生病人</span>
+	<span class="menu"><img src="nav.png" alt=""/></span>
+	<ul>
+		<li><a href="home.html" class="scroll">首页</a></li>
+		<li><a href="company-info.html" class="scroll">单位信息</a></li>
+		<li><a href="doctor-manage.html" class="scroll">医生管理</a></li>
+		<li><a href="news-manage.html" class="scroll">公告管理</a></li>
+		<li><a href="mine-info.html" class="scroll">账户信息</a></li>
+	</ul>
+	
+	<!--打开导航-->
+	<script>
+	$("span.menu").click(function(){
+		$(".top-menu ul").fadeToggle(200 , function(){
+		});
+	});
+	
+	$(".scroll").click(function(){	
+		var display = $("span.menu").css("display");
+		if(display !== "none"){
+			//alert("aa");
+			$(".top-menu ul").fadeIn("slow" );
+		}
+	});
+	</script>
+</nav>
+
+<!--循环部分-->
+<section class="doc-list ">
+	<div class="list-row row-1">
+		<span class="d-col doc-name">王明明</span>
+		<span class="d-col patient-id">ID:212121421</span>
+	</div>
+	<div class="list-row row-2">
+		<span class="doc-hospital">患者类型：当前患者</span>
+	</div>
+	<div class="list-row row-4">
+		<span class="doc-time">创建时间：2016-12-10 12:20</span>
+	</div>
+	<div class="btn-box2">
+		<a href="javascript:void(0)" class="doc-btn btn-patient">解除关联</a>
+	</div>
+</section>
+<!--循环部分结束-->
+<!--循环部分-->
+<section class="doc-list ">
+	<div class="list-row row-1">
+		<span class="d-col doc-name">18716407734</span>
+		<span class="d-col patient-id">ID:212121421</span>
+	</div>
+	<div class="list-row row-2">
+		<span class="doc-hospital">患者类型：历史患者</span>
+	</div>
+	<div class="list-row row-4">
+		<span class="doc-time">创建时间：2016-12-10 12:20</span>
+	</div>
+	<div class="btn-box2">
+		<a href="javascript:void(0)" class="doc-btn btn-patient">解除关联</a>
+	</div>
+</section>
+<!--循环部分结束-->
+<!--循环部分-->
+<section class="doc-list ">
+	<div class="list-row row-1">
+		<span class="d-col doc-name">18716407734</span>
+		<span class="d-col patient-id">ID:212121421</span>
+	</div>
+	<div class="list-row row-2">
+		<span class="doc-hospital">患者类型：当前患者</span>
+	</div>
+	<div class="list-row row-4">
+		<span class="doc-time">创建时间：2016-12-10 12:20</span>
+	</div>
+	<div class="btn-box2">
+		<a href="javascript:void(0)" class="doc-btn btn-patient">解除关联</a>
+	</div>
+</section>
+<!--循环部分结束-->
+<!--循环部分-->
+<section class="doc-list ">
+	<div class="list-row row-1">
+		<span class="d-col doc-name">18716407734</span>
+		<span class="d-col patient-id">ID:212121421</span>
+	</div>
+	<div class="list-row row-2">
+		<span class="doc-hospital">患者类型：历史患者</span>
+	</div>
+	<div class="list-row row-4">
+		<span class="doc-time">创建时间：2016-12-10 12:20</span>
+	</div>
+	<div class="btn-box2">
+		<a href="javascript:void(0)" class="doc-btn btn-patient">解除关联</a>
+	</div>
+</section>
+<!--循环部分结束-->
+<!--循环部分-->
+<section class="doc-list ">
+	<div class="list-row row-1">
+		<span class="d-col doc-name">18716407734</span>
+		<span class="d-col patient-id">ID:212121421</span>
+	</div>
+	<div class="list-row row-2">
+		<span class="doc-hospital">患者类型：当前患者</span>
+	</div>
+	<div class="list-row row-4">
+		<span class="doc-time">创建时间：2016-12-10 12:20</span>
+	</div>
+	<div class="btn-box2">
+		<a href="javascript:void(0)" class="doc-btn btn-patient">解除关联</a>
+	</div>
+</section>
+<!--循环部分结束-->
+<!--循环部分-->
+<section class="doc-list ">
+	<div class="list-row row-1">
+		<span class="d-col doc-name">18716407734</span>
+		<span class="d-col patient-id">ID:212121421</span>
+	</div>
+	<div class="list-row row-2">
+		<span class="doc-hospital">患者类型：当前患者</span>
+	</div>
+	<div class="list-row row-4">
+		<span class="doc-time">创建时间：2016-12-10 12:20</span>
+	</div>
+	<div class="btn-box2">
+		<a href="javascript:void(0)" class="doc-btn btn-patient">解除关联</a>
+	</div>
+</section>
+<!--循环部分结束-->
+
+</html>

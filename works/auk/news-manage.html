@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>公告管理</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no;">
+	<link href="style.css"  rel="stylesheet" type="text/css">
+	<script src="jquery-1.11.1.min.js"></script>
+</head>
+
+<body class="m-p-0">
+<nav class="top-menu">
+	<span class="top-title">公告管理</span>
+	<span class="menu"><img src="nav.png" alt=""/></span>
+	<ul>
+		<li><a href="home.html" class="scroll">首页</a></li>
+		<li><a href="company-info.html" class="scroll">单位信息</a></li>
+		<li><a href="doctor-manage.html" class="scroll">医生管理</a></li>
+		<li><a href="news-manage.html" class="scroll">公告管理</a></li>
+		<li><a href="mine-info.html" class="scroll">账户信息</a></li>
+	</ul>
+	
+	<!--打开导航-->
+	<script>
+	$("span.menu").click(function(){
+		$(".top-menu ul").fadeToggle(200 , function(){
+		});
+	});
+	
+	$(".scroll").click(function(){	
+		var display = $("span.menu").css("display");
+		if(display !== "none"){
+			//alert("aa");
+			$(".top-menu ul").fadeIn("slow" );
+		}
+	});
+	</script>
+</nav>
+
+<!--循环部分-->
+<section class="news-list ">
+	<div class="list-row">
+		<span class="n-col news-id">ID:2</span>
+		<span class="n-col news-to">发送给患者</span>
+	</div>
+	<div class="list-row">
+		公告内容：
+		在中国历史文化名城成都市锦江万里桥头的华西坝，有一座闻名遐迩的医学城，她就是四川大学华西临床医学院！
+	</div>
+	<div class="list-row">
+		<span class="news-time">创建时间：2016-12-10 12:20</span>
+	</div>
+</section>
+<!--循环部分结束-->
+<!--循环部分-->
+<section class="news-list ">
+	<div class="list-row">
+		<span class="n-col news-id">ID:2</span>
+		<span class="n-col news-to">发送给患者</span>
+	</div>
+	<div class="list-row">
+		公告内容：
+		明天我们一起出去玩吧！
+	</div>
+	<div class="list-row">
+		<span class="news-time">创建时间：2016-12-10 12:20</span>
+	</div>
+</section>
+<!--循环部分结束-->
+<!--循环部分-->
+<section class="news-list ">
+	<div class="list-row">
+		<span class="n-col news-id">ID:2</span>
+		<span class="n-col news-to">发送给患者</span>
+	</div>
+	<div class="list-row">
+		公告内容：
+		有一座闻名遐迩的医学城，她就是四川大学华西临床医学院！
+	</div>
+	<div class="list-row">
+		<span class="news-time">创建时间：2016-12-10 12:20</span>
+	</div>
+</section>
+<!--循环部分结束-->
+
+<a href="add-news.html" class="add-doc-btn">发布新公告</a>
+</html>

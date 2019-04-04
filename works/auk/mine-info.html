@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>公告管理-添加单位公告</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no;">
+	<link href="style.css"  rel="stylesheet" type="text/css">
+	<script src="jquery-1.11.1.min.js"></script>
+</head>
+
+<body class="m-p-0">
+<nav class="top-menu">
+	<span class="top-title">账户信息</span>
+	<span class="menu"><img src="nav.png" alt=""/></span>
+	<ul>
+		<li><a href="home.html" class="scroll">首页</a></li>
+		<li><a href="company-info.html" class="scroll">单位信息</a></li>
+		<li><a href="doctor-manage.html" class="scroll">医生管理</a></li>
+		<li><a href="news-manage.html" class="scroll">公告管理</a></li>
+		<li><a href="mine-info.html" class="scroll">账户信息</a></li>
+	</ul>
+	
+	<!--打开导航-->
+	<script>
+	$("span.menu").click(function(){
+		$(".top-menu ul").fadeToggle(200 , function(){
+		});
+	});
+	
+	$(".scroll").click(function(){	
+		var display = $("span.menu").css("display");
+		if(display !== "none"){
+			//alert("aa");
+			$(".top-menu ul").fadeIn("slow" );
+		}
+	});
+	</script>
+</nav>
+
+
+<h2 class="a-c-h2">登录账户：AUK102</h2>
+<form class="a-c-form">
+	<p>原密码</p>
+	<div class="input-wrapper"><input type="password" class="a-c-input" name="doc_name" placeholder="请输入原密码" /></div>
+	<p>新密码</p>
+	<div class="input-wrapper"><input type="password" class="a-c-input" name="doc_phone" placeholder="请输入新密码" /></div>
+	<a href="home.html" class="a-c-btn">确认修改</a>
+	<div class="quit-box"><a href="login.html" class="quit-btn">退出登录</a></div>
+</form>
+</html>

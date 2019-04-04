@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>医生管理</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no;">
+	<meta name="format-detection" content="telephone=no" />
+	<link href="style.css"  rel="stylesheet" type="text/css">
+	<script src="jquery-1.11.1.min.js"></script>
+</head>
+
+<body class="m-p-0">
+<nav class="top-menu">
+	<span class="top-title">医生管理</span>
+	<span class="menu"><img src="nav.png" alt=""/></span>
+	<ul>
+		<li><a href="home.html" class="scroll">首页</a></li>
+		<li><a href="company-info.html" class="scroll">单位信息</a></li>
+		<li><a href="doctor-manage.html" class="scroll">医生管理</a></li>
+		<li><a href="news-manage.html" class="scroll">公告管理</a></li>
+		<li><a href="mine-info.html" class="scroll">账户信息</a></li>
+	</ul>
+	
+	<!--打开导航-->
+	<script>
+	$("span.menu").click(function(){
+		$(".top-menu ul").fadeToggle(200 , function(){
+		});
+	});
+	
+	$(".scroll").click(function(){	
+		var display = $("span.menu").css("display");
+		if(display !== "none"){
+			//alert("aa");
+			$(".top-menu ul").fadeIn("slow" );
+		}
+	});
+	</script>
+</nav>
+
+<!--循环部分-->
+<section class="doc-list ">
+	<div class="list-row row-1">
+		<span class="d-col doc-name">袁静家的大孩子</span>
+		<span class="d-col doc-sex">男</span>
+		<span class="d-col doc-id">ID:10</span>
+	</div>
+	<div class="list-row row-2">
+		<span class="doc-hospital">统计权限：高</span>
+	</div>
+	<div class="list-row row-3">
+		<span class="doc-status">账号状态：开启中</span>
+	</div>
+	<div class="list-row row-4">
+		<span class="doc-time">创建时间：2016-12-10 12:20</span>
+	</div>
+	<div class="btn-box">
+		<a href="doctor-edit.html" class="doc-btn btn-exid">修改</a>
+		<a href="doctor-patient.html" class="doc-btn btn-patient">医生病人</a>
+	</div>
+</section>
+<!--循环部分结束-->
+<!--循环部分-->
+<section class="doc-list ">
+	<div class="list-row row-1">
+		<span class="d-col doc-name">王大雷</span>
+		<span class="d-col doc-sex">男</span>
+		<span class="d-col doc-id">ID:122</span>
+	</div>
+	<div class="list-row row-2">
+		<span class="doc-hospital">统计权限：低</span>
+	</div>
+	<div class="list-row row-3">
+		<span class="doc-status">账号状态：开启中</span>
+	</div>
+	<div class="list-row row-4">
+		<span class="doc-time">创建时间：2016-12-10 12:20</span>
+	</div>
+	<div class="btn-box">
+		<a href="doctor-edit.html" class="doc-btn btn-exid">修改</a>
+		<a href="doctor-patient.html" class="doc-btn btn-patient">医生病人</a>
+	</div>
+</section>
+<!--循环部分结束-->
+<!--循环部分-->
+<section class="doc-list ">
+	<div class="list-row row-1">
+		<span class="d-col doc-name">王大雷</span>
+		<span class="d-col doc-sex">男</span>
+		<span class="d-col doc-id">ID:212</span>
+	</div>
+	<div class="list-row row-2">
+		<span class="doc-hospital">统计权限：高</span>
+	</div>
+	<div class="list-row row-3">
+		<span class="doc-status">账号状态：开启中</span>
+	</div>
+	<div class="list-row row-4">
+		<span class="doc-time">创建时间：2016-12-10 12:20</span>
+	</div>
+	<div class="btn-box">
+		<a href="doctor-edit.html" class="doc-btn btn-exid">修改</a>
+		<a href="doctor-patient.html" class="doc-btn btn-patient">医生病人</a>
+	</div>
+</section>
+<!--循环部分结束-->
+<!--循环部分-->
+<section class="doc-list ">
+	<div class="list-row row-1">
+		<span class="d-col doc-name">王大雷</span>
+		<span class="d-col doc-sex">男</span>
+		<span class="d-col doc-id">ID:573</span>
+	</div>
+	<div class="list-row row-2">
+		<span class="doc-hospital">统计权限：低</span>
+	</div>
+	<div class="list-row row-3">
+		<span class="doc-status">账号状态：开启中</span>
+	</div>
+	<div class="list-row row-4">
+		<span class="doc-time">创建时间：2016-12-10 12:20</span>
+	</div>
+	<div class="btn-box">
+		<a href="doctor-edit.html" class="doc-btn btn-exid">修改</a>
+		<a href="doctor-patient.html" class="doc-btn btn-patient">医生病人</a>
+	</div>
+</section>
+<!--循环部分结束-->
+<!--循环部分-->
+<section class="doc-list ">
+	<div class="list-row row-1">
+		<span class="d-col doc-name">王大雷</span>
+		<span class="d-col doc-sex">男</span>
+		<span class="d-col doc-id">ID:212121</span>
+	</div>
+	<div class="list-row row-2">
+		<span class="doc-hospital">统计权限：高</span>
+	</div>
+	<div class="list-row row-3">
+		<span class="doc-status">账号状态：开启中</span>
+	</div>
+	<div class="list-row row-4">
+		<span class="doc-time">创建时间：2016-12-10 12:20</span>
+	</div>
+	<div class="btn-box">
+		<a href="doctor-edit.html" class="doc-btn btn-exid">修改</a>
+		<a href="doctor-patient.html" class="doc-btn btn-patient">医生病人</a>
+	</div>
+</section>
+<!--循环部分结束-->
+
+
+<a href="add-doctor.html" class="add-doc-btn">注册新医生</a>
+</html>

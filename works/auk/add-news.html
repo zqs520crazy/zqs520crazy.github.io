@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>公告管理-添加单位公告</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no;">
+	<link href="style.css"  rel="stylesheet" type="text/css">
+	<script src="jquery-1.11.1.min.js"></script>
+</head>
+
+<body class="m-p-0">
+<nav class="top-menu">
+	<span class="menu"><img src="nav.png" alt=""/></span>
+	<ul>
+		<li><a href="home.html" class="scroll">首页</a></li>
+		<li><a href="company-info.html" class="scroll">单位信息</a></li>
+		<li><a href="doctor-manage.html" class="scroll">医生管理</a></li>
+		<li><a href="news-manage.html" class="scroll">公告管理</a></li>
+		<li><a href="mine-info.html" class="scroll">账户信息</a></li>
+	</ul>
+	
+	<!--打开导航-->
+	<script>
+	$("span.menu").click(function(){
+		$(".top-menu ul").fadeToggle(200 , function(){
+		});
+	});
+	
+	$(".scroll").click(function(){	
+		var display = $("span.menu").css("display");
+		if(display !== "none"){
+			//alert("aa");
+			$(".top-menu ul").fadeIn("slow" );
+		}
+	});
+
+	</script>
+</nav>
+
+<h2 class="a-c-h2">添加单位公告</h2>
+<form class="a-c-form">
+	<p>发布对象</p>
+	<div class="input-wrapper">
+		<select type="password" class="a-c-input a-c-select" name="doc_sex" placeholder="请选择医生性别" />
+			<option value="s1">所有医生</option>
+			<option value="s2">所有患者</option>
+			<option value="s3">医生患者</option>
+		</select>
+	</div>
+	<p>公告内容</p>
+	<div class="input-wrapper">
+		<textarea type="text" class="a-c-textarea" name="doc_name" placeholder="请输入公告内容" /></textarea>
+	</div>
+	<a href="javascript:void(0)" class="a-c-btn" id="pubBtn" >确认发布</a>
+</form>
+
+<!--弹窗页-->
+<div id="bgBox" class="bg" style="display:none;">
+	<div class="pop-box">
+		<div class="pop-text">公告发布后将不能进行修改和删除，确定发布？</div>
+		<div class="pop-btn">
+			<a href="news-manage.html" class="btn s-btn" id="sureBtn">确定</a>
+			<a href="javascript:void(0)" class="btn q-btn" id="quitBtn">取消</a>
+		</div>
+	</div>
+</div>
+<!--弹窗页-->
+<style>
+#bgBox {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.pop-box {
+	width: 80%;
+	height: auto;
+	margin: 50% auto;
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #D3D3D3;
+	border-radius: 3px 3px 3px 3px;
+}
+.pop-text {
+	font-size: 1.6rem;
+	line-height: 28px;
+	text-align: left;
+	color: #333;
+}
+.btn {
+	display: inline-block;
+	line-height: 40px;
+	font-size: 1.8rem;
+	width: 40%;
+}
+.s-btn {
+	color: #46dd5b;
+}
+.q-btn {
+	color: #666;
+}
+</style>
+<script>
+	<!--弹窗-->
+	$("#pubBtn").click(function(){
+		$("#bgBox").fadeIn(200);
+	});
+	$("#quitBtn").click(function(){
+		$("#bgBox").fadeOut(200);
+	});
+</script>
+</body>
+</html>
