@@ -131,6 +131,18 @@ html,body {
 	opacity: 0.4;
 }
 
+.to-top { 
+	display: none; 
+	padding: 8px 16px; 
+	color: #fff; 
+	font-size: 14px;
+	background-color: #f60;
+	box-shadow: 0px 2px 4px rgba(254,84,6,.4);
+}
+.to-top:hover { 
+	background-color: #f50;
+}
+
 
 /* 响应式样式 */
 @media screen and (max-width:1280px) {
@@ -245,6 +257,16 @@ html,body {
 		color: #000;
 		opacity: 0.4;
 	}
+
+	.to-top { 
+		display: none; 
+		padding: 6px 12px; 
+		color: #fff; 
+		font-size: 12px;
+		background-color: #f60;
+		box-shadow: 0px 1px 3px rgba(254,84,6,.4);
+	}
+
 }
 
 /* style end */
