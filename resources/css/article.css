@@ -79,6 +79,12 @@ html,body {
 	font-size: 16px;
 	color: #444;
 }
+.article h1 a, .article h2 a {
+	color: #343434;
+}
+.article h3 a {
+	color: #444;
+}
 .article p {
 	font-size: 16px;
 	color: #535353;
@@ -117,6 +123,16 @@ html,body {
 	line-height: 30px;
 	color: #767676;
 	margin: 10px 0;
+}
+.article .ex-part {
+	background: #f9f9f9;
+	text-align: left;
+	font-size: 16px;
+	color: #767676;
+	padding: 16px 20px;
+	margin-top: -4px;
+	line-height: 24px;
+	border-left: 4px solid #eee;
 }
 
 .copyright {
@@ -245,6 +261,11 @@ html,body {
 	}
 	.article .img-box img.middle-pic {
 		width: 100%;
+	}
+	.article .ex-part {
+		padding: 12px 16px;
+		margin-top: 0;
+		border-left: 3px solid #eee;
 	}
 
 
