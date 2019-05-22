@@ -140,6 +140,9 @@ html,body {
 	color: #767676;
 	margin: 10px 0;
 }
+.article ul li b {
+	color: #565656;
+}
 .article .ex-part {
 	background: #f9f9f9;
 	text-align: left;

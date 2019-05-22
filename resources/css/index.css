@@ -357,7 +357,7 @@ html,body {
 	}
 	.article-text a {
 		color: var(--maincolor);
-		font-size: 18px;
+		font-size: 17px;
 	}
 	.article-text p {
 		font-size: 14px;
@@ -366,7 +366,7 @@ html,body {
 	.tools-list .tools-link {
 		display: block;
 		margin: 20px auto 0;
-		font-size: 14px;
+		font-size: 15px;
 	}
 
 	.footer {
