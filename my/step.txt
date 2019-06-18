@@ -1,3 +1,6 @@
 git add .
 git commit -m "add new content"
 git push origin master
+
+ÌÚÑ¶ÔÆÌá½»
+git push https://git.dev.tencent.com/zqs520crazy/QING.git --all
