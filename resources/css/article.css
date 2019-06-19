@@ -168,7 +168,7 @@ html,body {
 
 .to-top { 
 	display: none; 
-	padding: 8px 16px; 
+	padding: 8px 12px; 
 	color: #fff; 
 	font-size: 14px;
 	background-color: #f60;
@@ -176,6 +176,9 @@ html,body {
 }
 .to-top:hover { 
 	background-color: #f50;
+}
+.to-top img {
+	width: 20px;
 }
 
 

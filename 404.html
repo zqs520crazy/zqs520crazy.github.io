@@ -13,8 +13,8 @@
 		<meta charset=utf-8>
 		<link rel=canonical href>
 		<title>404 Page not found - QING点</title>
-		<!-- <link rel=stylesheet href="https://awps-assets.meituan.net/mit/blog/v20190124-1/errorPage.css?v=Whistle&t=20181017-1r"> -->
     	<link rel="shortcut icon" href="resources/imgs/favicon.ico">
+    	<link href="resources/css/reset.css" rel="stylesheet" type="text/css">
 		<script>
 			top!=self&&top.host!=self.host&&(top.location=self.location);(function(d){d.className=d.className.replace(/\bno-js/,'');})(document.documentElement);var $CONFIG={'data':{}};
 		</script>
@@ -25,6 +25,7 @@
 				text-align: center;
 				font-size: 28px;
 				color: #898989;
+				margin: 40px 0 20px;
 			}
 			p {
 				text-align: center;
@@ -53,12 +54,45 @@
 				max-width: 68%;
 				margin: 0 auto;
 			}
+			.error-pic-box {
+				display: none;
+				text-align: center;
+			}
+			.error-pic-box img {
+			}
+			.error-pic-box a {
+				display: block;
+				width: 134px;
+				height: 56px;
+				margin: 20px auto;
+				font-size: 16px;
+				color: #333;
+				text-decoration: none;
+				line-height: 56px;
+				border: 1px solid #333;
+			}
 		</style>
 	</head>
 	<body>
 		<h2>404 PAGE NOT FOUND</h2>
 		<div class="maze-game-container"><canvas class=maze-content></canvas></div>
-		<div><p><span>你可以使用 <kbd>W</kbd>、<kbd>A</kbd>、<kbd>S</kbd>、<kbd>D</kbd>，或者方向键进行游戏</span></p></div>
+		<div class="maze-game-tips"><p><span>你可以使用 <kbd>W</kbd>、<kbd>A</kbd>、<kbd>S</kbd>、<kbd>D</kbd>，或者方向键进行游戏</span></p></div>
+		<div class="error-pic-box"><img src="resources/imgs/error.png"><a href="index.html">回到首页</a></div>
+
 		<script src="https://awps-assets.meituan.net/mit/blog/v20190124-1/errorPage.js?v=Whistle&t=20181017-1r"></script>
+		<script type="text/javascript">
+	        $(document).ready(function(){
+	            isIPhoneX();
+	        });
+	        function isIPhoneX(fn){
+	            var u = navigator.userAgent;
+	            var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+	            if (isIOS) {
+	                $(".maze-game-container").css("display","none");
+	                $(".maze-game-tips").css("display","none");
+	                $(".error-pic-box").css("display","block");
+	            }
+	        }
+	    </script>
 	</body>
 </html>
