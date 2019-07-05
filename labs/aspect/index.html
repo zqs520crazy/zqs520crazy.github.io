@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="16:9, 4:3, 21:9, 2:1">
+<meta name="description" content="16:9, 4:3, 21:9, 2:1 在线计算工具">
+<title>Aspect - 长宽比例换算工具</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="shortcut icon" href="assets/favicon.png">
+<script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="assets/main.js"></script>
+<link rel="stylesheet" href="assets/nav.css">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+</head>
+
+<body onload="setupCommon(&#39;metallic&#39;);mtlcLoad1st();">
+    <div class="ctnr">
+        <ul class="ratios">
+            <li class="current" id="1">16:9</li>
+            <li id="2">21:9</li>
+            <li id="3">4:3</li>
+            <li id="4">2:1</li>
+        </ul>
+        <div class="calculator">
+            <section id="width">
+                <h1 style="color: rgb(255, 255, 255); font-weight: 300;">Width</h1>
+                <input style="opacity: 0.3;" name="width" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57" value="Value" type="text">
+            </section>
+            <section id="height">
+                <h1 style="color: rgb(255, 255, 255); font-weight: 300;">Height</h1>
+                <input style="opacity: 0.3;" name="height" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57" value="Value" type="text">
+            </section>
+            <img src="assets/x.svg" alt="X">
+        </div>
+    </div>
+</body></html>

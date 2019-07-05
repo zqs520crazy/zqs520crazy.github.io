@@ -1,0 +1,16 @@
+<svg id="x" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2751c7;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="24" cy="24" r="24"/>
+  <path class="cls-2" d="M500.9,538.071l-2.828,2.828L491,533.828l-7.071,7.071-2.828-2.828L488.172,531l-7.071-7.071,2.828-2.828L491,528.172l7.071-7.071,2.828,2.828L493.828,531Z" transform="translate(-467 -507)"/>
+</svg>

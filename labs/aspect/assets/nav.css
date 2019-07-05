@@ -1,0 +1,42 @@
+/*
+
+Theme Name: SheJiDaRen-2
+
+Theme URI: shejidaren.com
+
+Description: VibeBox is 3 columns fixed width WordPress theme developed by MagPress.com. This theme comes with added features such as Smoothgallery slider, featured categories, Adsense ready, Twitter ready and many more.
+
+Author:commy
+
+Author URI: http://shejedaren.com
+
+Tags: black,white,three-columns,custom-menu,fixed-width,right-sidebar,theme-options,threaded-comments
+
+
+
+*/
+
+
+
+
+body {padding-top:53px}
+body.nav-none .nav,
+.none{display:none;}
+body.nav-none {padding-top:0;}
+.nav {width:100%;position:fixed;top:0;z-index:9999;padding:5px 0;height:43px;background:#222;font-size:12px;}
+.share {position:relative;width:330px;margin:0 auto;}
+.share:before {content:'爱分享';position:absolute;left:-50px;top:13px;color:#fff;}
+.l-link,.r-link {padding:15px 15px 0;}
+.l-link {float:left;}
+.r-link {float:right;}
+.l-link:hover,.r-link:hover {color:#fff;}
+.header {margin:10px 0 50px;padding:30px 10px;text-align:center;}
+.nav a {color:#999;text-decoration: none;}
+.nav a:hover {color:#fff;}
+.logo {float: left;margin:12px 15px 0 15px;color:#eee;font-size:20px;}
+a.logo {margin-top:7px;width:98px;height:30px;background:url(http://hao.shejidaren.com/images/logo.png) no-repeat 0 0;text-indent:-22222px;color:#eee;}
+
+
+/*  AD  */
+.ad-fixed-right {position:fixed;top:63px;right:10px;}
+.ad-fixed-right a.close {float:right;}

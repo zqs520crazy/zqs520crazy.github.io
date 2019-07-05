@@ -2,13 +2,13 @@
 /*--------------------------------------
 	font system
 ---------------------------------------*/
-body { font-family: 'Hiragino Sans','microsoft yahei',sans-serif; -webkit-text-size-adjust: 100%; }
+body { font-family: 'Microsoft YaHei','Hiragino Sans','microsoft yahei',sans-serif; -webkit-text-size-adjust: 100%; }
 
-.ffg { font-family:  'Hiragino Sans','microsoft yahei',sans-serif }
+.ffg { font-family:  'Microsoft YaHei','Hiragino Sans','microsoft yahei',sans-serif }
 
-.ffm, #text-area { font-family: 'Hiragino Sans','microsoft yahei',sans-serif; }
+.ffm, #text-area { font-family: 'Microsoft YaHei','Hiragino Sans','microsoft yahei',sans-serif; }
 
-#footer #copyright { font-size: 0.625rem; line-height: 100%; font-weight: 300; }
+#footer #copyright { font-size: 0.625rem; line-height: 100%; font-weight: 300; color: #fff; }
 
 #text-area { font-size: 0.875rem; line-height: 175%; font-weight: 300; }
 
@@ -55,7 +55,7 @@ img { border-style: none; vertical-align: top; }
 #headerset { position: relative; margin: 0 auto; padding-top: 30px; padding-bottom: 40px; }
 #headerset #logo { text-align: center; }
 #headerset #menuset { display: none; }
-#headerset #m-menubtn { position: absolute; top: 30px; left: 13px; }
+#headerset #m-menubtn { position: absolute; top: 30px; left: 13px; display: none; }
 #headerset #menuset-mobile { height: 0; margin: 30px 20px 0; text-align: center; border-top: 1px dotted #cacaca; overflow: hidden; }
 #headerset #menuset-mobile li { display: block; padding: 4px 0; border-bottom: 1px dotted #cacaca; }
 #headerset #menuset-mobile li a { display: block; }
