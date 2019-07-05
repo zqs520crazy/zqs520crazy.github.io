@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="黄金比, 黄金分割, golden ration, silver ratio, 白銀比,青銅比,白金比">
+<meta name="description" content="一个计算金属比例的工具，包括黄金比（Golden Ratio）、白银比例（Silver Ratio）、铂金比例（Platinum Ratio）、青铜比例（Bronze Ratio），来让你的设计作品高大上起来吧！">
+<title>黄金比例在线计算工具</title>
+
+<link rel="shortcut icon" href="assets/favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" media="(orientation:portrait) and (min-width:551px), (orientation:landscape) and (min-width:737px)" href="assets/metallic_pc.css">
+<link rel="stylesheet" media="(orientation:portrait) and (min-width:0px) and (max-width:550px), (orientation:landscape) and (min-width:0px) and (max-width:736px)" href="assets/metallic_sp.css">
+<link rel="stylesheet" href="assets/nav.css">
+<script src="assets/klib.js"></script>
+<script src="assets/common.js"></script>
+<script src="assets/metallic.js"></script>
+
+<style>
+a.shareCount:before {
+    content: '12';
+}
+.none {display:none;}
+</style>
+</head>
+
+<body onload="setupCommon(&#39;metallic&#39;);mtlcLoad1st();">
+
+	<div id="wholepage" style="visibility: visible;">
+
+
+		<div id="headerset">
+			<div style="width:1000px; margin:0 auto;padding-top:20px;margin-bottom:-50px">
+			<h1><b style="color:#daa520;">黄金比</b>在线计算工具</h1>
+			<p style="color:#999;margin-top: 20px;">一个计算金属比例的工具，包括黄金比（Golden Ratio）、白银比例（Silver Ratio）、铂金比例（Platinum Ratio）、青铜比例（Bronze Ratio），来让你的设计作品高大上起来吧！</p>
+			</div>
+			<div class="cf"></div>
+
+			<div id="m-menubtn"><a href="javascript:mMenuOpenClose()"><img src="assets/sp_common_btn_menu.png" width="39" height="38" alt="MENU"></a></div>
+			<ul id="menuset-mobile" style="height: 0px;"><img src="assets/sp_common_menu_contact_off.png" width="280" height="30" alt="CONTACT"></li>
+			</ul>
+		</div>
+
+
+		<div id="contents" style="width: 1267px; padding-bottom: 0px;">
+			<div id="metallic-body">
+
+				<h2 class="area-title"><img src="assets/idx_obj_type_title.png" width="186" height="40" alt="RATIO TYPE"></h2>
+				<div id="type-ctrl" style="padding-left: 0px;">
+					<a href="javascript:changeType(&#39;rect&#39;)" class="nowtype"><img src="assets/idx_btn_type_rect.png" width="78" height="28" alt="Rect"></a>
+					<a href="javascript:changeType(&#39;bar&#39;)"><img src="assets/idx_btn_type_bar.png" width="78" height="28" alt="Bar"></a>
+					<div class="cf"></div>
+				</div>
+				<div class="cf"></div>
+
+				<div id="type-set-rect">
+					<a href="javascript:changeRatio(1000)" id="rect1000" class=""></a>
+					<a href="javascript:changeRatio(1333)" id="rect1333" class=""></a>
+					<a href="javascript:changeRatio(1414)" id="rect1414" class=""></a>
+					<a href="javascript:changeRatio(1618)" id="rect1618" class="nowratio"></a>
+					<a href="javascript:changeRatio(1732)" id="rect1732" class=""></a>
+					<a href="javascript:changeRatio(2000)" id="rect2000" class=""></a>
+					<a href="javascript:changeRatio(2414)" id="rect2414" class=""></a>
+					<a href="javascript:changeRatio(2618)" id="rect2618" class=""></a>
+					<a href="javascript:changeRatio(3303)" id="rect3303" class=""></a>
+					<div class="cf"></div>
+				</div>
+
+				<div id="type-set-bar">
+					<a href="javascript:changeRatio(1414)" id="bar1414" class=""></a>
+					<a href="javascript:changeRatio(1618)" id="bar1618" class="nowratio"></a>
+					<a href="javascript:changeRatio(1732)" id="bar1732" class=""></a>
+					<a href="javascript:changeRatio(2000)" id="bar2000" class=""></a>
+					<a href="javascript:changeRatio(2414)" id="bar2414" class=""></a>
+					<a href="javascript:changeRatio(2618)" id="bar2618" class=""></a>
+					<a href="javascript:changeRatio(3303)" id="bar3303" class=""></a>
+					<div class="cf"></div>
+				</div>
+
+				<h2 class="area-title"><img src="assets/idx_obj_result_title.png" width="186" height="40" alt="RESULT"></h2>
+				<div id="result-ctrl">
+					<div id="fp-title"><img src="assets/idx_txt_floatingpoint.png" width="121" height="30" alt="FLOATING POINT"></div>
+					<a href="javascript:changeFP(&#39;round&#39;)" class="nowfptype"><img src="assets/idx_btn_fp_round.png" width="70" height="28" alt="ROUND"></a>
+					<a href="javascript:changeFP(&#39;zero1&#39;)" class=""><img src="assets/idx_btn_fp_0.png" width="30" height="28" alt=".0"></a>
+					<a href="javascript:changeFP(&#39;zero2&#39;)" class=""><img src="assets/idx_btn_fp_00.png" width="39" height="28" alt=".00"></a>
+					<a href="javascript:changeFP(&#39;zero3&#39;)" class=""><img src="assets/idx_btn_fp_000.png" width="47" height="28" alt=".000"></a>
+					<div class="cf"></div>
+				</div>
+				<div class="cf"></div>
+
+				<div id="result-area" style="height: 303px;">
+					<form id="resultform" name="resultform">
+						<div id="result-rect" style="height: 295px; width: 482px; left: 255px;">
+							<input type="text" id="rect-input1" onkeyup="setInputPos(this);mathRatio();" style="color: rgb(68, 68, 68); width: 67px; top: 114px;">
+							<input type="text" id="rect-input2" onkeyup="setInputPos(this);mathRatio();" style="color: rgb(28, 149, 173); left: 200px; width: 81px; top: 229px;">
+						</div>
+
+						<div id="result-bar">
+							<div id="result-bar-numbox1"><input type="text" id="bar-input1" onkeyup="setInputPos(this);mathRatio();" style="color: rgb(68, 68, 68); width: 25px;"></div>
+							<div id="result-bar-numbox2"><input type="text" id="bar-input2" onkeyup="setInputPos(this);mathRatio();" style="color: rgb(68, 68, 68); width: 25px;"></div>
+							<div class="cf"></div>
+							<div id="result-bar-l"></div>
+							<div id="result-bar-r"></div>
+							<div class="cf"></div>
+							<div id="result-bar-numbox3"><input type="text" id="bar-input3" onkeyup="setInputPos(this);mathRatio();" style="color: rgb(28, 149, 173); width: 120px;"></div>
+						</div>
+					</form>
+				</div>
+				<div id="result-caption"><img src="assets/idx_txt_clicknumber.png" width="185" height="12" alt="CLICK NUMBER TO INPUT"></div>
+
+				<div id="text-area">
+					<div id="ta-left1">
+						<p>黄金分割具有严格的比例性、艺术性、和谐性，蕴藏着丰富的美学价值，而且呈现于不少动物和植物的外观。现今很多工业产品、电子产品、建筑物或艺术品均普遍应用黄金分割，展现其功能性与美观性。</p>
+						<p>「金属比例」除了黄金比（Golden Ratio）外，其实还有白银比例（Silver Ratio）、铂金比例（Platinum Ratio）、青铜比例（Bronze Ratio）这些都具有严格的比例性、艺术性、和谐性，并蕴藏着丰富的美学价值，好好利用，将会使你的作品变得更多高大上。</p>
+						<p>黄金比例是属于数学领域的一个专有名词，但是它最后涵盖的内容不只是有关数学领域的研究，以目前的文献探讨我们可以说黄金比例的发现和如何演进至今仍然是一个谜。</p>
+						<p>他侧重于从数学关系去探讨美的规律，并认为美就是和谐与比例，按照这种比例关系就可以组成美的图案，这其实是一个数字的比例关系，即将一条线分成两部分，较长的一段与较短的一段之比等于全长与较长的一段之比，它们的比例大约是1.618:1。按此种比例关系组成的任何事物都表现出其内部关系的和谐与均衡。</p>
+					</div>
+				</div>
+				<div class="cf"></div>
+
+			</div>
+		</div>
+
+
+		<div id="footer">
+			<div id="topagetop" style="display: block;"><a href="javascript:$scrToPT();"><img src="assets/common_btn_topagetop.png" width="53" height="38" alt="PAGE TOP"></a></div>
+			<div id="copyright">COPYRIGHT© 2016 KISHIN, ALL RIGHTS RESERVED.</div>
+		</div>
+
+
+	</div>
+<span class="none"><script src="http://s15.cnzz.com/stat.php?id=2673729&web_id=2673729" language="JavaScript"></script></span>
+</body></html>
